@@ -1,0 +1,3 @@
+# Handle patterns that start with a dot
+**/.*
+!**/.git*
