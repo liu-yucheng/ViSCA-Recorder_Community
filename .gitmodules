@@ -1,0 +1,6 @@
+[submodule "Android-Plugin"]
+	path = Android-Plugin
+	url = git@github.com:liu-yucheng/liu_yucheng.visca_recorder.github_repo.git
+[submodule "Script-Utils"]
+	path = Script-Utils
+	url = git@github.com:liu-yucheng/ViSCA-Recorder-Utils.git
