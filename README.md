@@ -13,7 +13,7 @@
 - Released under the GNU AGPL 3.0 License.
 - A copy of the ViSCA Recorder Unity C-Sharp Scripts in the `Unity-App` module of the [`liu-yucheng/ViSCA-Recorder`](https://github.com/liu-yucheng/ViSCA-Recorder) repository.
 - The [`liu-yucheng/ViSCA-Recorder`](https://github.com/liu-yucheng/ViSCA-Recorder) repository will be publicly available if the following conditions are met.
-  - An academic journal paper, that is at a computer science journal with a [`CCF-A`](https://www.ccf.org.cn/en/Bulletin/2019-05-13/663884.shtml) rating or above, and that is about the [`liu-yucheng/ViSCA-Recorder`](https://github.com/liu-yucheng/ViSCA-Recorder) repository, and whose first author is and only is Yucheng Liu, and whose corresponding author is and only is Mingming Fan, is confirmed to be published.
+  - An academic journal paper, that is at a computer science journal with a [`CCF-A`](https://www.ccf.org.cn/en/Bulletin/2019-05-13/663884.shtml) rating or above, and that is about the [`liu-yucheng/ViSCA-Recorder`](https://github.com/liu-yucheng/ViSCA-Recorder) repository, and whose first author is and only is [Yucheng Liu](https://orcid.org/0000-0002-5322-3983), and whose corresponding author is and only is [Mingming Fan](https://orcid.org/0000-0002-0356-4712), is confirmed to be published.
 
 # Preparation
 
