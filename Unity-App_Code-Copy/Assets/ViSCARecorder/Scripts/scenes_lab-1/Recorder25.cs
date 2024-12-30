@@ -1,4 +1,4 @@
-// Copyright (C) 2024 Yucheng Liu. Under the GNU AGPL 3.0 License.
+// Copyright (C) 2024-2025 Yucheng Liu. Under the GNU AGPL 3.0 License.
 // GNU AGPL 3.0 License: https://www.gnu.org/licenses/agpl-3.0.txt .
 
 using System;
@@ -65,7 +65,7 @@ namespace ViSCARecorder
         private float time_PreviousFixedUpdateSeconds;
         private float time_FixedDeltaTimeSeconds;
 
-        // Eye gaze legacy.
+        // Eye gaze.
         private float eyeGaze_UpdateIntervalSeconds = 0.033_333_333f; // 30 Hz.
         private float eyeGaze_UpdateCountdown;
         private bool eyeGaze_UpdatePending;
@@ -73,12 +73,16 @@ namespace ViSCARecorder
         private Vector3 eyeGaze_Position;
         private Vector3 eyeGaze_Rotation;
 
-        // Face legacy.
+        // Face.
         private float face_UpdateIntervalSeconds = 0.033_333_333f; // 30 Hz.
         private float face_UpdateCountdown;
         private bool face_UpdatePending;
+        private bool face_TrackingSupported;
         private Dictionary<string, float> face_BlendShapeDict;
         private Dictionary<string, float> face_BlendShapeDictMirrored;
+        private Face::BlendShapesData face_BlendShapesData;
+        private Face::BlendShapesDataMirrored face_BlendShapesDataMirrored;
+        private float face_Laughing;
 
         // Tracked devices.
         private float trackedDevice_UpdateIntervalSeconds = 0.033_333_333f; // 30 Hz.
@@ -160,8 +164,8 @@ namespace ViSCARecorder
         {
             Start_Shared();
             Start_Time();
-            Start_EyeGazeLegacy();
-            Start_FaceLegacy();
+            Start_EyeGaze();
+            Start_Face();
             Start_TrackedDevices();
             Start_Controllers();
             Start_Actions();
@@ -176,8 +180,8 @@ namespace ViSCARecorder
         {
             FixedUpdate_Shared();
             FixedUpdate_Time();
-            FixedUpdate_EyeGazeLegacy();
-            FixedUpdate_FaceLegacy();
+            FixedUpdate_EyeGaze();
+            FixedUpdate_Face();
             FixedUpdate_TrackedDevices();
             FixedUpdate_Controllers();
             FixedUpdate_Actions();
@@ -201,7 +205,7 @@ namespace ViSCARecorder
 
         void OnDestroy()
         {
-            OnDestroy_FaceLegacy();
+            OnDestroy_Face();
             OnDestroy_Text();
         }
 
@@ -285,14 +289,14 @@ namespace ViSCARecorder
         // end timing helpers.
         // begin eye gaze legacy helpers.
 
-        private void Start_EyeGazeLegacy()
+        private void Start_EyeGaze()
         {
             eyeGaze_UpdateCountdown = eyeGaze_UpdateIntervalSeconds;
             eyeGaze_UpdatePending = false;
             eyeGaze_MainCamera = shared_MainCameraObject.GetComponent<Camera>();
         }
 
-        private void FixedUpdate_EyeGazeLegacy()
+        private void FixedUpdate_EyeGaze()
         {
             eyeGaze_UpdateCountdown -= time_FixedDeltaTimeSeconds;
             
@@ -339,15 +343,29 @@ namespace ViSCARecorder
         // end eye gaze legacy helpers.
         // begin face legacy helpers.
 
-        private void Start_FaceLegacy()
+        private void Start_Face()
         {
             face_UpdateCountdown = face_UpdateIntervalSeconds;
             face_UpdatePending = false;
-            PXR_System.EnableLipSync(true);
-            PXR_System.EnableFaceTracking(true);
+
+            bool supported = false;
+            int modeCount = 0;
+            FaceTrackingMode[] modes = { };
+            PXR_MotionTracking.GetFaceTrackingSupported(ref supported, ref modeCount, ref modes);
+            face_TrackingSupported = supported;
+
+            if (face_TrackingSupported)
+            {
+                PXR_MotionTracking.WantFaceTrackingService();
+                FaceTrackingStartInfo info = new();
+                info.mode = FaceTrackingMode.PXR_FTM_FACE_LIPS_BS;
+                PXR_MotionTracking.StartFaceTracking(ref info);
+                PXR_System.EnableLipSync(true);
+                PXR_System.EnableFaceTracking(true);
+            }
         }
 
-        private unsafe void FixedUpdate_FaceLegacy()
+        private unsafe void FixedUpdate_Face()
         {
             face_UpdateCountdown -= time_FixedDeltaTimeSeconds;
 
@@ -356,25 +374,44 @@ namespace ViSCARecorder
                 face_UpdateCountdown = face_UpdateIntervalSeconds;
                 face_UpdatePending = true;
 
-                PxrFaceTrackingInfo info = new();
-                PXR_System.GetFaceTrackingData(0, GetDataType.PXR_GET_FACELIP_DATA, ref info);
-                Face::__.FindShapeArray(info, out float[] blendShapeArray);
-                Face::__.ShapeArrayToDict(blendShapeArray, false, out Dictionary<string, float> faceBlendShapeDict);
-                Face::__.ShapeArrayToDict(blendShapeArray, true, out Dictionary<string, float> faceBlendShapeDictMirrored);
-                float faceLaughing = info.laughingProb;
+                if (face_TrackingSupported)
+                {
+                    bool tracking = false;
+                    FaceTrackingState state = new();
+                    PXR_MotionTracking.GetFaceTrackingState(ref tracking, ref state);
+                    PxrFaceTrackingInfo info = new();
+                    PXR_System.GetFaceTrackingData(0l, GetDataType.PXR_GET_FACELIP_DATA, ref info);
 
-                face_BlendShapeDict = faceBlendShapeDict;
-                face_BlendShapeDictMirrored = faceBlendShapeDictMirrored;
+                    Face::__.FindShapeArray(info, out float[] blendShapeArray);
+                    Face::__.ShapeArrayToDict(blendShapeArray, false, out face_BlendShapeDict);
+                    Face::__.ShapeArrayToDict(blendShapeArray, true, out face_BlendShapeDictMirrored);
+                    Face::__.ShapeArrayToData(blendShapeArray, out face_BlendShapesData);
+                    Face::__.ShapeArrayToDataMirrored(blendShapeArray, out face_BlendShapesDataMirrored);
+                    face_Laughing = info.laughingProb;
+                }
+                else
+                {
+                    Face::__.ShapeArrayToDict(Face::__.emptyBlendShapeArray, false, out face_BlendShapeDict);
+                    Face::__.ShapeArrayToDict(Face::__.emptyBlendShapeArray, true, out face_BlendShapeDictMirrored);
+                    Face::__.ShapeArrayToData(Face::__.emptyBlendShapeArray, out face_BlendShapesData);
+                    Face::__.ShapeArrayToDataMirrored(Face::__.emptyBlendShapeArray, out face_BlendShapesDataMirrored);
+                    face_Laughing = 0f;
+                }
 
-                record_Current.face.blend_shape_dict = new SerializableDict<string, float>(faceBlendShapeDict);
-                record_Current.face.laughing = faceLaughing;
+                record_Current.face.blend_shapes_data = face_BlendShapesData;
+                record_Current.face.laughing = face_Laughing;
             }
         }
 
-        private void OnDestroy_FaceLegacy()
+        private void OnDestroy_Face()
         {
-            PXR_System.EnableLipSync(false);
-            PXR_System.EnableFaceTracking(false);
+            if (face_TrackingSupported)
+            {
+                FaceTrackingStopInfo info = new FaceTrackingStopInfo();
+                PXR_MotionTracking.StopFaceTracking(ref info);
+                PXR_System.EnableLipSync(false);
+                PXR_System.EnableFaceTracking(false);
+            }
         }
 
         // end face legacy helpers.
@@ -1012,7 +1049,11 @@ namespace ViSCARecorder
             {
                 count = record_Task.subtasks.Count;
             }
-            text_RecordStatusText.text = $"Recording tasks: {count}";
+            
+            if (text_RecordStatusText != null)
+            {
+                text_RecordStatusText.text = $"Recording tasks: {count}";
+            }
         }
 
         private void Start_Text_UpdateCaptureStatusText()
@@ -1028,29 +1069,49 @@ namespace ViSCARecorder
                 count = capture_Task.subtasks.Count;
             }
 
-            text_CaptureStatusText.text = $"Capturing tasks: {count}";
+            if (text_CaptureStatusText != null)
+            {
+                text_CaptureStatusText.text = $"Capturing tasks: {count}";
+            }
         }
 
         private void OnApplicationFocus_Text_Record(bool focus)
         {
             if (!focus)
             {
-                text_RecordStatusText.color = text_RecordStatusCriticalColor;
+                if (text_RecordStatusText != null)
+                {
+                    text_RecordStatusText.color = text_RecordStatusCriticalColor;
+                }
             }
 
             OnApplicationFocus_RecordCompleteAllTasks(focus);
 
             if (!focus)
             {
-                text_RecordStatusText.color = text_RecordStatusOKColor;
-                record_Task.fixedUpdateEnabled = false;
-                record_Task.createSubtaskEnabled = false;
+                if (text_RecordStatusText != null)
+                {
+                    text_RecordStatusText.color = text_RecordStatusOKColor;
+                }
+
+                if (record_Task != null)
+                {
+                    record_Task.fixedUpdateEnabled = false;
+                    record_Task.createSubtaskEnabled = false;
+                }
             }
             else
             {
-                text_RecordStatusText.color = text_RecordStatusWarningColor;
-                record_Task.fixedUpdateEnabled = true;
-                record_Task.createSubtaskEnabled = true;
+                if (text_RecordStatusText != null)
+                {
+                    text_RecordStatusText.color = text_RecordStatusWarningColor;
+                }
+
+                if (record_Task != null)
+                {
+                    record_Task.fixedUpdateEnabled = true;
+                    record_Task.createSubtaskEnabled = true;
+                }
             }
 
             Start_Text_UpdateRecordStatusText();
@@ -1060,22 +1121,39 @@ namespace ViSCARecorder
         {
             if (!focus)
             {
-                text_CaptureStatusText.color = text_CaptureStatusCriticalColor;
+                if (text_CaptureStatusText != null)
+                {
+                    text_CaptureStatusText.color = text_CaptureStatusCriticalColor;
+                }
             }
 
             OnApplicationFocus_Text_CaptureCompleteAllTasks(focus);
 
             if (!focus)
             {
-                text_CaptureStatusText.color = text_CaptureStatusOKColor;
-                capture_Task.fixedUpdateEnabled = false;
-                capture_Task.createSubtaskEnabled = false;
+                if (text_CaptureStatusText != null)
+                {
+                    text_CaptureStatusText.color = text_CaptureStatusOKColor;
+                }
+                
+                if (capture_Task != null)
+                {
+                    capture_Task.fixedUpdateEnabled = false;
+                    capture_Task.createSubtaskEnabled = false;
+                }
             }
             else
             {
-                text_CaptureStatusText.color = text_CaptureStatusWarningColor;
-                capture_Task.fixedUpdateEnabled = true;
-                capture_Task.createSubtaskEnabled = true;
+                if (text_CaptureStatusText != null)
+                {
+                    text_CaptureStatusText.color = text_CaptureStatusWarningColor;
+                }
+
+                if (capture_Task != null)
+                {
+                    capture_Task.fixedUpdateEnabled = true;
+                    capture_Task.createSubtaskEnabled = true;
+                }
             }
 
             Start_Text_UpdateCaptureStatusText();

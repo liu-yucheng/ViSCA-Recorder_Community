@@ -1,4 +1,4 @@
-// Copyright (C) 2024 Yucheng Liu. Under the GNU AGPL 3.0 License.
+// Copyright (C) 2024-2025 Yucheng Liu. Under the GNU AGPL 3.0 License.
 // GNU AGPL 3.0 License: https://www.gnu.org/licenses/agpl-3.0.txt .
 
 using System;
@@ -10,6 +10,8 @@ using Unity.XR.PXR;
 using UnityEngine;
 using UnityEngine.Experimental.Rendering;
 using UnityEngine.Rendering;
+
+using ViSCARecorder.Recorder25_.Face;
 
 
 namespace ViSCARecorder.Recorder25_
@@ -494,6 +496,322 @@ namespace ViSCARecorder.Recorder25_.Face
         tongueOut = 51
     }
 
+    [Serializable]
+    public class BlendShapesData
+    {
+        public float eyeLookDownLeft = 0f;
+        public float noseSneerLeft = 0f;
+        public float eyeLookInLeft = 0f;
+        public float browInnerUp = 0f;
+        public float browDownRight = 0f;
+        public float mouthClose = 0f;
+        public float mouthLowerDownRight = 0f;
+        public float jawOpen = 0f;
+        public float mouthUpperUpRight = 0f;
+        public float mouthShrugUpper = 0f;
+        public float mouthFunnel = 0f;
+        public float eyeLookInRight = 0f;
+        public float eyeLookDownRight = 0f;
+        public float noseSneerRight = 0f;
+        public float mouthRollUpper = 0f;
+        public float jawRight = 0f;
+        public float browDownLeft = 0f;
+        public float mouthShrugLower = 0f;
+        public float mouthRollLower = 0f;
+        public float mouthSmileLeft = 0f;
+        public float mouthPressLeft = 0f;
+        public float mouthSmileRight = 0f;
+        public float mouthPressRight = 0f;
+        public float mouthDimpleRight = 0f;
+        public float mouthLeft = 0f;
+        public float jawForward = 0f;
+        public float eyeSquintLeft = 0f;
+        public float mouthFrownLeft = 0f;
+        public float eyeBlinkLeft = 0f;
+        public float cheekSquintLeft = 0f;
+        public float browOuterUpLeft = 0f;
+        public float eyeLookUpLeft = 0f;
+        public float jawLeft = 0f;
+        public float mouthStretchLeft = 0f;
+        public float mouthPucker = 0f;
+        public float eyeLookUpRight = 0f;
+        public float browOuterUpRight = 0f;
+        public float cheekSquintRight = 0f;
+        public float eyeBlinkRight = 0f;
+        public float mouthUpperUpLeft = 0f;
+        public float mouthFrownRight = 0f;
+        public float eyeSquintRight = 0f;
+        public float mouthStretchRight = 0f;
+        public float cheekPuff = 0f;
+        public float eyeLookOutLeft = 0f;
+        public float eyeLookOutRight = 0f;
+        public float eyeWideRight = 0f;
+        public float eyeWideLeft = 0f;
+        public float mouthRight = 0f;
+        public float mouthDimpleLeft = 0f;
+        public float mouthLowerDownLeft = 0f;
+        public float tongueOut = 0f;
+        public float viseme_PP = 0f;
+        public float viseme_CH = 0f;
+        public float viseme_o = 0f;
+        public float viseme_O = 0f;
+        public float viseme_i = 0f;
+        public float viseme_I = 0f;
+        public float viseme_RR = 0f;
+        public float viseme_XX = 0f;
+        public float viseme_aa = 0f;
+        public float viseme_FF = 0f;
+        public float viseme_u = 0f;
+        public float viseme_U = 0f;
+        public float viseme_TH = 0f;
+        public float viseme_kk = 0f;
+        public float viseme_SS = 0f;
+        public float viseme_e = 0f;
+        public float viseme_DD = 0f;
+        public float viseme_E = 0f;
+        public float viseme_nn = 0f;
+        public float viseme_sil = 0f;
+
+        public BlendShapesData()
+        {
+            // Do nothing.
+        }
+
+        public BlendShapesData(BlendShapesData original)
+        {
+            eyeLookDownLeft = original.eyeLookDownLeft;
+            noseSneerLeft = original.noseSneerLeft;
+            eyeLookInLeft = original.eyeLookInLeft;
+            browInnerUp = original.browInnerUp;
+            browDownRight = original.browDownRight;
+            mouthClose = original.mouthClose;
+            mouthLowerDownRight = original.mouthLowerDownRight;
+            jawOpen = original.jawOpen;
+            mouthUpperUpRight = original.mouthUpperUpRight;
+            mouthShrugUpper = original.mouthShrugUpper;
+            mouthFunnel = original.mouthFunnel;
+            eyeLookInRight = original.eyeLookInRight;
+            eyeLookDownRight = original.eyeLookDownRight;
+            noseSneerRight = original.noseSneerRight;
+            mouthRollUpper = original.mouthRollUpper;
+            jawRight = original.jawRight;
+            browDownLeft = original.browDownLeft;
+            mouthShrugLower = original.mouthShrugLower;
+            mouthRollLower = original.mouthRollLower;
+            mouthSmileLeft = original.mouthSmileLeft;
+            mouthPressLeft = original.mouthPressLeft;
+            mouthSmileRight = original.mouthSmileRight;
+            mouthPressRight = original.mouthPressRight;
+            mouthDimpleRight = original.mouthDimpleRight;
+            mouthLeft = original.mouthLeft;
+            jawForward = original.jawForward;
+            eyeSquintLeft = original.eyeSquintLeft;
+            mouthFrownLeft = original.mouthFrownLeft;
+            eyeBlinkLeft = original.eyeBlinkLeft;
+            cheekSquintLeft = original.cheekSquintLeft;
+            browOuterUpLeft = original.browOuterUpLeft;
+            eyeLookUpLeft = original.eyeLookUpLeft;
+            jawLeft = original.jawLeft;
+            mouthStretchLeft = original.mouthStretchLeft;
+            mouthPucker = original.mouthPucker;
+            eyeLookUpRight = original.eyeLookUpRight;
+            browOuterUpRight = original.browOuterUpRight;
+            cheekSquintRight = original.cheekSquintRight;
+            eyeBlinkRight = original.eyeBlinkRight;
+            mouthUpperUpLeft = original.mouthUpperUpLeft;
+            mouthFrownRight = original.mouthFrownRight;
+            eyeSquintRight = original.eyeSquintRight;
+            mouthStretchRight = original.mouthStretchRight;
+            cheekPuff = original.cheekPuff;
+            eyeLookOutLeft = original.eyeLookOutLeft;
+            eyeLookOutRight = original.eyeLookOutRight;
+            eyeWideRight = original.eyeWideRight;
+            eyeWideLeft = original.eyeWideLeft;
+            mouthRight = original.mouthRight;
+            mouthDimpleLeft = original.mouthDimpleLeft;
+            mouthLowerDownLeft = original.mouthLowerDownLeft;
+            tongueOut = original.tongueOut;
+            viseme_PP = original.viseme_PP;
+            viseme_CH = original.viseme_CH;
+            viseme_o = original.viseme_o;
+            viseme_O = original.viseme_O;
+            viseme_i = original.viseme_i;
+            viseme_I = original.viseme_I;
+            viseme_RR = original.viseme_RR;
+            viseme_XX = original.viseme_XX;
+            viseme_aa = original.viseme_aa;
+            viseme_FF = original.viseme_FF;
+            viseme_u = original.viseme_u;
+            viseme_U = original.viseme_U;
+            viseme_TH = original.viseme_TH;
+            viseme_kk = original.viseme_kk;
+            viseme_SS = original.viseme_SS;
+            viseme_e = original.viseme_e;
+            viseme_DD = original.viseme_DD;
+            viseme_E = original.viseme_E;
+            viseme_nn = original.viseme_nn;
+            viseme_sil = original.viseme_sil;
+        }
+    }
+
+    [Serializable]
+    public class BlendShapesDataMirrored
+    {
+        public float eyeLookDownRight = 0f;
+        public float noseSneerRight = 0f;
+        public float eyeLookInRight = 0f;
+        public float browInnerUp = 0f;
+        public float browDownLeft = 0f;
+        public float mouthClose = 0f;
+        public float mouthLowerDownLeft = 0f;
+        public float jawOpen = 0f;
+        public float mouthUpperUpLeft = 0f;
+        public float mouthShrugUpper = 0f;
+        public float mouthFunnel = 0f;
+        public float eyeLookInLeft = 0f;
+        public float eyeLookDownLeft = 0f;
+        public float noseSneerLeft = 0f;
+        public float mouthRollUpper = 0f;
+        public float jawLeft = 0f;
+        public float browDownRight = 0f;
+        public float mouthShrugLower = 0f;
+        public float mouthRollLower = 0f;
+        public float mouthSmileRight = 0f;
+        public float mouthPressRight = 0f;
+        public float mouthSmileLeft = 0f;
+        public float mouthPressLeft = 0f;
+        public float mouthDimpleLeft = 0f;
+        public float mouthRight = 0f;
+        public float jawForward = 0f;
+        public float eyeSquintRight = 0f;
+        public float mouthFrownRight = 0f;
+        public float eyeBlinkRight = 0f;
+        public float cheekSquintRight = 0f;
+        public float browOuterUpRight = 0f;
+        public float eyeLookUpRight = 0f;
+        public float jawRight = 0f;
+        public float mouthStretchRight = 0f;
+        public float mouthPucker = 0f;
+        public float eyeLookUpLeft = 0f;
+        public float browOuterUpLeft = 0f;
+        public float cheekSquintLeft = 0f;
+        public float eyeBlinkLeft = 0f;
+        public float mouthUpperUpRight = 0f;
+        public float mouthFrownLeft = 0f;
+        public float eyeSquintLeft = 0f;
+        public float mouthStretchLeft = 0f;
+        public float cheekPuff = 0f;
+        public float eyeLookOutRight = 0f;
+        public float eyeLookOutLeft = 0f;
+        public float eyeWideLeft = 0f;
+        public float eyeWideRight = 0f;
+        public float mouthLeft = 0f;
+        public float mouthDimpleRight = 0f;
+        public float mouthLowerDownRight = 0f;
+        public float tongueOut = 0f;
+        public float viseme_PP = 0f;
+        public float viseme_CH = 0f;
+        public float viseme_o = 0f;
+        public float viseme_O = 0f;
+        public float viseme_i = 0f;
+        public float viseme_I = 0f;
+        public float viseme_RR = 0f;
+        public float viseme_XX = 0f;
+        public float viseme_aa = 0f;
+        public float viseme_FF = 0f;
+        public float viseme_u = 0f;
+        public float viseme_U = 0f;
+        public float viseme_TH = 0f;
+        public float viseme_kk = 0f;
+        public float viseme_SS = 0f;
+        public float viseme_e = 0f;
+        public float viseme_DD = 0f;
+        public float viseme_E = 0f;
+        public float viseme_nn = 0f;
+        public float viseme_sil = 0f;
+
+        public BlendShapesDataMirrored()
+        {
+            // Do nothing.
+        }
+
+        public BlendShapesDataMirrored(BlendShapesDataMirrored original)
+        {
+            eyeLookDownRight = original.eyeLookDownRight;
+            noseSneerRight = original.noseSneerRight;
+            eyeLookInRight = original.eyeLookInRight;
+            browInnerUp = original.browInnerUp;
+            browDownLeft = original.browDownLeft;
+            mouthClose = original.mouthClose;
+            mouthLowerDownLeft = original.mouthLowerDownLeft;
+            jawOpen = original.jawOpen;
+            mouthUpperUpLeft = original.mouthUpperUpLeft;
+            mouthShrugUpper = original.mouthShrugUpper;
+            mouthFunnel = original.mouthFunnel;
+            eyeLookInLeft = original.eyeLookInLeft;
+            eyeLookDownLeft = original.eyeLookDownLeft;
+            noseSneerLeft = original.noseSneerLeft;
+            mouthRollUpper = original.mouthRollUpper;
+            jawLeft = original.jawLeft;
+            browDownRight = original.browDownRight;
+            mouthShrugLower = original.mouthShrugLower;
+            mouthRollLower = original.mouthRollLower;
+            mouthSmileRight = original.mouthSmileRight;
+            mouthPressRight = original.mouthPressRight;
+            mouthSmileLeft = original.mouthSmileLeft;
+            mouthPressLeft = original.mouthPressLeft;
+            mouthDimpleLeft = original.mouthDimpleLeft;
+            mouthRight = original.mouthRight;
+            jawForward = original.jawForward;
+            eyeSquintRight = original.eyeSquintRight;
+            mouthFrownRight = original.mouthFrownRight;
+            eyeBlinkRight = original.eyeBlinkRight;
+            cheekSquintRight = original.cheekSquintRight;
+            browOuterUpRight = original.browOuterUpRight;
+            eyeLookUpRight = original.eyeLookUpRight;
+            jawRight = original.jawRight;
+            mouthStretchRight = original.mouthStretchRight;
+            mouthPucker = original.mouthPucker;
+            eyeLookUpLeft = original.eyeLookUpLeft;
+            browOuterUpLeft = original.browOuterUpLeft;
+            cheekSquintLeft = original.cheekSquintLeft;
+            eyeBlinkLeft = original.eyeBlinkLeft;
+            mouthUpperUpRight = original.mouthUpperUpRight;
+            mouthFrownLeft = original.mouthFrownLeft;
+            eyeSquintLeft = original.eyeSquintLeft;
+            mouthStretchLeft = original.mouthStretchLeft;
+            cheekPuff = original.cheekPuff;
+            eyeLookOutRight = original.eyeLookOutRight;
+            eyeLookOutLeft = original.eyeLookOutLeft;
+            eyeWideLeft = original.eyeWideLeft;
+            eyeWideRight = original.eyeWideRight;
+            mouthLeft = original.mouthLeft;
+            mouthDimpleRight = original.mouthDimpleRight;
+            mouthLowerDownRight = original.mouthLowerDownRight;
+            tongueOut = original.tongueOut;
+            viseme_PP = original.viseme_PP;
+            viseme_CH = original.viseme_CH;
+            viseme_o = original.viseme_o;
+            viseme_O = original.viseme_O;
+            viseme_i = original.viseme_i;
+            viseme_I = original.viseme_I;
+            viseme_RR = original.viseme_RR;
+            viseme_XX = original.viseme_XX;
+            viseme_aa = original.viseme_aa;
+            viseme_FF = original.viseme_FF;
+            viseme_u = original.viseme_u;
+            viseme_U = original.viseme_U;
+            viseme_TH = original.viseme_TH;
+            viseme_kk = original.viseme_kk;
+            viseme_SS = original.viseme_SS;
+            viseme_e = original.viseme_e;
+            viseme_DD = original.viseme_DD;
+            viseme_E = original.viseme_E;
+            viseme_nn = original.viseme_nn;
+            viseme_sil = original.viseme_sil;
+        }
+    }
+
     public class __
     {
         public static int shapeArrayLength = 72;
@@ -692,6 +1010,21 @@ namespace ViSCARecorder.Recorder25_.Face
             "tongueOut"
         };
 
+        public static float[] emptyBlendShapeArray =
+        {
+            0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f,
+            0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f,
+            0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f,
+            0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f,
+
+            0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f,
+            0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f,
+            0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f,
+            0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f,
+
+            0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f
+        };
+
         public static unsafe void FindShapeArray(in PxrFaceTrackingInfo info, out float[] array)
         {
             array = new float[shapeArrayLength];
@@ -712,26 +1045,26 @@ namespace ViSCARecorder.Recorder25_.Face
         )
         {
             dict = new();
-            List<string> shapeNames;
+            List<string> shapeNames_;
 
             if (mirrorEnabled)
             {
-                shapeNames = shapeNamesMirrored;
+                shapeNames_ = shapeNamesMirrored;
             }
             else
             {
-                shapeNames = __.shapeNames;
+                shapeNames_ = shapeNames;
             }
 
-            for (int index = 0; index < shapeNames.Count; index += 1)
+            for (int index = 0; index < shapeNames_.Count; index += 1)
             {
                 if (index < array.Length)
                 {
-                    dict.Add(shapeNames[index], array[index]);
+                    dict.Add(shapeNames_[index], array[index]);
                 }
                 else
                 {
-                    dict.Add(shapeNames[index], 0f);
+                    dict.Add(shapeNames_[index], 0f);
                 }
             }
         }
@@ -744,6 +1077,182 @@ namespace ViSCARecorder.Recorder25_.Face
             {
                 float element = array[index];
                 list.Add(element);
+            }
+        }
+
+        public static void ShapeArrayToData(
+            in float[] array,
+            out BlendShapesData data
+        )
+        {
+            data = new();
+
+            if (array.Length >= shapeArrayLength)
+            {
+                data.eyeLookDownLeft = array[0];
+                data.noseSneerLeft = array[1];
+                data.eyeLookInLeft = array[2];
+                data.browInnerUp = array[3];
+                data.browDownRight = array[4];
+                data.mouthClose = array[5];
+                data.mouthLowerDownRight = array[6];
+                data.jawOpen = array[7];
+                data.mouthUpperUpRight = array[8];
+                data.mouthShrugUpper = array[9];
+                data.mouthFunnel = array[10];
+                data.eyeLookInRight = array[11];
+                data.eyeLookDownRight = array[12];
+                data.noseSneerRight = array[13];
+                data.mouthRollUpper = array[14];
+                data.jawRight = array[15];
+                data.browDownLeft = array[16];
+                data.mouthShrugLower = array[17];
+                data.mouthRollLower = array[18];
+                data.mouthSmileLeft = array[19];
+                data.mouthPressLeft = array[20];
+                data.mouthSmileRight = array[21];
+                data.mouthPressRight = array[22];
+                data.mouthDimpleRight = array[23];
+                data.mouthLeft = array[24];
+                data.jawForward = array[25];
+                data.eyeSquintLeft = array[26];
+                data.mouthFrownLeft = array[27];
+                data.eyeBlinkLeft = array[28];
+                data.cheekSquintLeft = array[29];
+                data.browOuterUpLeft = array[30];
+                data.eyeLookUpLeft = array[31];
+                data.jawLeft = array[32];
+                data.mouthStretchLeft = array[33];
+                data.mouthPucker = array[34];
+                data.eyeLookUpRight = array[35];
+                data.browOuterUpRight = array[36];
+                data.cheekSquintRight = array[37];
+                data.eyeBlinkRight = array[38];
+                data.mouthUpperUpLeft = array[39];
+                data.mouthFrownRight = array[40];
+                data.eyeSquintRight = array[41];
+                data.mouthStretchRight = array[42];
+                data.cheekPuff = array[43];
+                data.eyeLookOutLeft = array[44];
+                data.eyeLookOutRight = array[45];
+                data.eyeWideRight = array[46];
+                data.eyeWideLeft = array[47];
+                data.mouthRight = array[48];
+                data.mouthDimpleLeft = array[49];
+                data.mouthLowerDownLeft = array[50];
+                data.tongueOut = array[51];
+                data.viseme_PP = array[52];
+                data.viseme_CH = array[53];
+                data.viseme_o = array[54];
+                data.viseme_O = array[55];
+                data.viseme_i = array[56];
+                data.viseme_I = array[57];
+                data.viseme_RR = array[58];
+                data.viseme_XX = array[59];
+                data.viseme_aa = array[60];
+                data.viseme_FF = array[61];
+                data.viseme_u = array[62];
+                data.viseme_U = array[63];
+                data.viseme_TH = array[64];
+                data.viseme_kk = array[65];
+                data.viseme_SS = array[66];
+                data.viseme_e = array[67];
+                data.viseme_DD = array[68];
+                data.viseme_E = array[69];
+                data.viseme_nn = array[70];
+                data.viseme_sil = array[71];
+            }
+            else
+            {
+                Debug.LogError("ShapeArrayToData: array.Length < shapeArrayLength.");
+            }
+        }
+
+        public static void ShapeArrayToDataMirrored(
+            in float[] array,
+            out BlendShapesDataMirrored dataMirrored
+        )
+        {
+            dataMirrored = new();
+
+            if (array.Length >= shapeArrayLength)
+            {
+                dataMirrored.eyeLookDownRight = array[0];
+                dataMirrored.noseSneerRight = array[1];
+                dataMirrored.eyeLookInRight = array[2];
+                dataMirrored.browInnerUp = array[3];
+                dataMirrored.browDownLeft = array[4];
+                dataMirrored.mouthClose = array[5];
+                dataMirrored.mouthLowerDownLeft = array[6];
+                dataMirrored.jawOpen = array[7];
+                dataMirrored.mouthUpperUpLeft = array[8];
+                dataMirrored.mouthShrugUpper = array[9];
+                dataMirrored.mouthFunnel = array[10];
+                dataMirrored.eyeLookInLeft = array[11];
+                dataMirrored.eyeLookDownLeft = array[12];
+                dataMirrored.noseSneerLeft = array[13];
+                dataMirrored.mouthRollUpper = array[14];
+                dataMirrored.jawLeft = array[15];
+                dataMirrored.browDownRight = array[16];
+                dataMirrored.mouthShrugLower = array[17];
+                dataMirrored.mouthRollLower = array[18];
+                dataMirrored.mouthSmileRight = array[19];
+                dataMirrored.mouthPressRight = array[20];
+                dataMirrored.mouthSmileLeft = array[21];
+                dataMirrored.mouthPressLeft = array[22];
+                dataMirrored.mouthDimpleLeft = array[23];
+                dataMirrored.mouthRight = array[24];
+                dataMirrored.jawForward = array[25];
+                dataMirrored.eyeSquintRight = array[26];
+                dataMirrored.mouthFrownRight = array[27];
+                dataMirrored.eyeBlinkRight = array[28];
+                dataMirrored.cheekSquintRight = array[29];
+                dataMirrored.browOuterUpRight = array[30];
+                dataMirrored.eyeLookUpRight = array[31];
+                dataMirrored.jawRight = array[32];
+                dataMirrored.mouthStretchRight = array[33];
+                dataMirrored.mouthPucker = array[34];
+                dataMirrored.eyeLookUpLeft = array[35];
+                dataMirrored.browOuterUpLeft = array[36];
+                dataMirrored.cheekSquintLeft = array[37];
+                dataMirrored.eyeBlinkLeft = array[38];
+                dataMirrored.mouthUpperUpRight = array[39];
+                dataMirrored.mouthFrownLeft = array[40];
+                dataMirrored.eyeSquintLeft = array[41];
+                dataMirrored.mouthStretchLeft = array[42];
+                dataMirrored.cheekPuff = array[43];
+                dataMirrored.eyeLookOutRight = array[44];
+                dataMirrored.eyeLookOutLeft = array[45];
+                dataMirrored.eyeWideLeft = array[46];
+                dataMirrored.eyeWideRight = array[47];
+                dataMirrored.mouthLeft = array[48];
+                dataMirrored.mouthDimpleRight = array[49];
+                dataMirrored.mouthLowerDownRight = array[50];
+                dataMirrored.tongueOut = array[51];
+                dataMirrored.viseme_PP = array[52];
+                dataMirrored.viseme_CH = array[53];
+                dataMirrored.viseme_o = array[54];
+                dataMirrored.viseme_O = array[55];
+                dataMirrored.viseme_i = array[56];
+                dataMirrored.viseme_I = array[57];
+                dataMirrored.viseme_RR = array[58];
+                dataMirrored.viseme_XX = array[59];
+                dataMirrored.viseme_aa = array[60];
+                dataMirrored.viseme_FF = array[61];
+                dataMirrored.viseme_u = array[62];
+                dataMirrored.viseme_U = array[63];
+                dataMirrored.viseme_TH = array[64];
+                dataMirrored.viseme_kk = array[65];
+                dataMirrored.viseme_SS = array[66];
+                dataMirrored.viseme_e = array[67];
+                dataMirrored.viseme_DD = array[68];
+                dataMirrored.viseme_E = array[69];
+                dataMirrored.viseme_nn = array[70];
+                dataMirrored.viseme_sil = array[71];
+            }
+            else
+            {
+                Debug.LogError("ShapeArrayToDataMirrored: array.Length < shapeArrayLength.");
             }
         }
 
@@ -762,7 +1271,7 @@ namespace ViSCARecorder.Recorder25_.Face
                 }
                 else
                 {
-                    elementString = $"{key}: null";
+                    elementString = $"{key}: <format_unknown>";
                 }
 
                 elementStringList.Add(elementString);
@@ -925,7 +1434,7 @@ namespace ViSCARecorder.Recorder25_.Record
     [Serializable]
     public class Face
     {
-        public SerializableDict<string, float> blend_shape_dict = new();
+        public BlendShapesData blend_shapes_data = new();
         public float laughing = 0f;
 
         public Face()
@@ -935,7 +1444,7 @@ namespace ViSCARecorder.Recorder25_.Record
 
         public Face(Face original)
         {
-            blend_shape_dict = new(original.blend_shape_dict);
+            blend_shapes_data = new(original.blend_shapes_data);
             laughing = original.laughing;
         }
 
@@ -1578,6 +2087,60 @@ namespace ViSCARecorder.Recorder25_.Record
         }
     }
 
+    public class SpecialsStandards
+    {
+        public static Color colorSpecialsRed = new(0.9f, 0.45f, 0.45f, 1f);
+        public static Color colorSpecialsGreen = new(0.45f, 0.9f, 0.45f, 1f);
+        public static Color colorSpecialsBlue = new(0.45f, 0.45f, 0.9f, 1f);
+        public static string colorNameSpecialsRed = "specials_red";
+        public static string colorNameSpecialsGreen = "specials_green";
+        public static string colorNameSpecialsBlue = "specials_blue";
+
+        public static List<Specials> standards = new()
+        {
+            new()
+            {
+                color1_path = colorSpecialsRed,
+                color2_not_path = colorSpecialsGreen,
+                color3_not_path = colorSpecialsBlue,
+                color1_name_path = colorNameSpecialsRed,
+                color2_name_not_path = colorNameSpecialsGreen,
+                color3_name_not_path = colorNameSpecialsBlue
+            },
+            new()
+            {
+                color1_path = colorSpecialsGreen,
+                color2_not_path = colorSpecialsBlue,
+                color3_not_path = colorSpecialsRed,
+                color1_name_path = colorNameSpecialsGreen,
+                color2_name_not_path = colorNameSpecialsBlue,
+                color3_name_not_path = colorNameSpecialsRed
+            },
+            new()
+            {
+                color1_path = colorSpecialsBlue,
+                color2_not_path = colorSpecialsRed,
+                color3_not_path = colorSpecialsGreen,
+                color1_name_path = colorNameSpecialsBlue,
+                color2_name_not_path = colorNameSpecialsRed,
+                color3_name_not_path = colorNameSpecialsGreen
+            }
+        };
+
+        public static void CreateSpecialsByIndex(in int index, out Specials specials)
+        {
+            int index_ = index;
+
+            if (index_ < 0)
+            {
+                index_ = -index_;
+            }
+
+            index_ %= standards.Count;
+            specials = new(standards[index_]);
+        }
+    }
+
     public class RecordTask
     {
         public string folderName;
@@ -1687,66 +2250,12 @@ namespace ViSCARecorder.Recorder25_.Record
                 string text = JsonUtility.ToJson(records, true);
                 File.WriteAllText(path, text);
             }
-        }
+        } // end method
     } // end class
-
-    public class SpecialsStandards
-    {
-        public static Color colorSpecialsRed = new(0.9f, 0.45f, 0.45f, 1f);
-        public static Color colorSpecialsGreen = new(0.45f, 0.9f, 0.45f, 1f);
-        public static Color colorSpecialsBlue = new(0.45f, 0.45f, 0.9f, 1f);
-        public static string colorNameSpecialsRed = "specials_red";
-        public static string colorNameSpecialsGreen = "specials_green";
-        public static string colorNameSpecialsBlue = "specials_blue";
-
-        public static List<Specials> standards = new()
-        {
-            new()
-            {
-                color1_path = colorSpecialsRed,
-                color2_not_path = colorSpecialsGreen,
-                color3_not_path = colorSpecialsBlue,
-                color1_name_path = colorNameSpecialsRed,
-                color2_name_not_path = colorNameSpecialsGreen,
-                color3_name_not_path = colorNameSpecialsBlue
-            },
-            new()
-            {
-                color1_path = colorSpecialsGreen,
-                color2_not_path = colorSpecialsBlue,
-                color3_not_path = colorSpecialsRed,
-                color1_name_path = colorNameSpecialsGreen,
-                color2_name_not_path = colorNameSpecialsBlue,
-                color3_name_not_path = colorNameSpecialsRed
-            },
-            new()
-            {
-                color1_path = colorSpecialsBlue,
-                color2_not_path = colorSpecialsRed,
-                color3_not_path = colorSpecialsGreen,
-                color1_name_path = colorNameSpecialsBlue,
-                color2_name_not_path = colorNameSpecialsRed,
-                color3_name_not_path = colorNameSpecialsGreen
-            }
-        };
-
-        public static void CreateSpecialsByIndex(in int index, out Specials specials)
-        {
-            int index_ = index;
-
-            if (index_ < 0)
-            {
-                index_ = -index_;
-            }
-
-            index_ %= standards.Count;
-            specials = new(standards[index_]);
-        }
-    }
 
     public class __
     {
-
+        // Do nothing.
     } // end class
 } // end namespace
 
