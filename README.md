@@ -4,7 +4,7 @@
 
 # Project Logo
 
-![](./README_Assets/visca-recorder-logo.svg)
+![](./README_Assets/visca-recorder-logo_gradient-gray.png)
 
 # Code Copy
 
