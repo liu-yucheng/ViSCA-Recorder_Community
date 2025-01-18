@@ -104,6 +104,22 @@ namespace ViSCARecorder
                     RandomSeed_Autopilot = 3,
                     RandomSeed_Specials = 0,
                 },
+                new()
+                {
+                    VehicleOpacity = 0.8f,
+                    AutopilotEnabled = true,
+                    RandomSeed_Terrain = 4,
+                    RandomSeed_Autopilot = 4,
+                    RandomSeed_Specials = 0,
+                },
+                new()
+                {
+                    VehicleOpacity = 0.2f,
+                    AutopilotEnabled = true,
+                    RandomSeed_Terrain = 5,
+                    RandomSeed_Autopilot = 5,
+                    RandomSeed_Specials = 0,
+                },
             };
 
             public static void ByUserIndex_AndByPresetIndex_Create(
