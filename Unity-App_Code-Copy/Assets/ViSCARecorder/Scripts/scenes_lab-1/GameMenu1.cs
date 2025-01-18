@@ -58,7 +58,7 @@ namespace ViSCARecorder
 
         private Text UserIndex_Text;
         private Scrollbar UserIndex_Scrollbar;
-        private float UserIndex_Refresh_Interval_Seconds = 0.1f; // 10 Hz.
+        private float UserIndex_Refresh_Interval_Seconds = 0.033_333_333f; // 30 Hz.
         private float UserIndex_Refresh_Countdown_Seconds = 0f;
         private float UserIndex_Value_Raw = 0f;
         private int UserIndex_Value_Processed = 0;
@@ -67,16 +67,16 @@ namespace ViSCARecorder
 
         private Text PresetIndex_Text;
         private Scrollbar PresetIndex_Scrollbar;
-        private float PresetIndex_Refresh_Interval_Seconds = 0.1f; // 10 Hz.
+        private float PresetIndex_Refresh_Interval_Seconds = 0.033_333_333f; // 30 Hz.
         private float PresetIndex_Refresh_Countdown_Seconds = 0f;
         private float PresetIndex_Value_Raw = 0f;
         private int PresetIndex_Value_Processed = 0;
-        private int PresetIndex_Count = 4;
+        private int PresetIndex_Count = 6;
         private bool PresetIndex_Scrollbar_Sync_Needed = true;
 
         private Text VehicleOpacity_Text;
         private Scrollbar VehicleOpacity_Scrollbar;
-        private float VehicleOpacity_Refresh_Interval_Seconds = 0.1f; // 10 Hz.
+        private float VehicleOpacity_Refresh_Interval_Seconds = 0.033_333_333f; // 30 Hz.
         private float VehicleOpacity_Refresh_Countdown_Seconds = 0f;
         private float VehicleOpacity_Normalized = 1f;
         private float VehicleOpacity_Percent = 100f;
@@ -84,7 +84,7 @@ namespace ViSCARecorder
 
         private Text AutopilotToggle_Text;
         private Scrollbar AutopilotToggle_Scrollbar;
-        private float AutopilotToggle_Refresh_Interval_Seconds = 0.1f; // 10 Hz.
+        private float AutopilotToggle_Refresh_Interval_Seconds = 0.033_333_333f; // 30 Hz.
         private float AutopilotToggle_Refresh_Countdown_Seconds = 0f;
         private float AutopilotToggle_Normalized = 1f;
         private bool AutopilotToggle_Enabled = true;
@@ -93,7 +93,7 @@ namespace ViSCARecorder
 
         private Text RandomSeedTerrain_Text;
         private Scrollbar RandomSeedTerrain_Scrollbar;
-        private float RandomSeedTerrain_Refresh_Interval_Seconds = 0.1f; // 10 Hz.
+        private float RandomSeedTerrain_Refresh_Interval_Seconds = 0.033_333_333f; // 30 Hz.
         private float RandomSeedTerrain_Refresh_Countdown_Seconds = 0f;
         private float RandomSeedTerrain_Value_Raw = 0f;
         private int RandomSeedTerrain_Value_Processed = 0;
@@ -102,7 +102,7 @@ namespace ViSCARecorder
 
         private Text RandomSeedAutopilot_Text;
         private Scrollbar RandomSeedAutopilot_Scrollbar;
-        private float RandomSeedAutopilot_Refresh_Interval_Seconds = 0.1f; // 10 Hz.
+        private float RandomSeedAutopilot_Refresh_Interval_Seconds = 0.033_333_333f; // 30 Hz.
         private float RandomSeedAutopilot_Refresh_Countdown_Seconds = 0f;
         private float RandomSeedAutopilot_Value_Raw = 0f;
         private int RandomSeedAutopilot_Value_Processed = 0;
@@ -111,7 +111,7 @@ namespace ViSCARecorder
 
         private Text RandomSeedSpecials_Text;
         private Scrollbar RandomSeedSpecials_Scrollbar;
-        private float RandomSeedSpecials_Refresh_Interval_Seconds = 0.1f; // 10 Hz.
+        private float RandomSeedSpecials_Refresh_Interval_Seconds = 0.033_333_333f; // 30 Hz.
         private float RandomSeedSpecials_Refresh_Countdown_Seconds = 0f;
         private float RandomSeedSpecials_Value_Raw = 0f;
         private int RandomSeedSpecials_Value_Processed = 0;
