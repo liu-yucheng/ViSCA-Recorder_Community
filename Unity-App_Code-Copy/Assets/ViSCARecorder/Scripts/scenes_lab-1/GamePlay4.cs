@@ -24,13 +24,8 @@ namespace ViSCARecorder
         public GameObject Restart_Button_Object;
         public GameObject Exit_Button_Object;
 
-        public GameObject UserIndex_Text_Object;
-        public GameObject UserIndex_Scrollbar_Object;
-        public GameObject UserIndex_Button_Object;
-
-        public GameObject PresetIndex_Text_Object;
-        public GameObject PresetIndex_Scrollbar_Object;
-        public GameObject PresetIndex_Button_Object;
+        public GameObject UserIndex_Config_Object;
+        public GameObject PresetIndex_Config_Object;
 
         public GameObject VehicleOpacity_Text_Object;
         public GameObject VehicleOpacity_Scrollbar_Object;
@@ -39,20 +34,18 @@ namespace ViSCARecorder
         public GameObject AutopilotToggle_Text_Object;
         public GameObject AutopilotToggle_Scrollbar_Object;
 
-        public GameObject RandomSeedTerrain_Text_Object;
-        public GameObject RandomSeedTerrain_Scrollbar_Object;
-        public GameObject RandomSeedTerrain_Button_Object;
+        public GameObject RandomSeedTerrain_Config_Object;
+        public GameObject RandomSeedAutopilot_Config_Object;
+        public GameObject RandomSeedSpecials_Config_Object;
 
-        public GameObject RandomSeedAutopilot_Text_Object;
-        public GameObject RandomSeedAutopilot_Scrollbar_Object;
-
-        public GameObject RandomSeedSpecials_Text_Object;
-        public GameObject RandomSeedSpecials_Scrollbar_Object;
-        
         public GameObject AutopilotStatus_TextObject;
+
+        public GameObject Exit2_Button_Object;
         // end public fields
 
         // begin private fields
+        private GameConfigs2_.GameConfigs_Backup GameConfigs_Backup_;
+        private bool GameConfigs_Initialized = false;
         private float GameConfigs_Refresh_Interval_Seconds = 0.033_333_333f; // 30 Hz.
         private float GameConfigs_Refresh_Countdown_Seconds = 0f;
         private bool GameConfigs_StandardApply_Needed = false;
@@ -83,25 +76,13 @@ namespace ViSCARecorder
         private Scrollbar Exit_Button;
         private string Exit_SceneName = "lab-1_menu";
 
-        private Text UserIndex_Text;
-        private Scrollbar UserIndex_Scrollbar;
-        private Scrollbar UserIndex_Button;
+        private UI_Config_Int_Custom1 UserIndex_Config;
         private float UserIndex_Refresh_Interval_Seconds = 0.033_333_333f; // 30 Hz.
         private float UserIndex_Refresh_Countdown_Seconds = 0f;
-        private float UserIndex_Value_Raw = 0f;
-        private int UserIndex_Value_Processed = 0;
-        private int UserIndex_Count = 16;
-        private bool UserIndex_Scrollbar_Sync_Needed = false;
 
-        private Text PresetIndex_Text;
-        private Scrollbar PresetIndex_Scrollbar;
-        private Scrollbar PresetIndex_Button;
+        private UI_Config_Int_Custom1 PresetIndex_Config;
         private float PresetIndex_Refresh_Interval_Seconds = 0.033_333_333f; // 30 Hz.
         private float PresetIndex_Refresh_Countdown_Seconds = 0f;
-        private float PresetIndex_Value_Raw = 0f;
-        private int PresetIndex_Value_Processed = 0;
-        private int PresetIndex_Count = 6;
-        private bool PresetIndex_Scrollbar_Sync_Needed = false;
 
         private Text VehicleOpacity_Text;
         private Scrollbar VehicleOpacity_Scrollbar;
@@ -122,44 +103,30 @@ namespace ViSCARecorder
         private float AutopilotToggle_EnableThreshold = 0.5f;
         private bool AutopilotToggle_Scrollbar_Sync_Needed = true;
 
-        private Text RandomSeedTerrain_Text;
-        private Scrollbar RandomSeedTerrain_Scrollbar;
-        private Scrollbar RandomSeedTerrain_Button;
+        private UI_Config_Int_Custom1 RandomSeedTerrain_Config;
         private float RandomSeedTerrain_Refresh_Interval_Seconds = 0.033_333_333f; // 30 Hz.
         private float RandomSeedTerrain_Refresh_Countdown_Seconds = 0f;
-        private float RandomSeedTerrain_Value_Raw = 0f;
-        private int RandomSeedTerrain_Value_Processed = 0;
-        private int RandomSeedTerrain_Count = 16;
-        private bool RandomSeedTerrain_Scrollbar_Sync_Needed = true;
 
-        private Text RandomSeedAutopilot_Text;
-        private Scrollbar RandomSeedAutopilot_Scrollbar;
+        private UI_Config_Int_Custom1 RandomSeedAutopilot_Config;
         private float RandomSeedAutopilot_Refresh_Interval_Seconds = 0.033_333_333f; // 30 Hz.
         private float RandomSeedAutopilot_Refresh_Countdown_Seconds = 0f;
-        private float RandomSeedAutopilot_Value_Raw = 0f;
-        private int RandomSeedAutopilot_Value_Processed = 0;
-        private int RandomSeedAutopilot_Count = 16;
-        private bool RandomSeedAutopilot_Scrollbar_Sync_Needed = true;
 
-        private Text RandomSeedSpecials_Text;
-        private Scrollbar RandomSeedSpecials_Scrollbar;
+        private UI_Config_Int_Custom1 RandomSeedSpecials_Config;
         private float RandomSeedSpecials_Refresh_Interval_Seconds = 0.033_333_333f; // 30 Hz.
         private float RandomSeedSpecials_Refresh_Countdown_Seconds = 0f;
-        private float RandomSeedSpecials_Value_Raw = 0f;
-        private int RandomSeedSpecials_Value_Processed = 0;
-        private int RandomSeedSpecials_Count = 16;
         private int RandomSeedSpecials_SpecialsIndex = 0;
         private Recorder25_.Record.Specials RandomSeedSpecials_SpecialsInstance;
         private Random.State RandomSeedSpecials_Random_State;
         private bool RandomSeedSpecials_Random_Initialized = false;
-        private bool RandomSeedSpecials_Scrollbar_Sync_Needed = true;
-        
+
         private Text AutopilotStatus_Text;
         private float AutopilotStatus_Refresh_Interval_Seconds = 0.033_333_333f; // 30 Hz.
         private float AutopilotStatus_Refresh_Countdown_Seconds = 0f;
         private bool AutopilotStatus_Enabled = false;
         private Color AutopilotStatus_EnabledColor = new(0f, 1f, 0f, 1f);
         private Color AutopilotStatus_DisabledColor = new(1f, 0f, 0f, 1f);
+
+        private Scrollbar Exit2_Button;
         // end private fields
 
         // begin MonoBehaviour callbacks
@@ -180,6 +147,7 @@ namespace ViSCARecorder
             RandomSeedAutopilot_Setup();
             RandomSeedSpecials_Setup();
             AutopilotStatus_Setup();
+            Exit2_Setup();
         }
 
         void FixedUpdate()
@@ -210,41 +178,60 @@ namespace ViSCARecorder
             RandomSeedTerrain_TearDown();
             RandomSeedAutopilot_TearDown();
             RandomSeedSpecials_TearDown();
+            Exit2_TearDown();
         }
         // end MonoBehaviour callbacks
 
         private void GameConfigs_Setup()
         {
-            UserIndex_Value_Processed = GameConfigs2.UserIndex;
-            PresetIndex_Value_Processed = GameConfigs2.PresetIndex;
-            VehicleOpacity_Normalized = GameConfigs2.VehicleOpacity;
-            AutopilotToggle_Enabled = GameConfigs2.AutopilotEnabled;
-            RandomSeedTerrain_Value_Processed = GameConfigs2.RandomSeed_Terrain;
-            RandomSeedAutopilot_Value_Processed = GameConfigs2.RandomSeed_Autopilot;
-            RandomSeedSpecials_Value_Processed = GameConfigs2.RandomSeed_Specials;
-            RandomSeedSpecials_SpecialsIndex = GameConfigs2.Specials_Index;
-            RandomSeedSpecials_SpecialsInstance = GameConfigs2.Specials_Instance;
-
-            UserIndex_Scrollbar_Sync_Needed = true;
-            PresetIndex_Scrollbar_Sync_Needed = true;
-            VehicleOpacity_Scrollbar_Sync_Needed = true;
-            AutopilotToggle_Scrollbar_Sync_Needed = true;
-            RandomSeedTerrain_Scrollbar_Sync_Needed = true;
-            RandomSeedAutopilot_Scrollbar_Sync_Needed = true;
-            RandomSeedSpecials_Scrollbar_Sync_Needed = true;
+            GameConfigs2_.GameConfigs_Backup.FromGameConfigs_Backup(out GameConfigs_Backup_);
         }
 
         // begin helpers GameConfigs
         private void GameConfigs_Refresh()
         {
+            if (
+                UserIndex_Config == null
+                || PresetIndex_Config == null
+                || VehicleOpacity_Text == null
+                || VehicleOpacity_Scrollbar == null
+                || AutopilotToggle_Text == null
+                || AutopilotToggle_Scrollbar == null
+                || RandomSeedTerrain_Config == null
+                || RandomSeedAutopilot_Config == null
+                || RandomSeedSpecials_Config == null
+            )
+            {
+                return;
+            }
+
+            if (!GameConfigs_Initialized)
+            {
+                GameConfigs_Initialized = true;
+
+                GameConfigs2_.GameConfigs_Backup.ToGameConfigs_Restore(GameConfigs_Backup_);
+                UserIndex_Config.Config_Value = GameConfigs2.UserIndex;
+                PresetIndex_Config.Config_Value = GameConfigs2.PresetIndex;
+                VehicleOpacity_Normalized = GameConfigs2.VehicleOpacity;
+                AutopilotToggle_Enabled = GameConfigs2.AutopilotEnabled;
+                RandomSeedTerrain_Config.Config_Value = GameConfigs2.RandomSeed_Terrain;
+                RandomSeedAutopilot_Config.Config_Value = GameConfigs2.RandomSeed_Autopilot;
+                RandomSeedSpecials_Config.Config_Value = GameConfigs2.RandomSeed_Specials;
+                RandomSeedSpecials_SpecialsIndex = GameConfigs2.Specials_Index;
+                RandomSeedSpecials_SpecialsInstance = GameConfigs2.Specials_Instance;
+
+                VehicleOpacity_Scrollbar_Sync_Needed = true;
+                AutopilotToggle_Scrollbar_Sync_Needed = true;
+            }
+
             GameConfigs_Refresh_Countdown_Seconds -= Time.fixedDeltaTime;
 
             if (GameConfigs_Refresh_Countdown_Seconds < Time.fixedDeltaTime)
             {
                 GameConfigs_Refresh_Countdown_Seconds = GameConfigs_Refresh_Interval_Seconds;
 
-                GameConfigs2.UserIndex = UserIndex_Value_Processed;
-                GameConfigs2.PresetIndex = PresetIndex_Value_Processed;
+                GameConfigs2.UserIndex = UserIndex_Config.Config_Value;
+                GameConfigs2.PresetIndex = PresetIndex_Config.Config_Value;
 
                 if (GameConfigs_StandardApply_Needed)
                 {
@@ -253,15 +240,12 @@ namespace ViSCARecorder
                     
                     VehicleOpacity_Normalized = GameConfigs2.VehicleOpacity;
                     AutopilotToggle_Enabled = GameConfigs2.AutopilotEnabled;
-                    RandomSeedTerrain_Value_Processed = GameConfigs2.RandomSeed_Terrain;
-                    RandomSeedAutopilot_Value_Processed = GameConfigs2.RandomSeed_Autopilot;
-                    RandomSeedSpecials_Value_Processed = GameConfigs2.RandomSeed_Specials;
+                    RandomSeedTerrain_Config.Config_Value = GameConfigs2.RandomSeed_Terrain;
+                    RandomSeedAutopilot_Config.Config_Value = GameConfigs2.RandomSeed_Autopilot;
+                    RandomSeedSpecials_Config.Config_Value = GameConfigs2.RandomSeed_Specials;
                     
                     VehicleOpacity_Scrollbar_Sync_Needed = true;
                     AutopilotToggle_Scrollbar_Sync_Needed = true;
-                    RandomSeedTerrain_Scrollbar_Sync_Needed = true;
-                    RandomSeedAutopilot_Scrollbar_Sync_Needed = true;
-                    RandomSeedSpecials_Scrollbar_Sync_Needed = true;
                     
                     TerrainGenerator_Generate_Needed = true;
                     Autopilot_RandomSeedAutopilot_Reset_Needed = true;
@@ -271,9 +255,9 @@ namespace ViSCARecorder
                 {
                     GameConfigs2.VehicleOpacity = VehicleOpacity_Normalized;
                     GameConfigs2.AutopilotEnabled = AutopilotToggle_Enabled;
-                    GameConfigs2.RandomSeed_Terrain = RandomSeedTerrain_Value_Processed;
-                    GameConfigs2.RandomSeed_Autopilot = RandomSeedAutopilot_Value_Processed;
-                    GameConfigs2.RandomSeed_Specials = RandomSeedSpecials_Value_Processed;
+                    GameConfigs2.RandomSeed_Terrain = RandomSeedTerrain_Config.Config_Value;
+                    GameConfigs2.RandomSeed_Autopilot = RandomSeedAutopilot_Config.Config_Value;
+                    GameConfigs2.RandomSeed_Specials = RandomSeedSpecials_Config.Config_Value;
                     GameConfigs2.Specials_Index = RandomSeedSpecials_SpecialsIndex;
                     GameConfigs2.Specials_Instance = RandomSeedSpecials_SpecialsInstance;
                 }
@@ -342,7 +326,7 @@ namespace ViSCARecorder
                 if (TerrainGenerator_Generate_Needed)
                 {
                     TerrainGenerator_Generate_Needed = false;
-                    TerrainGenerator.Random_Seed_Reset(RandomSeedTerrain_Value_Processed);
+                    TerrainGenerator.Random_Seed_Reset(RandomSeedTerrain_Config.Config_Value);
                     TerrainGenerator.Terrain_AndNature_Generate();
                     Vehicle_PositionY_Reset_Needed = true;
                 }
@@ -423,7 +407,7 @@ namespace ViSCARecorder
                 if (Autopilot_RandomSeedAutopilot_Reset_Needed)
                 {
                     Autopilot_RandomSeedAutopilot_Reset_Needed = false;
-                    Autopilot.Random_Autopilot_Seed_Reset(RandomSeedAutopilot_Value_Processed);
+                    Autopilot.Random_Autopilot_Seed_Reset(RandomSeedAutopilot_Config.Config_Value);
                 }
 
                 if (Autopilot_RandomSpecialsIndex_Reset_Needed)
@@ -439,15 +423,15 @@ namespace ViSCARecorder
         private void Restart_Setup()
         {
             Restart_Button = Restart_Button_Object.GetComponent<Scrollbar>();
-            Restart_Button.onValueChanged.AddListener(Restart_OnClick);
+            Restart_Button.onValueChanged.AddListener(Restart_Button_OnClick);
         }
 
         private void Restart_TearDown()
         {
-            Restart_Button.onValueChanged.RemoveListener(Restart_OnClick);
+            Restart_Button.onValueChanged.RemoveListener(Restart_Button_OnClick);
         }
 
-        private void Restart_OnClick(float Value)
+        private void Restart_Button_OnClick(float Value)
         {
             if (Recorder_Object.activeInHierarchy)
             {
@@ -462,15 +446,15 @@ namespace ViSCARecorder
         private void Exit_Setup()
         {
             Exit_Button = Exit_Button_Object.GetComponent<Scrollbar>();
-            Exit_Button.onValueChanged.AddListener(Exit_OnClick);
+            Exit_Button.onValueChanged.AddListener(Exit_Button_OnClick);
         }
 
         private void Exit_TearDown()
         {
-            Exit_Button.onValueChanged.RemoveListener(Exit_OnClick);
+            Exit_Button.onValueChanged.RemoveListener(Exit_Button_OnClick);
         }
 
-        private void Exit_OnClick(float Value)
+        private void Exit_Button_OnClick(float Value)
         {
             if (Recorder_Object.activeInHierarchy)
             {
@@ -484,12 +468,9 @@ namespace ViSCARecorder
         // begin helpers UserIndex
         private void UserIndex_Setup()
         {
-            UserIndex_Text = UserIndex_Text_Object.GetComponent<Text>();
-            UserIndex_Scrollbar = UserIndex_Scrollbar_Object.GetComponent<Scrollbar>();
-            UserIndex_Scrollbar.onValueChanged.AddListener(UserIndex_OnValueChanged);
-            UserIndex_Button = UserIndex_Button_Object.GetComponent<Scrollbar>();
-            UserIndex_Button.onValueChanged.AddListener(UserIndex_Button_OnClick);
-            UserIndex_Scrollbar_Sync(false);
+            UserIndex_Config = UserIndex_Config_Object.GetComponent<UI_Config_Int_Custom1>();
+            UserIndex_Config.Config_Value_OnChanged.AddListener(UserIndex_Value_OnChanged);
+            UserIndex_Config.Config_Refresh_OnClicked.AddListener(UserIndex_Refresh_OnClicked);
         }
 
         private void UserIndex_Refresh()
@@ -499,44 +480,21 @@ namespace ViSCARecorder
             if (UserIndex_Refresh_Countdown_Seconds < Time.fixedDeltaTime)
             {
                 UserIndex_Refresh_Countdown_Seconds = UserIndex_Refresh_Interval_Seconds;
-
-                if (UserIndex_Scrollbar_Sync_Needed)
-                {
-                    UserIndex_Scrollbar_Sync_Needed = false;
-                    UserIndex_Scrollbar_Sync();
-                }
-
-                UserIndex_Value_Processed = Mathf.RoundToInt(UserIndex_Value_Raw * (UserIndex_Count - 1));
-                UserIndex_Text.text = $"User index | 用户编号：{UserIndex_Value_Processed}";
             }
         }
 
         private void UserIndex_TearDown()
         {
-            UserIndex_Scrollbar.onValueChanged.RemoveListener(UserIndex_OnValueChanged);
-            UserIndex_Button.onValueChanged.RemoveListener(UserIndex_Button_OnClick);
+            UserIndex_Config.Config_Value_OnChanged.RemoveListener(UserIndex_Value_OnChanged);
+            UserIndex_Config.Config_Refresh_OnClicked.RemoveListener(UserIndex_Refresh_OnClicked);
         }
 
-        private void UserIndex_Scrollbar_Sync(bool Notify = true)
+        private void UserIndex_Value_OnChanged(float Value)
         {
-            UserIndex_Value_Raw = (float)UserIndex_Value_Processed / ((float)UserIndex_Count - 1);
-            
-            if (Notify)
-            {
-                UserIndex_Scrollbar.value = UserIndex_Value_Raw;
-            }
-            else
-            {
-                UserIndex_Scrollbar.SetValueWithoutNotify(UserIndex_Value_Raw);
-            }
+            // Do nothing.
         }
 
-        private void UserIndex_OnValueChanged(float Value)
-        {
-            UserIndex_Value_Raw = Value;
-        }
-
-        private void UserIndex_Button_OnClick(float Value)
+        private void UserIndex_Refresh_OnClicked(float Value)
         {
             GameConfigs_StandardApply_Needed = true;
         }
@@ -545,12 +503,9 @@ namespace ViSCARecorder
         // begin helpers PresetIndex
         private void PresetIndex_Setup()
         {
-            PresetIndex_Text = PresetIndex_Text_Object.GetComponent<Text>();
-            PresetIndex_Scrollbar = PresetIndex_Scrollbar_Object.GetComponent<Scrollbar>();
-            PresetIndex_Button = PresetIndex_Button_Object.GetComponent<Scrollbar>();
-            PresetIndex_Scrollbar.onValueChanged.AddListener(PresetIndex_Scrollbar_OnValueChanged);
-            PresetIndex_Button.onValueChanged.AddListener(PresetIndex_Button_OnClick);
-            PresetIndex_Scrollbar_Sync(false);
+            PresetIndex_Config = PresetIndex_Config_Object.GetComponent<UI_Config_Int_Custom1>();
+            PresetIndex_Config.Config_Value_OnChanged.AddListener(PresetIndex_Value_OnChanged);
+            PresetIndex_Config.Config_Refresh_OnClicked.AddListener(PresetIndex_Refresh_OnClicked);
         }
 
         private void PresetIndex_Refresh()
@@ -560,44 +515,21 @@ namespace ViSCARecorder
             if (PresetIndex_Refresh_Countdown_Seconds < Time.fixedDeltaTime)
             {
                 PresetIndex_Refresh_Countdown_Seconds = PresetIndex_Refresh_Interval_Seconds;
-
-                if (PresetIndex_Scrollbar_Sync_Needed)
-                {
-                    PresetIndex_Scrollbar_Sync_Needed = false;
-                    PresetIndex_Scrollbar_Sync();
-                }
-
-                PresetIndex_Value_Processed = Mathf.RoundToInt(PresetIndex_Value_Raw * (PresetIndex_Count - 1));
-                PresetIndex_Text.text = $"Preset index | 预案编号：{PresetIndex_Value_Processed}";
             }
         }
 
         private void PresetIndex_TearDown()
         {
-            PresetIndex_Scrollbar.onValueChanged.RemoveListener(PresetIndex_Scrollbar_OnValueChanged);
-            PresetIndex_Button.onValueChanged.RemoveListener(PresetIndex_Button_OnClick);
+            PresetIndex_Config.Config_Value_OnChanged.RemoveListener(PresetIndex_Value_OnChanged);
+            PresetIndex_Config.Config_Refresh_OnClicked.RemoveListener(PresetIndex_Refresh_OnClicked);
         }
 
-        private void PresetIndex_Scrollbar_Sync(bool Notify = true)
+        private void PresetIndex_Value_OnChanged(float Value)
         {
-            PresetIndex_Value_Raw = (float)PresetIndex_Value_Processed / ((float)PresetIndex_Count - 1);
-            
-            if (Notify)
-            {
-                PresetIndex_Scrollbar.value = PresetIndex_Value_Raw;
-            }
-            else
-            {
-                PresetIndex_Scrollbar.SetValueWithoutNotify(PresetIndex_Value_Raw);
-            }
+            // Do nothing.
         }
 
-        private void PresetIndex_Scrollbar_OnValueChanged(float Value)
-        {
-            PresetIndex_Value_Raw = Value;   
-        }
-
-        private void PresetIndex_Button_OnClick(float Value)
+        private void PresetIndex_Refresh_OnClicked(float Value)
         {
             GameConfigs_StandardApply_Needed = true;
         }
@@ -731,11 +663,9 @@ namespace ViSCARecorder
         // begin helpers RandomSeedTerrain
         private void RandomSeedTerrain_Setup()
         {
-            RandomSeedTerrain_Text = RandomSeedTerrain_Text_Object.GetComponent<Text>();
-            RandomSeedTerrain_Scrollbar = RandomSeedTerrain_Scrollbar_Object.GetComponent<Scrollbar>();
-            RandomSeedTerrain_Button = RandomSeedTerrain_Button_Object.GetComponent<Scrollbar>();
-            RandomSeedTerrain_Scrollbar.onValueChanged.AddListener(RandomSeedTerrain_Scrollbar_OnValueChanged);
-            RandomSeedTerrain_Button.onValueChanged.AddListener(RandomSeedTerrain_Button_OnClick);
+            RandomSeedTerrain_Config = RandomSeedTerrain_Config_Object.GetComponent<UI_Config_Int_Custom1>();
+            RandomSeedTerrain_Config.Config_Value_OnChanged.AddListener(RandomSeedTerrain_Value_OnChanged);
+            RandomSeedTerrain_Config.Config_Refresh_OnClicked.AddListener(RandomSeedTerrain_Refresh_OnClicked);
         }
 
         private void RandomSeedTerrain_Refresh()
@@ -745,36 +675,21 @@ namespace ViSCARecorder
             if (RandomSeedTerrain_Refresh_Countdown_Seconds < Time.fixedDeltaTime)
             {
                 RandomSeedTerrain_Refresh_Countdown_Seconds = RandomSeedTerrain_Refresh_Interval_Seconds;
-
-                if (RandomSeedTerrain_Scrollbar_Sync_Needed)
-                {
-                    RandomSeedTerrain_Scrollbar_Sync_Needed = false;
-                    RandomSeedTerrain_Scrollbar_Sync();
-                }
-
-                RandomSeedTerrain_Value_Processed = Mathf.RoundToInt(RandomSeedTerrain_Value_Raw * (RandomSeedTerrain_Count - 1));
-                RandomSeedTerrain_Text.text = $"Terrain random seed | 地形随机种子：{RandomSeedTerrain_Value_Processed}";
             }
         }
 
         private void RandomSeedTerrain_TearDown()
         {
-            RandomSeedTerrain_Scrollbar.onValueChanged.RemoveListener(RandomSeedTerrain_Scrollbar_OnValueChanged);
-            RandomSeedTerrain_Button.onValueChanged.RemoveListener(RandomSeedTerrain_Button_OnClick);
+            RandomSeedTerrain_Config.Config_Value_OnChanged.RemoveListener(RandomSeedTerrain_Value_OnChanged);
+            RandomSeedTerrain_Config.Config_Refresh_OnClicked.RemoveListener(RandomSeedTerrain_Refresh_OnClicked);
         }
 
-        private void RandomSeedTerrain_Scrollbar_Sync()
+        private void RandomSeedTerrain_Value_OnChanged(float Value)
         {
-            RandomSeedTerrain_Value_Raw = (float)RandomSeedTerrain_Value_Processed / ((float)RandomSeedTerrain_Count - 1);
-            RandomSeedTerrain_Scrollbar.value = RandomSeedTerrain_Value_Raw;
+            // Do nothing.
         }
 
-        private void RandomSeedTerrain_Scrollbar_OnValueChanged(float Value)
-        {
-            RandomSeedTerrain_Value_Raw = Value;
-        }
-
-        private void RandomSeedTerrain_Button_OnClick(float Value)
+        private void RandomSeedTerrain_Refresh_OnClicked(float Value)
         {
             TerrainGenerator_Generate_Needed = true;
         }
@@ -783,9 +698,8 @@ namespace ViSCARecorder
         // begin helpers RandomSeedAutopilot
         private void RandomSeedAutopilot_Setup()
         {
-            RandomSeedAutopilot_Text = RandomSeedAutopilot_Text_Object.GetComponent<Text>();
-            RandomSeedAutopilot_Scrollbar = RandomSeedAutopilot_Scrollbar_Object.GetComponent<Scrollbar>();
-            RandomSeedAutopilot_Scrollbar.onValueChanged.AddListener(RandomSeedAutopilot_Scrollbar_OnValueChanged);
+            RandomSeedAutopilot_Config = RandomSeedAutopilot_Config_Object.GetComponent<UI_Config_Int_Custom1>();
+            RandomSeedAutopilot_Config.Config_Value_OnChanged.AddListener(RandomSeedAutopilot_Value_OnChanged);
         }
 
         private void RandomSeedAutopilot_Refresh()
@@ -795,32 +709,16 @@ namespace ViSCARecorder
             if (RandomSeedAutopilot_Refresh_Countdown_Seconds < Time.fixedDeltaTime)
             {
                 RandomSeedAutopilot_Refresh_Countdown_Seconds = RandomSeedAutopilot_Refresh_Interval_Seconds;
-
-                if (RandomSeedAutopilot_Scrollbar_Sync_Needed)
-                {
-                    RandomSeedAutopilot_Scrollbar_Sync_Needed = false;
-                    RandomSeedAutopilot_Scrollbar_Sync();
-                }
-
-                RandomSeedAutopilot_Value_Processed = Mathf.RoundToInt(RandomSeedAutopilot_Value_Raw * (RandomSeedAutopilot_Count - 1));
-                RandomSeedAutopilot_Text.text = $"Autopilot random seed | 自动驾驶随机种子：{RandomSeedAutopilot_Value_Processed}";
             }
         }
 
         private void RandomSeedAutopilot_TearDown()
         {
-            RandomSeedAutopilot_Scrollbar.onValueChanged.RemoveListener(RandomSeedAutopilot_Scrollbar_OnValueChanged);
+            RandomSeedAutopilot_Config.Config_Value_OnChanged.RemoveListener(RandomSeedAutopilot_Value_OnChanged);
         }
 
-        private void RandomSeedAutopilot_Scrollbar_Sync()
+        private void RandomSeedAutopilot_Value_OnChanged(float Value)
         {
-            RandomSeedAutopilot_Value_Raw = (float)RandomSeedAutopilot_Value_Processed / ((float)RandomSeedAutopilot_Count - 1);
-            RandomSeedAutopilot_Scrollbar.value = RandomSeedAutopilot_Value_Raw;
-        }
-
-        private void RandomSeedAutopilot_Scrollbar_OnValueChanged(float Value)
-        {
-            RandomSeedAutopilot_Value_Raw = Value;
             Autopilot_RandomSeedAutopilot_Reset_Needed = true;
         }
         // end helpers RandomSeedAutopilot
@@ -828,9 +726,8 @@ namespace ViSCARecorder
         // begin helpers RandomSeedSpecials
         private void RandomSeedSpecials_Setup()
         {
-            RandomSeedSpecials_Text = RandomSeedSpecials_Text_Object.GetComponent<Text>();
-            RandomSeedSpecials_Scrollbar = RandomSeedSpecials_Scrollbar_Object.GetComponent<Scrollbar>();
-            RandomSeedSpecials_Scrollbar.onValueChanged.AddListener(RandomSeedSpecials_Scrollbar_OnValueChanged);
+            RandomSeedSpecials_Config = RandomSeedSpecials_Config_Object.GetComponent<UI_Config_Int_Custom1>();
+            RandomSeedSpecials_Config.Config_Value_OnChanged.AddListener(RandomSeedSpecials_Value_OnChanged);
         }
 
         private void RandomSeedSpecials_Refresh()
@@ -840,33 +737,16 @@ namespace ViSCARecorder
             if (RandomSeedSpecials_Refresh_Countdown_Seconds < Time.fixedDeltaTime)
             {
                 RandomSeedSpecials_Refresh_Countdown_Seconds = RandomSeedSpecials_Refresh_Interval_Seconds;
-
-                if (RandomSeedSpecials_Scrollbar_Sync_Needed)
-                {
-                    RandomSeedSpecials_Scrollbar_Sync_Needed = false;
-                    RandomSeedSpecials_Scrollbar_Sync();
-                }
-
-                RandomSeedSpecials_Value_Processed = Mathf.RoundToInt(RandomSeedSpecials_Value_Raw * (RandomSeedSpecials_Count - 1));
-                RandomSeedSpecials_Text.text = $"Specials random seed | 彩蛋内容随机种子：{RandomSeedSpecials_Value_Processed}";
             }
         }
 
         private void RandomSeedSpecials_TearDown()
         {
-            RandomSeedSpecials_Scrollbar.onValueChanged.RemoveListener(RandomSeedSpecials_Scrollbar_OnValueChanged);
+            RandomSeedSpecials_Config.Config_Value_OnChanged.RemoveListener(RandomSeedSpecials_Value_OnChanged);
         }
 
-        private void RandomSeedSpecials_Scrollbar_Sync()
+        private void RandomSeedSpecials_Value_OnChanged(float Value)
         {
-            RandomSeedSpecials_Value_Raw = (float)RandomSeedSpecials_Value_Processed / ((float)RandomSeedSpecials_Count - 1);
-            RandomSeedSpecials_Scrollbar.value = RandomSeedSpecials_Value_Raw;
-        }
-
-        private void RandomSeedSpecials_Scrollbar_OnValueChanged(float Value)
-        {
-            RandomSeedSpecials_Value_Raw = Value;
-            RandomSeedSpecials_Value_Processed = Mathf.RoundToInt(RandomSeedSpecials_Value_Raw * (RandomSeedSpecials_Count - 1));
             RandomSeedSpecials_Index_AndInstance_Generate();
             Autopilot_RandomSpecialsIndex_Reset_Needed = true;
         }
@@ -884,7 +764,7 @@ namespace ViSCARecorder
             if (!RandomSeedSpecials_Random_Initialized)
             {
                 RandomSeedSpecials_Random_Initialized = true;
-                Random.InitState(RandomSeedSpecials_Value_Processed);
+                Random.InitState(RandomSeedSpecials_Config.Config_Value);
                 RandomSeedSpecials_Random_State = Random.state;
             }
             else
@@ -929,5 +809,18 @@ namespace ViSCARecorder
             }
         }
         // end helpers AutopilotStatus
+
+        // begin helpers Exit2
+        private void Exit2_Setup()
+        {
+            Exit2_Button = Exit2_Button_Object.GetComponent<Scrollbar>();
+            Exit2_Button.onValueChanged.AddListener(Exit_Button_OnClick);
+        }
+
+        private void Exit2_TearDown()
+        {
+            Exit2_Button.onValueChanged.RemoveListener(Exit_Button_OnClick);
+        }
+        // end helpers Exit2
     } // end class
 } // end namespace

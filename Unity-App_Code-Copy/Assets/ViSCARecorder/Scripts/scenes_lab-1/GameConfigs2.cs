@@ -134,5 +134,47 @@ namespace ViSCARecorder
                 GameConfigsStandard_.RandomSeed_Specials = UserIndex;
             }
         }
+
+        public class GameConfigs_Backup
+        {
+            public int UserIndex = 0;
+            public int PresetIndex = 0;
+            public float VehicleOpacity = 0.8f;
+            public bool AutopilotEnabled = true;
+            public int RandomSeed_Terrain = 0;
+            public int RandomSeed_Autopilot = 0;
+            public int RandomSeed_Specials = 0;
+            public int Specials_Index = 0;
+            public Recorder25_.Record.Specials Specials_Instance;
+
+            public static void FromGameConfigs_Backup(out GameConfigs_Backup Backup)
+            {
+                Backup = new()
+                {
+                    UserIndex = GameConfigs2.UserIndex,
+                    PresetIndex = GameConfigs2.PresetIndex,
+                    VehicleOpacity = GameConfigs2.VehicleOpacity,
+                    AutopilotEnabled = GameConfigs2.AutopilotEnabled,
+                    RandomSeed_Terrain = GameConfigs2.RandomSeed_Terrain,
+                    RandomSeed_Autopilot = GameConfigs2.RandomSeed_Autopilot,
+                    RandomSeed_Specials = GameConfigs2.RandomSeed_Specials,
+                    Specials_Index = GameConfigs2.Specials_Index,
+                    Specials_Instance = GameConfigs2.Specials_Instance
+                };
+            }
+
+            public static void ToGameConfigs_Restore(in GameConfigs_Backup Backup)
+            {
+                GameConfigs2.UserIndex = Backup.UserIndex;
+                GameConfigs2.PresetIndex = Backup.PresetIndex;
+                GameConfigs2.VehicleOpacity = Backup.VehicleOpacity;
+                GameConfigs2.AutopilotEnabled = Backup.AutopilotEnabled;
+                GameConfigs2.RandomSeed_Terrain = Backup.RandomSeed_Terrain;
+                GameConfigs2.RandomSeed_Autopilot = Backup.RandomSeed_Autopilot;
+                GameConfigs2.RandomSeed_Specials = Backup.RandomSeed_Specials;
+                GameConfigs2.Specials_Index = Backup.Specials_Index;
+                GameConfigs2.Specials_Instance = Backup.Specials_Instance;
+            }
+        }
     } // end namespace
 } // end namespace
