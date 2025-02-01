@@ -36,7 +36,7 @@ namespace ViSCARecorder
         // end public fields
 
         // begin private fields
-        private float TerrainGenerator_Refresh_Interval_Seconds = 0f;
+        private float TerrainGenerator_Refresh_Interval_Seconds = 0.033_333_333f; // 30 Hz.
         private float TerrainGenerator_Refresh_Countdown_Seconds = 0f;
 
         private MeshFilter Terrain_MeshFilter;

@@ -1,0 +1,4078 @@
+{
+    "items": [
+        {
+            "recorder_name": "Recorder25",
+            "timestamp": {
+                "date_time_custom": "20250201-173635-673105-utc0800",
+                "date_time": "2025-02-01T17:36:35.6731050+08:00",
+                "unix_ms": 1738402595673,
+                "game_time_custom": "000 days, 00:01:02.001394",
+                "game_time": "00:01:02.0013940",
+                "game_time_seconds": 59.994972229003909,
+                "unity_fixed_delta_time_seconds": 0.0111236572265625,
+                "ideal_record_interval_seconds": 0.03333333134651184,
+                "actual_record_interval_seconds": 0.0333404541015625
+            },
+            "eye_gaze": {
+                "spatial_pose": {
+                    "position": {
+                        "x": -0.0036917366087436678,
+                        "y": -0.050822801887989047,
+                        "z": 0.03248324245214462
+                    },
+                    "rotation": {
+                        "x": 40.50605010986328,
+                        "y": 11.768685340881348,
+                        "z": -4.6337447656696897e-7
+                    },
+                    "velocity": {
+                        "x": -0.00027415016666054726,
+                        "y": -0.001978111919015646,
+                        "z": -0.0017757241148501635
+                    },
+                    "angular_velocity": {
+                        "x": 2.0029234886169435,
+                        "y": -0.2243712842464447,
+                        "z": -0.41175782680511477
+                    },
+                    "acceleration": {
+                        "x": -0.13275586068630219,
+                        "y": -0.04627970606088638,
+                        "z": -0.12281657755374909
+                    },
+                    "angular_acceleration": {
+                        "x": -84.06830596923828,
+                        "y": -24.715456008911134,
+                        "z": 17.359506607055665
+                    },
+                    "raw_position": {
+                        "x": -0.00370025634765625,
+                        "y": -0.0508880615234375,
+                        "z": 0.0324249267578125
+                    },
+                    "raw_rotation": {
+                        "x": 40.57377624511719,
+                        "y": 11.761244773864746,
+                        "z": -5.620118486149295e-7
+                    },
+                    "raw_velocity": {
+                        "x": -0.004118993412703276,
+                        "y": -0.0034610985312610866,
+                        "z": -0.005491991061717272
+                    },
+                    "raw_angular_velocity": {
+                        "x": -0.7212814688682556,
+                        "y": -1.0352402925491334,
+                        "z": 0.15058577060699464
+                    },
+                    "raw_acceleration": {
+                        "x": -0.12354341149330139,
+                        "y": -0.10445453226566315,
+                        "z": -0.16472454369068147
+                    },
+                    "raw_angular_acceleration": {
+                        "x": -21.63382339477539,
+                        "y": -31.05316925048828,
+                        "z": 4.51632022857666
+                    },
+                    "magnitude_position": 0.060429688543081287,
+                    "magnitude_rotation": 42.18106460571289,
+                    "magnitude_velocity": 0.0026723176706582309,
+                    "magnitude_angular_velocity": 2.0570828914642336,
+                    "magnitude_acceleration": 0.1866811215877533,
+                    "magnitude_angular_acceleration": 89.32909393310547,
+                    "magnitude_raw_position": 0.060453806072473529,
+                    "magnitude_raw_rotation": 42.2440299987793,
+                    "magnitude_raw_velocity": 0.007688125595450401,
+                    "magnitude_raw_angular_velocity": 1.2706871032714844,
+                    "magnitude_raw_acceleration": 0.23088502883911134,
+                    "magnitude_raw_angular_acceleration": 38.11454772949219
+                },
+                "viewport_pose": {
+                    "position": {
+                        "x": 0.47432273626327517,
+                        "y": 0.6741616725921631
+                    },
+                    "velocity": {
+                        "x": -0.11438428610563278,
+                        "y": 0.4920929968357086
+                    },
+                    "acceleration": {
+                        "x": -2.692668914794922,
+                        "y": 37.881893157958987
+                    },
+                    "raw_position": {
+                        "x": 0.47034671902656557,
+                        "y": 0.6906934380531311
+                    },
+                    "raw_velocity": {
+                        "x": -0.21825478971004487,
+                        "y": 1.6926648616790772
+                    },
+                    "raw_acceleration": {
+                        "x": -7.067079544067383,
+                        "y": 50.248268127441409
+                    },
+                    "magnitude_position": 0.8243033289909363,
+                    "magnitude_velocity": 0.505212128162384,
+                    "magnitude_acceleration": 37.97747039794922,
+                    "magnitude_raw_position": 0.8356335759162903,
+                    "magnitude_raw_velocity": 1.7066779136657715,
+                    "magnitude_raw_acceleration": 50.742801666259769
+                },
+                "left_eye_openness": 1.0,
+                "right_eye_openness": 1.0
+            },
+            "face": {
+                "blend_shapes_data": {
+                    "eyeLookDownLeft": 0.4182821214199066,
+                    "noseSneerLeft": 0.2156282365322113,
+                    "eyeLookInLeft": 0.17436519265174867,
+                    "browInnerUp": 0.0015107854269444943,
+                    "browDownRight": 0.1105496808886528,
+                    "mouthClose": 0.05510706827044487,
+                    "mouthLowerDownRight": 0.0,
+                    "jawOpen": 0.003181738778948784,
+                    "mouthUpperUpRight": 0.05840827524662018,
+                    "mouthShrugUpper": 0.04614577069878578,
+                    "mouthFunnel": 0.07309635728597641,
+                    "eyeLookInRight": 0.005480497144162655,
+                    "eyeLookDownRight": 0.4182821214199066,
+                    "noseSneerRight": 0.23249980807304383,
+                    "mouthRollUpper": 0.00031880574533715844,
+                    "jawRight": 0.00006419927376555279,
+                    "browDownLeft": 0.1105496808886528,
+                    "mouthShrugLower": 0.05366489663720131,
+                    "mouthRollLower": 0.0005667279474437237,
+                    "mouthSmileLeft": 0.0009806419257074595,
+                    "mouthPressLeft": 0.13734070956707,
+                    "mouthSmileRight": 0.001309039886109531,
+                    "mouthPressRight": 0.04679640382528305,
+                    "mouthDimpleRight": 0.04811090975999832,
+                    "mouthLeft": 0.01088601816445589,
+                    "jawForward": 0.0015317420475184918,
+                    "eyeSquintLeft": 0.029716856777668,
+                    "mouthFrownLeft": 0.054232217371463779,
+                    "eyeBlinkLeft": 0.0017633485840633512,
+                    "cheekSquintLeft": 0.18140465021133424,
+                    "browOuterUpLeft": 0.0015107854269444943,
+                    "eyeLookUpLeft": 0.006277252454310656,
+                    "jawLeft": 3.835484676528722e-7,
+                    "mouthStretchLeft": 0.0006447532796300948,
+                    "mouthPucker": 0.0013759785797446967,
+                    "eyeLookUpRight": 0.006277252454310656,
+                    "browOuterUpRight": 0.0015107854269444943,
+                    "cheekSquintRight": 0.12374042719602585,
+                    "eyeBlinkRight": 0.0019541389774531128,
+                    "mouthUpperUpLeft": 0.05525938421487808,
+                    "mouthFrownRight": 0.06157264485955238,
+                    "eyeSquintRight": 0.03376566618680954,
+                    "mouthStretchRight": 0.0006579603650607169,
+                    "cheekPuff": 0.0608048141002655,
+                    "eyeLookOutLeft": 0.005480497144162655,
+                    "eyeLookOutRight": 0.17436519265174867,
+                    "eyeWideRight": 0.00574141088873148,
+                    "eyeWideLeft": 0.00574141088873148,
+                    "mouthRight": 0.014197479002177716,
+                    "mouthDimpleLeft": 0.0377546101808548,
+                    "mouthLowerDownLeft": 0.00011298055324004963,
+                    "tongueOut": 0.0,
+                    "viseme_PP": 0.0,
+                    "viseme_CH": 0.0,
+                    "viseme_o": 0.0,
+                    "viseme_O": 0.0,
+                    "viseme_i": 0.0,
+                    "viseme_I": 0.0,
+                    "viseme_RR": 0.0,
+                    "viseme_XX": 0.0,
+                    "viseme_aa": 0.0,
+                    "viseme_FF": 0.0,
+                    "viseme_u": 0.0,
+                    "viseme_U": 0.0,
+                    "viseme_TH": 0.0,
+                    "viseme_kk": 0.0,
+                    "viseme_SS": 0.0,
+                    "viseme_e": 0.0,
+                    "viseme_DD": 0.0,
+                    "viseme_E": 0.0,
+                    "viseme_nn": 0.0,
+                    "viseme_sil": 0.9999998807907105
+                },
+                "laughing": 0.0
+            },
+            "headset_spatial_pose": {
+                "position": {
+                    "x": -33.217933654785159,
+                    "y": -12.918447494506836,
+                    "z": -72.66343688964844
+                },
+                "rotation": {
+                    "x": -0.737356424331665,
+                    "y": -132.99496459960938,
+                    "z": -12.689606666564942
+                },
+                "velocity": {
+                    "x": -2.6995277404785158,
+                    "y": 11.758888244628907,
+                    "z": -14.637784957885743
+                },
+                "angular_velocity": {
+                    "x": 7.414299011230469,
+                    "y": 2.930288791656494,
+                    "z": -4.156550407409668
+                },
+                "acceleration": {
+                    "x": -17.576766967773439,
+                    "y": 166.5244903564453,
+                    "z": -11.476886749267579
+                },
+                "angular_acceleration": {
+                    "x": 68.90013885498047,
+                    "y": 26.703754425048829,
+                    "z": -93.8629150390625
+                },
+                "raw_position": {
+                    "x": -33.30546951293945,
+                    "y": -12.538834571838379,
+                    "z": -73.13568878173828
+                },
+                "raw_rotation": {
+                    "x": -0.99969482421875,
+                    "y": -132.89849853515626,
+                    "z": -12.77056884765625
+                },
+                "raw_velocity": {
+                    "x": -3.3289475440979006,
+                    "y": 17.096881866455079,
+                    "z": -15.352173805236817
+                },
+                "raw_angular_velocity": {
+                    "x": 9.609070777893067,
+                    "y": 3.8713605403900148,
+                    "z": -7.2485127449035648
+                },
+                "raw_acceleration": {
+                    "x": -44.52581024169922,
+                    "y": 211.68292236328126,
+                    "z": -116.94133758544922
+                },
+                "raw_angular_acceleration": {
+                    "x": 75.42744445800781,
+                    "y": 57.45014953613281,
+                    "z": -160.71775817871095
+                },
+                "magnitude_position": 80.93387603759766,
+                "magnitude_rotation": 133.6009979248047,
+                "magnitude_velocity": 18.969018936157228,
+                "magnitude_angular_velocity": 8.99084758758545,
+                "magnitude_acceleration": 167.84239196777345,
+                "magnitude_angular_acceleration": 119.45947265625,
+                "magnitude_raw_position": 81.33452606201172,
+                "magnitude_raw_rotation": 133.51441955566407,
+                "magnitude_raw_velocity": 23.21797752380371,
+                "magnitude_raw_angular_velocity": 12.643678665161133,
+                "magnitude_raw_acceleration": 245.9013671875,
+                "magnitude_raw_angular_acceleration": 186.60122680664063
+            },
+            "left_controller_spatial_pose": {
+                "position": {
+                    "x": -32.655113220214847,
+                    "y": -13.201830863952637,
+                    "z": -72.50568389892578
+                },
+                "rotation": {
+                    "x": 27.825302124023439,
+                    "y": -154.71954345703126,
+                    "z": -61.4134407043457
+                },
+                "velocity": {
+                    "x": -2.719122886657715,
+                    "y": 11.69932746887207,
+                    "z": -14.690073013305664
+                },
+                "angular_velocity": {
+                    "x": 1.9258959293365479,
+                    "y": 8.12602424621582,
+                    "z": -2.424450159072876
+                },
+                "acceleration": {
+                    "x": -18.12054443359375,
+                    "y": 165.39964294433595,
+                    "z": -11.886482238769532
+                },
+                "angular_acceleration": {
+                    "x": 25.359718322753908,
+                    "y": 99.22648620605469,
+                    "z": -76.2467041015625
+                },
+                "raw_position": {
+                    "x": -32.743289947509769,
+                    "y": -12.824155807495118,
+                    "z": -72.97962188720703
+                },
+                "raw_rotation": {
+                    "x": 27.735836029052736,
+                    "y": -154.43267822265626,
+                    "z": -61.360687255859378
+                },
+                "raw_velocity": {
+                    "x": -3.366018295288086,
+                    "y": 17.000686645507814,
+                    "z": -15.418078422546387
+                },
+                "raw_angular_velocity": {
+                    "x": 2.6705880165100099,
+                    "y": 11.331005096435547,
+                    "z": -4.921739101409912
+                },
+                "raw_acceleration": {
+                    "x": -45.385345458984378,
+                    "y": 210.03561401367188,
+                    "z": -117.537841796875
+                },
+                "raw_angular_acceleration": {
+                    "x": 2.4245424270629885,
+                    "y": 131.19615173339845,
+                    "z": -127.98884582519531
+                },
+                "magnitude_position": 80.60842895507813,
+                "magnitude_rotation": 168.7720184326172,
+                "magnitude_velocity": 18.97540855407715,
+                "magnitude_angular_velocity": 8.69593620300293,
+                "magnitude_acceleration": 166.81332397460938,
+                "magnitude_angular_acceleration": 127.6815185546875,
+                "magnitude_raw_position": 81.00991821289063,
+                "magnitude_raw_rotation": 168.47511291503907,
+                "magnitude_raw_velocity": 23.196348190307618,
+                "magnitude_raw_angular_velocity": 12.639114379882813,
+                "magnitude_raw_acceleration": 244.9284210205078,
+                "magnitude_raw_angular_acceleration": 183.30152893066407
+            },
+            "right_controller_spatial_pose": {
+                "position": {
+                    "x": -33.12727737426758,
+                    "y": -13.171897888183594,
+                    "z": -72.27740478515625
+                },
+                "rotation": {
+                    "x": 64.02936553955078,
+                    "y": -106.09843444824219,
+                    "z": -18.915191650390626
+                },
+                "velocity": {
+                    "x": -2.713955879211426,
+                    "y": 11.707151412963868,
+                    "z": -14.684139251708985
+                },
+                "angular_velocity": {
+                    "x": 2.2084836959838869,
+                    "y": 6.118929862976074,
+                    "z": -6.8985819816589359
+                },
+                "acceleration": {
+                    "x": -18.259689331054689,
+                    "y": 165.84873962402345,
+                    "z": -11.804088592529297
+                },
+                "angular_acceleration": {
+                    "x": 79.74380493164063,
+                    "y": -28.31573486328125,
+                    "z": -141.40771484375
+                },
+                "raw_position": {
+                    "x": -33.215293884277347,
+                    "y": -12.793946266174317,
+                    "z": -72.75115966796875
+                },
+                "raw_rotation": {
+                    "x": 63.79568099975586,
+                    "y": -105.91815185546875,
+                    "z": -18.934722900390626
+                },
+                "raw_velocity": {
+                    "x": -3.365103006362915,
+                    "y": 17.023998260498048,
+                    "z": -15.41006851196289
+                },
+                "raw_angular_velocity": {
+                    "x": 4.745632648468018,
+                    "y": 5.46971321105957,
+                    "z": -11.374828338623047
+                },
+                "raw_acceleration": {
+                    "x": -45.545867919921878,
+                    "y": 211.02642822265626,
+                    "z": -117.67869567871094
+                },
+                "raw_angular_acceleration": {
+                    "x": 104.30250549316406,
+                    "y": 24.435026168823243,
+                    "z": -147.53201293945313
+                },
+                "magnitude_position": 80.5911865234375,
+                "magnitude_rotation": 125.357177734375,
+                "magnitude_velocity": 18.97490119934082,
+                "magnitude_angular_velocity": 9.48204231262207,
+                "magnitude_acceleration": 167.26791381835938,
+                "magnitude_angular_acceleration": 164.79380798339845,
+                "magnitude_raw_position": 80.99180603027344,
+                "magnitude_raw_rotation": 125.08824157714844,
+                "magnitude_raw_velocity": 23.20798683166504,
+                "magnitude_raw_angular_velocity": 13.484268188476563,
+                "magnitude_raw_acceleration": 245.8756866455078,
+                "magnitude_raw_angular_acceleration": 182.32327270507813
+            },
+            "game_configs": {
+                "user_index": 0,
+                "preset_index": 1,
+                "vehicle_opacity": 0.20000000298023225,
+                "autopilot_enabled": true,
+                "random_seed_terrain": 1,
+                "random_seed_autopilot": 1,
+                "random_seed_specials": 0,
+                "specials_index": 1,
+                "specials": {
+                    "color1_path": {
+                        "r": 0.44999998807907107,
+                        "g": 0.8999999761581421,
+                        "b": 0.44999998807907107,
+                        "a": 1.0
+                    },
+                    "color2_not_path": {
+                        "r": 0.44999998807907107,
+                        "g": 0.44999998807907107,
+                        "b": 0.8999999761581421,
+                        "a": 1.0
+                    },
+                    "color3_not_path": {
+                        "r": 0.8999999761581421,
+                        "g": 0.44999998807907107,
+                        "b": 0.44999998807907107,
+                        "a": 1.0
+                    },
+                    "color1_name_path": "specials_green",
+                    "color2_name_not_path": "specials_blue",
+                    "color3_name_not_path": "specials_red"
+                }
+            },
+            "game_play": {
+                "scene_name": "lab-1",
+                "autopilot_enabled": true,
+                "locomotion": {
+                    "left_joystick_input": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "right_joystick_input": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "combined_input": {
+                        "x": -0.02644503116607666,
+                        "y": 0.5
+                    },
+                    "active_input": {
+                        "enabled": false,
+                        "input_value": {
+                            "x": 0.0,
+                            "y": 0.0
+                        }
+                    },
+                    "passive_input": {
+                        "enabled": true,
+                        "input_value": {
+                            "x": -0.02644503116607666,
+                            "y": 0.5
+                        }
+                    },
+                    "spatial_pose": {
+                        "position": {
+                            "x": 29.158344268798829,
+                            "y": 0.06744415313005448,
+                            "z": -74.07894897460938
+                        },
+                        "rotation": {
+                            "x": 6.049746513366699,
+                            "y": 133.177001953125,
+                            "z": 354.50225830078127
+                        },
+                        "velocity": {
+                            "x": 8.737700462341309,
+                            "y": -1.1811740398406983,
+                            "z": -8.382328033447266
+                        },
+                        "angular_velocity": {
+                            "x": 6.267108917236328,
+                            "y": -0.9620242118835449,
+                            "z": 2.6688897609710695
+                        },
+                        "acceleration": {
+                            "x": -60.096534729003909,
+                            "y": 10.229045867919922,
+                            "z": 58.10224914550781
+                        },
+                        "angular_acceleration": {
+                            "x": 56.86687469482422,
+                            "y": 4.722539901733398,
+                            "z": -14.595584869384766
+                        },
+                        "raw_position": {
+                            "x": 29.435470581054689,
+                            "y": 0.029944155365228654,
+                            "z": -74.34479522705078
+                        },
+                        "raw_rotation": {
+                            "x": 5.853463172912598,
+                            "y": 133.15524291992188,
+                            "z": 354.59136962890627
+                        },
+                        "raw_velocity": {
+                            "x": 6.838901519775391,
+                            "y": -0.8639051914215088,
+                            "z": -6.54645299911499
+                        },
+                        "raw_angular_velocity": {
+                            "x": 7.913567543029785,
+                            "y": -0.8356979489326477,
+                            "z": 2.0475199222564699
+                        },
+                        "raw_acceleration": {
+                            "x": -101.08155059814453,
+                            "y": 13.6968355178833,
+                            "z": 97.5124282836914
+                        },
+                        "raw_angular_acceleration": {
+                            "x": -7.430434703826904,
+                            "y": -0.2631900906562805,
+                            "z": -90.92023468017578
+                        },
+                        "magnitude_position": 79.61095428466797,
+                        "magnitude_rotation": 378.7407531738281,
+                        "magnitude_velocity": 12.165772438049317,
+                        "magnitude_angular_velocity": 6.8793253898620609,
+                        "magnitude_acceleration": 84.21459197998047,
+                        "magnitude_angular_acceleration": 58.89970397949219,
+                        "magnitude_raw_position": 79.95996856689453,
+                        "magnitude_raw_rotation": 378.8134460449219,
+                        "magnitude_raw_velocity": 9.506468772888184,
+                        "magnitude_raw_angular_velocity": 8.216768264770508,
+                        "magnitude_raw_acceleration": 141.11611938476563,
+                        "magnitude_raw_angular_acceleration": 91.2237319946289
+                    }
+                }
+            },
+            "sickness": {
+                "button_input": {
+                    "a": 0.0,
+                    "b": 0.0,
+                    "x": 0.0,
+                    "y": 0.0
+                },
+                "reported": 0.0,
+                "deduced": 0.0,
+                "predicted": 0.0
+            },
+            "continuous_ema": {
+                "time_interval_ideal": 0.03333333134651184,
+                "time_interval_actual": 0.0333404541015625,
+                "exponent_rectification": 1.0002137422561646,
+                "alpha_ideal": 0.5,
+                "alpha_actual": 0.500074028968811,
+                "_1_minus_alpha_ideal": 0.5,
+                "_1_minus_alpha_actual": 0.4999259412288666
+            }
+        },
+        {
+            "recorder_name": "Recorder25",
+            "timestamp": {
+                "date_time_custom": "20250201-173635-749367-utc0800",
+                "date_time": "2025-02-01T17:36:35.7493670+08:00",
+                "unix_ms": 1738402595749,
+                "game_time_custom": "000 days, 00:01:02.077656",
+                "game_time": "00:01:02.0776560",
+                "game_time_seconds": 60.05052947998047,
+                "unity_fixed_delta_time_seconds": 0.0111236572265625,
+                "ideal_record_interval_seconds": 0.03333333134651184,
+                "actual_record_interval_seconds": 0.0444488525390625
+            },
+            "eye_gaze": {
+                "spatial_pose": {
+                    "position": {
+                        "x": -0.00377050694078207,
+                        "y": -0.05078738182783127,
+                        "z": 0.032397445291280749
+                    },
+                    "rotation": {
+                        "x": 40.47364044189453,
+                        "y": 11.71619701385498,
+                        "z": -8.606418759882217e-7
+                    },
+                    "velocity": {
+                        "x": -0.0017653225222602487,
+                        "y": 0.0008974770898930728,
+                        "z": -0.001843500416725874
+                    },
+                    "angular_velocity": {
+                        "x": -0.8190922141075134,
+                        "y": -1.1690950393676758,
+                        "z": 0.17257703840732575
+                    },
+                    "acceleration": {
+                        "x": -0.03405158221721649,
+                        "y": 0.06645453721284867,
+                        "z": 0.000170879065990448
+                    },
+                    "angular_acceleration": {
+                        "x": -59.88013458251953,
+                        "y": -20.057842254638673,
+                        "z": 12.403528213500977
+                    },
+                    "raw_position": {
+                        "x": -0.00382232666015625,
+                        "y": -0.05076408386230469,
+                        "z": 0.03234100341796875
+                    },
+                    "raw_rotation": {
+                        "x": 40.45231628417969,
+                        "y": 11.681666374206543,
+                        "z": -0.0000011219893849556684
+                    },
+                    "raw_velocity": {
+                        "x": -0.002746309619396925,
+                        "y": 0.0027892207726836206,
+                        "z": -0.0018880878342315555
+                    },
+                    "raw_angular_velocity": {
+                        "x": -2.6755921840667726,
+                        "y": -1.7905938625335694,
+                        "z": 0.5569893717765808
+                    },
+                    "raw_acceleration": {
+                        "x": 0.030882321298122407,
+                        "y": 0.140618234872818,
+                        "z": 0.08107978105545044
+                    },
+                    "raw_angular_acceleration": {
+                        "x": -43.967628479003909,
+                        "y": -16.993770599365236,
+                        "z": 9.143174171447754
+                    },
+                    "magnitude_position": 0.060358673334121707,
+                    "magnitude_rotation": 42.13531494140625,
+                    "magnitude_velocity": 0.0027056094259023668,
+                    "magnitude_angular_velocity": 1.4378727674484254,
+                    "magnitude_acceleration": 0.07467091083526612,
+                    "magnitude_angular_acceleration": 64.35678100585938,
+                    "magnitude_raw_position": 0.060312043875455859,
+                    "magnitude_raw_rotation": 42.10523986816406,
+                    "magnitude_raw_velocity": 0.004345899913460016,
+                    "magnitude_raw_angular_velocity": 3.267301082611084,
+                    "magnitude_raw_acceleration": 0.16523055732250215,
+                    "magnitude_raw_angular_acceleration": 48.016021728515628
+                },
+                "viewport_pose": {
+                    "position": {
+                        "x": 0.49074751138687136,
+                        "y": 0.6688602566719055
+                    },
+                    "velocity": {
+                        "x": 0.37808817625045779,
+                        "y": -0.14834214746952058
+                    },
+                    "acceleration": {
+                        "x": 11.420601844787598,
+                        "y": -15.668474197387696
+                    },
+                    "raw_position": {
+                        "x": 0.5015528202056885,
+                        "y": 0.6653726696968079
+                    },
+                    "raw_velocity": {
+                        "x": 0.7020676136016846,
+                        "y": -0.5696607828140259
+                    },
+                    "raw_acceleration": {
+                        "x": 20.7052001953125,
+                        "y": -50.897281646728519
+                    },
+                    "magnitude_position": 0.8295825123786926,
+                    "magnitude_velocity": 0.406147837638855,
+                    "magnitude_acceleration": 19.388946533203126,
+                    "magnitude_raw_position": 0.8332322835922241,
+                    "magnitude_raw_velocity": 0.9041085839271545,
+                    "magnitude_raw_acceleration": 54.94759750366211
+                },
+                "left_eye_openness": 1.0,
+                "right_eye_openness": 1.0
+            },
+            "face": {
+                "blend_shapes_data": {
+                    "eyeLookDownLeft": 0.4233410358428955,
+                    "noseSneerLeft": 0.21559329330921174,
+                    "eyeLookInLeft": 0.17131167650222779,
+                    "browInnerUp": 0.0010238040704280139,
+                    "browDownRight": 0.11187072843313217,
+                    "mouthClose": 0.055086635053157809,
+                    "mouthLowerDownRight": 0.0,
+                    "jawOpen": 0.0031816954724490644,
+                    "mouthUpperUpRight": 0.0583113431930542,
+                    "mouthShrugUpper": 0.04716638848185539,
+                    "mouthFunnel": 0.07271991670131684,
+                    "eyeLookInRight": 0.0056052254512906078,
+                    "eyeLookDownRight": 0.4233410358428955,
+                    "noseSneerRight": 0.2319779247045517,
+                    "mouthRollUpper": 0.00031880292226560414,
+                    "jawRight": 0.00006491273961728439,
+                    "browDownLeft": 0.11187072843313217,
+                    "mouthShrugLower": 0.05367182195186615,
+                    "mouthRollLower": 0.0005647982470691204,
+                    "mouthSmileLeft": 0.0009806414600461722,
+                    "mouthPressLeft": 0.13432425260543824,
+                    "mouthSmileRight": 0.0013090387219563127,
+                    "mouthPressRight": 0.04494680464267731,
+                    "mouthDimpleRight": 0.047671057283878329,
+                    "mouthLeft": 0.010881071910262108,
+                    "jawForward": 0.001506015774793923,
+                    "eyeSquintLeft": 0.030188437551259996,
+                    "mouthFrownLeft": 0.05502374470233917,
+                    "eyeBlinkLeft": 0.0017086853040382267,
+                    "cheekSquintLeft": 0.18374577164649964,
+                    "browOuterUpLeft": 0.0010238040704280139,
+                    "eyeLookUpLeft": 0.005624011158943176,
+                    "jawLeft": 3.835467055068875e-7,
+                    "mouthStretchLeft": 0.0006533716223202646,
+                    "mouthPucker": 0.0014217610005289317,
+                    "eyeLookUpRight": 0.005624011158943176,
+                    "browOuterUpRight": 0.0010238040704280139,
+                    "cheekSquintRight": 0.12995347380638123,
+                    "eyeBlinkRight": 0.0018871764186769724,
+                    "mouthUpperUpLeft": 0.055259451270103458,
+                    "mouthFrownRight": 0.06214763969182968,
+                    "eyeSquintRight": 0.03320170193910599,
+                    "mouthStretchRight": 0.0006654085591435432,
+                    "cheekPuff": 0.06076745316386223,
+                    "eyeLookOutLeft": 0.0056052254512906078,
+                    "eyeLookOutRight": 0.17131167650222779,
+                    "eyeWideRight": 0.005191183649003506,
+                    "eyeWideLeft": 0.005191183649003506,
+                    "mouthRight": 0.014194643124938012,
+                    "mouthDimpleLeft": 0.03734305128455162,
+                    "mouthLowerDownLeft": 0.00011282753985142335,
+                    "tongueOut": 0.0,
+                    "viseme_PP": 0.0,
+                    "viseme_CH": 0.0,
+                    "viseme_o": 0.0,
+                    "viseme_O": 0.0,
+                    "viseme_i": 0.0,
+                    "viseme_I": 0.0,
+                    "viseme_RR": 0.0,
+                    "viseme_XX": 0.0,
+                    "viseme_aa": 0.0,
+                    "viseme_FF": 0.0,
+                    "viseme_u": 0.0,
+                    "viseme_U": 0.0,
+                    "viseme_TH": 0.0,
+                    "viseme_kk": 0.0,
+                    "viseme_SS": 0.0,
+                    "viseme_e": 0.0,
+                    "viseme_DD": 0.0,
+                    "viseme_E": 0.0,
+                    "viseme_nn": 0.0,
+                    "viseme_sil": 0.9999998807907105
+                },
+                "laughing": 0.0
+            },
+            "headset_spatial_pose": {
+                "position": {
+                    "x": -33.420494079589847,
+                    "y": -11.95630931854248,
+                    "z": -73.4631576538086
+                },
+                "rotation": {
+                    "x": -1.360226035118103,
+                    "y": -132.78228759765626,
+                    "z": -12.775035858154297
+                },
+                "velocity": {
+                    "x": -4.440448760986328,
+                    "y": 21.160579681396486,
+                    "z": -17.391698837280275
+                },
+                "angular_velocity": {
+                    "x": 10.660327911376954,
+                    "y": 4.5832905769348148,
+                    "z": -8.74721908569336
+                },
+                "acceleration": {
+                    "x": -37.60009765625,
+                    "y": 205.1579132080078,
+                    "z": -56.816612243652347
+                },
+                "angular_acceleration": {
+                    "x": 70.58512115478516,
+                    "y": 35.014610290527347,
+                    "z": -98.5669174194336
+                },
+                "raw_position": {
+                    "x": -33.553749084472659,
+                    "y": -11.32335376739502,
+                    "z": -73.9892578125
+                },
+                "raw_rotation": {
+                    "x": -1.769989013671875,
+                    "y": -132.6423797607422,
+                    "z": -12.83123779296875
+                },
+                "raw_velocity": {
+                    "x": -5.585736274719238,
+                    "y": 27.345605850219728,
+                    "z": -19.203397750854493
+                },
+                "raw_angular_velocity": {
+                    "x": 12.795769691467286,
+                    "y": 5.670739650726318,
+                    "z": -11.767250061035157
+                },
+                "raw_acceleration": {
+                    "x": -50.772708892822269,
+                    "y": 230.57342529296876,
+                    "z": -86.6439437866211
+                },
+                "raw_angular_acceleration": {
+                    "x": 71.69361114501953,
+                    "y": 40.48201370239258,
+                    "z": -101.66150665283203
+                },
+                "magnitude_position": 81.58871459960938,
+                "magnitude_rotation": 133.40235900878907,
+                "magnitude_velocity": 27.74813461303711,
+                "magnitude_angular_velocity": 14.531448364257813,
+                "magnitude_acceleration": 216.17507934570313,
+                "magnitude_angular_acceleration": 126.18922424316406,
+                "magnitude_raw_position": 82.02732849121094,
+                "magnitude_raw_rotation": 133.27330017089845,
+                "magnitude_raw_velocity": 33.87850570678711,
+                "magnitude_raw_angular_velocity": 18.285436630249025,
+                "magnitude_raw_acceleration": 251.4938201904297,
+                "magnitude_raw_angular_acceleration": 130.81982421875
+            },
+            "left_controller_spatial_pose": {
+                "position": {
+                    "x": -32.859947204589847,
+                    "y": -12.245662689208985,
+                    "z": -73.3091049194336
+                },
+                "rotation": {
+                    "x": 27.5554141998291,
+                    "y": -153.96380615234376,
+                    "z": -61.17280197143555
+                },
+                "velocity": {
+                    "x": -4.490724563598633,
+                    "y": 21.028907775878908,
+                    "z": -17.472911834716798
+                },
+                "angular_velocity": {
+                    "x": 3.3406734466552736,
+                    "y": 14.150785446166993,
+                    "z": -6.819151878356934
+                },
+                "acceleration": {
+                    "x": -38.26898193359375,
+                    "y": 203.58636474609376,
+                    "z": -57.445098876953128
+                },
+                "angular_acceleration": {
+                    "x": 31.786697387695314,
+                    "y": 131.42544555664063,
+                    "z": -95.2376708984375
+                },
+                "raw_position": {
+                    "x": -32.99470138549805,
+                    "y": -11.616636276245118,
+                    "z": -73.837646484375
+                },
+                "raw_rotation": {
+                    "x": 27.377864837646486,
+                    "y": -153.46664428710938,
+                    "z": -61.014495849609378
+                },
+                "raw_velocity": {
+                    "x": -5.656196117401123,
+                    "y": 27.166494369506837,
+                    "z": -19.303638458251954
+                },
+                "raw_angular_velocity": {
+                    "x": 4.2714033126831059,
+                    "y": 18.114253997802736,
+                    "z": -9.710264205932618
+                },
+                "raw_acceleration": {
+                    "x": -51.52389144897461,
+                    "y": 228.70799255371095,
+                    "z": -87.41642761230469
+                },
+                "raw_angular_acceleration": {
+                    "x": 36.0147705078125,
+                    "y": 152.6079559326172,
+                    "z": -107.73113250732422
+                },
+                "magnitude_position": 81.26473999023438,
+                "magnitude_rotation": 167.94720458984376,
+                "magnitude_velocity": 27.707115173339845,
+                "magnitude_angular_velocity": 16.0594425201416,
+                "magnitude_acceleration": 214.9694366455078,
+                "magnitude_angular_acceleration": 165.38819885253907,
+                "magnitude_raw_position": 81.70431518554688,
+                "magnitude_raw_rotation": 167.40467834472657,
+                "magnitude_raw_velocity": 33.802978515625,
+                "magnitude_raw_angular_velocity": 20.99190902709961,
+                "magnitude_raw_acceleration": 250.20729064941407,
+                "magnitude_raw_angular_acceleration": 190.24261474609376
+            },
+            "right_controller_spatial_pose": {
+                "position": {
+                    "x": -33.331947326660159,
+                    "y": -12.214553833007813,
+                    "z": -73.0802001953125
+                },
+                "rotation": {
+                    "x": 63.62596130371094,
+                    "y": -105.04761505126953,
+                    "z": -18.23892593383789
+                },
+                "velocity": {
+                    "x": -4.487173080444336,
+                    "y": 21.054725646972658,
+                    "z": -17.458858489990236
+                },
+                "angular_velocity": {
+                    "x": -4.1955413818359379,
+                    "y": 9.784381866455079,
+                    "z": -10.259368896484375
+                },
+                "acceleration": {
+                    "x": -38.3028450012207,
+                    "y": 203.95921325683595,
+                    "z": -57.25789260864258
+                },
+                "angular_acceleration": {
+                    "x": -146.86280822753907,
+                    "y": 80.03852081298828,
+                    "z": -70.9785385131836
+                },
+                "raw_position": {
+                    "x": -33.46659469604492,
+                    "y": -11.584753036499024,
+                    "z": -73.60832214355469
+                },
+                "raw_rotation": {
+                    "x": 63.360572814941409,
+                    "y": -104.3563232421875,
+                    "z": -17.794036865234376
+                },
+                "raw_velocity": {
+                    "x": -5.653707504272461,
+                    "y": 27.20414924621582,
+                    "z": -19.284242630004884
+                },
+                "raw_angular_velocity": {
+                    "x": -8.408513069152832,
+                    "y": 12.195748329162598,
+                    "z": -12.470305442810059
+                },
+                "raw_acceleration": {
+                    "x": -51.488494873046878,
+                    "y": 229.0306854248047,
+                    "z": -87.16027069091797
+                },
+                "raw_angular_acceleration": {
+                    "x": -295.9389343261719,
+                    "y": 151.32078552246095,
+                    "z": -24.645790100097658
+                },
+                "magnitude_position": 81.24610900878906,
+                "magnitude_rotation": 124.16087341308594,
+                "magnitude_velocity": 27.71728515625,
+                "magnitude_angular_velocity": 14.784834861755371,
+                "magnitude_acceleration": 215.2787322998047,
+                "magnitude_angular_acceleration": 181.69424438476563,
+                "magnitude_raw_position": 81.68478393554688,
+                "magnitude_raw_rotation": 123.37516784667969,
+                "magnitude_raw_velocity": 33.82176971435547,
+                "magnitude_raw_angular_velocity": 19.363571166992189,
+                "magnitude_raw_acceleration": 250.40574645996095,
+                "magnitude_raw_angular_acceleration": 333.2945251464844
+            },
+            "game_configs": {
+                "user_index": 0,
+                "preset_index": 1,
+                "vehicle_opacity": 0.20000000298023225,
+                "autopilot_enabled": true,
+                "random_seed_terrain": 1,
+                "random_seed_autopilot": 1,
+                "random_seed_specials": 0,
+                "specials_index": 1,
+                "specials": {
+                    "color1_path": {
+                        "r": 0.44999998807907107,
+                        "g": 0.8999999761581421,
+                        "b": 0.44999998807907107,
+                        "a": 1.0
+                    },
+                    "color2_not_path": {
+                        "r": 0.44999998807907107,
+                        "g": 0.44999998807907107,
+                        "b": 0.8999999761581421,
+                        "a": 1.0
+                    },
+                    "color3_not_path": {
+                        "r": 0.8999999761581421,
+                        "g": 0.44999998807907107,
+                        "b": 0.44999998807907107,
+                        "a": 1.0
+                    },
+                    "color1_name_path": "specials_green",
+                    "color2_name_not_path": "specials_blue",
+                    "color3_name_not_path": "specials_red"
+                }
+            },
+            "game_play": {
+                "scene_name": "lab-1",
+                "autopilot_enabled": true,
+                "locomotion": {
+                    "left_joystick_input": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "right_joystick_input": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "combined_input": {
+                        "x": -0.02814924716949463,
+                        "y": 0.0
+                    },
+                    "active_input": {
+                        "enabled": false,
+                        "input_value": {
+                            "x": 0.0,
+                            "y": 0.0
+                        }
+                    },
+                    "passive_input": {
+                        "enabled": true,
+                        "input_value": {
+                            "x": -0.02814924716949463,
+                            "y": 0.0
+                        }
+                    },
+                    "spatial_pose": {
+                        "position": {
+                            "x": 29.602882385253908,
+                            "y": 0.010625092312693596,
+                            "z": -74.5040054321289
+                        },
+                        "rotation": {
+                            "x": 5.625154495239258,
+                            "y": 133.1463623046875,
+                            "z": 354.8356628417969
+                        },
+                        "velocity": {
+                            "x": 9.707618713378907,
+                            "y": -1.2381205558776856,
+                            "z": -9.28147029876709
+                        },
+                        "angular_velocity": {
+                            "x": 11.766522407531739,
+                            "y": -1.3851912021636963,
+                            "z": 1.7981760501861573
+                        },
+                        "acceleration": {
+                            "x": 23.741201400756837,
+                            "y": -1.5275883674621583,
+                            "z": -22.086368560791017
+                        },
+                        "angular_acceleration": {
+                            "x": 123.94710540771485,
+                            "y": -9.360633850097657,
+                            "z": -16.948644638061525
+                        },
+                        "raw_position": {
+                            "x": 29.89532470703125,
+                            "y": -0.026754070073366166,
+                            "z": -74.78363800048828
+                        },
+                        "raw_rotation": {
+                            "x": 5.345830917358398,
+                            "y": 133.12620544433595,
+                            "z": 355.05499267578127
+                        },
+                        "raw_velocity": {
+                            "x": 10.345691680908204,
+                            "y": -1.2755835056304932,
+                            "z": -9.8729829788208
+                        },
+                        "raw_angular_velocity": {
+                            "x": 15.384384155273438,
+                            "y": -1.6635770797729493,
+                            "z": 1.2253656387329102
+                        },
+                        "raw_acceleration": {
+                            "x": 78.89495086669922,
+                            "y": -9.26184368133545,
+                            "z": -74.8395004272461
+                        },
+                        "raw_angular_acceleration": {
+                            "x": 168.0767059326172,
+                            "y": -18.62543296813965,
+                            "z": -18.49663734436035
+                        },
+                        "magnitude_position": 80.169677734375,
+                        "magnitude_rotation": 379.0355224609375,
+                        "magnitude_velocity": 13.487642288208008,
+                        "magnitude_angular_velocity": 11.983457565307618,
+                        "magnitude_acceleration": 32.462066650390628,
+                        "magnitude_angular_acceleration": 125.45024108886719,
+                        "magnitude_raw_position": 80.53771209716797,
+                        "magnitude_raw_rotation": 379.2297668457031,
+                        "magnitude_raw_velocity": 14.357444763183594,
+                        "magnitude_raw_angular_velocity": 15.52250862121582,
+                        "magnitude_raw_acceleration": 109.13819122314453,
+                        "magnitude_raw_angular_acceleration": 170.11410522460938
+                    }
+                }
+            },
+            "sickness": {
+                "button_input": {
+                    "a": 0.0,
+                    "b": 0.0,
+                    "x": 0.0,
+                    "y": 0.0
+                },
+                "reported": 0.0,
+                "deduced": 0.0,
+                "predicted": 0.0
+            },
+            "continuous_ema": {
+                "time_interval_ideal": 0.03333333134651184,
+                "time_interval_actual": 0.0444488525390625,
+                "exponent_rectification": 1.3334656953811646,
+                "alpha_ideal": 0.5,
+                "alpha_actual": 0.6031861305236816,
+                "_1_minus_alpha_ideal": 0.5,
+                "_1_minus_alpha_actual": 0.39681386947631838
+            }
+        },
+        {
+            "recorder_name": "Recorder25",
+            "timestamp": {
+                "date_time_custom": "20250201-173635-754051-utc0800",
+                "date_time": "2025-02-01T17:36:35.7540510+08:00",
+                "unix_ms": 1738402595754,
+                "game_time_custom": "000 days, 00:01:02.082340",
+                "game_time": "00:01:02.0823400",
+                "game_time_seconds": 60.08385467529297,
+                "unity_fixed_delta_time_seconds": 0.0111083984375,
+                "ideal_record_interval_seconds": 0.03333333134651184,
+                "actual_record_interval_seconds": 0.04443359375
+            },
+            "eye_gaze": {
+                "spatial_pose": {
+                    "position": {
+                        "x": -0.0038017574697732927,
+                        "y": -0.05077333375811577,
+                        "z": 0.0323588065803051
+                    },
+                    "rotation": {
+                        "x": 40.460784912109378,
+                        "y": 11.695377349853516,
+                        "z": -3.309310159238521e-9
+                    },
+                    "velocity": {
+                        "x": -0.0007007267558947206,
+                        "y": 0.000356244359863922,
+                        "z": -0.0008353060693480074
+                    },
+                    "angular_velocity": {
+                        "x": -0.3250368535518646,
+                        "y": -0.46397632360458376,
+                        "z": 0.06849689781665802
+                    },
+                    "acceleration": {
+                        "x": 0.023756952956318857,
+                        "y": -0.011477328836917878,
+                        "z": 0.023362889885902406
+                    },
+                    "angular_acceleration": {
+                        "x": 12.546884536743164,
+                        "y": 16.342378616333009,
+                        "z": -2.63623046875
+                    },
+                    "raw_position": {
+                        "x": -0.00382232666015625,
+                        "y": -0.05076408386230469,
+                        "z": 0.0323333740234375
+                    },
+                    "raw_rotation": {
+                        "x": 40.45232009887695,
+                        "y": 11.681673049926758,
+                        "z": 5.609948630080908e-7
+                    },
+                    "raw_velocity": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": -0.00017170330102089792
+                    },
+                    "raw_angular_velocity": {
+                        "x": 0.00015491771046072245,
+                        "y": 0.00013930584827903658,
+                        "z": -0.000009607290849089622
+                    },
+                    "raw_acceleration": {
+                        "x": 0.0618070587515831,
+                        "y": -0.06277279555797577,
+                        "z": 0.03862808272242546
+                    },
+                    "raw_angular_acceleration": {
+                        "x": 60.21901321411133,
+                        "y": 40.30133819580078,
+                        "z": -12.535537719726563
+                    },
+                    "magnitude_position": 0.060328081250190738,
+                    "magnitude_rotation": 42.11717987060547,
+                    "magnitude_velocity": 0.0011470241006463767,
+                    "magnitude_angular_velocity": 0.5706267356872559,
+                    "magnitude_acceleration": 0.0352412611246109,
+                    "magnitude_angular_acceleration": 20.771310806274415,
+                    "magnitude_raw_position": 0.060307953506708148,
+                    "magnitude_raw_rotation": 42.105247497558597,
+                    "magnitude_raw_velocity": 0.00017170330102089792,
+                    "magnitude_raw_angular_velocity": 0.00020856154151260853,
+                    "magnitude_raw_acceleration": 0.09619078040122986,
+                    "magnitude_raw_angular_acceleration": 73.5368423461914
+                },
+                "viewport_pose": {
+                    "position": {
+                        "x": 0.4982001781463623,
+                        "y": 0.6672252416610718
+                    },
+                    "velocity": {
+                        "x": 0.17115256190299989,
+                        "y": -0.048345327377319339
+                    },
+                    "acceleration": {
+                        "x": -4.521000385284424,
+                        "y": 1.7492451667785645
+                    },
+                    "raw_position": {
+                        "x": 0.5031055808067322,
+                        "y": 0.6661490797996521
+                    },
+                    "raw_velocity": {
+                        "x": 0.034945644438266757,
+                        "y": 0.01747349463403225
+                    },
+                    "raw_acceleration": {
+                        "x": -15.013909339904786,
+                        "y": 13.21374797821045
+                    },
+                    "magnitude_position": 0.8327021598815918,
+                    "magnitude_velocity": 0.17784957587718965,
+                    "magnitude_acceleration": 4.8476080894470219,
+                    "magnitude_raw_position": 0.8347873091697693,
+                    "magnitude_raw_velocity": 0.039070721715688708,
+                    "magnitude_raw_acceleration": 20.00051498413086
+                },
+                "left_eye_openness": 1.0,
+                "right_eye_openness": 1.0
+            },
+            "face": {
+                "blend_shapes_data": {
+                    "eyeLookDownLeft": 0.4233410358428955,
+                    "noseSneerLeft": 0.21559329330921174,
+                    "eyeLookInLeft": 0.17131167650222779,
+                    "browInnerUp": 0.0010238040704280139,
+                    "browDownRight": 0.11187072843313217,
+                    "mouthClose": 0.055086635053157809,
+                    "mouthLowerDownRight": 0.0,
+                    "jawOpen": 0.0031816954724490644,
+                    "mouthUpperUpRight": 0.0583113431930542,
+                    "mouthShrugUpper": 0.04716638848185539,
+                    "mouthFunnel": 0.07271991670131684,
+                    "eyeLookInRight": 0.0056052254512906078,
+                    "eyeLookDownRight": 0.4233410358428955,
+                    "noseSneerRight": 0.2319779247045517,
+                    "mouthRollUpper": 0.00031880292226560414,
+                    "jawRight": 0.00006491273961728439,
+                    "browDownLeft": 0.11187072843313217,
+                    "mouthShrugLower": 0.05367182195186615,
+                    "mouthRollLower": 0.0005647982470691204,
+                    "mouthSmileLeft": 0.0009806414600461722,
+                    "mouthPressLeft": 0.13432425260543824,
+                    "mouthSmileRight": 0.0013090387219563127,
+                    "mouthPressRight": 0.04494680464267731,
+                    "mouthDimpleRight": 0.047671057283878329,
+                    "mouthLeft": 0.010881071910262108,
+                    "jawForward": 0.001506015774793923,
+                    "eyeSquintLeft": 0.030188437551259996,
+                    "mouthFrownLeft": 0.05502374470233917,
+                    "eyeBlinkLeft": 0.0017086853040382267,
+                    "cheekSquintLeft": 0.18374577164649964,
+                    "browOuterUpLeft": 0.0010238040704280139,
+                    "eyeLookUpLeft": 0.005624011158943176,
+                    "jawLeft": 3.835467055068875e-7,
+                    "mouthStretchLeft": 0.0006533716223202646,
+                    "mouthPucker": 0.0014217610005289317,
+                    "eyeLookUpRight": 0.005624011158943176,
+                    "browOuterUpRight": 0.0010238040704280139,
+                    "cheekSquintRight": 0.12995347380638123,
+                    "eyeBlinkRight": 0.0018871764186769724,
+                    "mouthUpperUpLeft": 0.055259451270103458,
+                    "mouthFrownRight": 0.06214763969182968,
+                    "eyeSquintRight": 0.03320170193910599,
+                    "mouthStretchRight": 0.0006654085591435432,
+                    "cheekPuff": 0.06076745316386223,
+                    "eyeLookOutLeft": 0.0056052254512906078,
+                    "eyeLookOutRight": 0.17131167650222779,
+                    "eyeWideRight": 0.005191183649003506,
+                    "eyeWideLeft": 0.005191183649003506,
+                    "mouthRight": 0.014194643124938012,
+                    "mouthDimpleLeft": 0.03734305128455162,
+                    "mouthLowerDownLeft": 0.00011282753985142335,
+                    "tongueOut": 0.0,
+                    "viseme_PP": 0.0,
+                    "viseme_CH": 0.0,
+                    "viseme_o": 0.0,
+                    "viseme_O": 0.0,
+                    "viseme_i": 0.0,
+                    "viseme_I": 0.0,
+                    "viseme_RR": 0.0,
+                    "viseme_XX": 0.0,
+                    "viseme_aa": 0.0,
+                    "viseme_FF": 0.0,
+                    "viseme_u": 0.0,
+                    "viseme_U": 0.0,
+                    "viseme_TH": 0.0,
+                    "viseme_kk": 0.0,
+                    "viseme_SS": 0.0,
+                    "viseme_e": 0.0,
+                    "viseme_DD": 0.0,
+                    "viseme_E": 0.0,
+                    "viseme_nn": 0.0,
+                    "viseme_sil": 0.9999998807907105
+                },
+                "laughing": 0.0
+            },
+            "headset_spatial_pose": {
+                "position": {
+                    "x": -33.59463882446289,
+                    "y": -11.06283187866211,
+                    "z": -74.08844757080078
+                },
+                "rotation": {
+                    "x": -1.9499272108078004,
+                    "y": -132.57852172851563,
+                    "z": -12.89993667602539
+                },
+                "velocity": {
+                    "x": -3.8731980323791506,
+                    "y": 19.91704559326172,
+                    "z": -13.835543632507325
+                },
+                "angular_velocity": {
+                    "x": 10.959941864013672,
+                    "y": 4.414658069610596,
+                    "z": -7.757326602935791
+                },
+                "acceleration": {
+                    "x": 13.385320663452149,
+                    "y": -30.495269775390626,
+                    "z": 82.0689468383789
+                },
+                "angular_acceleration": {
+                    "x": 5.778409957885742,
+                    "y": -4.655512809753418,
+                    "z": 24.141273498535158
+                },
+                "raw_position": {
+                    "x": -33.709259033203128,
+                    "y": -10.474737167358399,
+                    "z": -74.50001525878906
+                },
+                "raw_rotation": {
+                    "x": -2.33807373046875,
+                    "y": -132.4443817138672,
+                    "z": -12.982147216796875
+                },
+                "raw_velocity": {
+                    "x": -3.499828338623047,
+                    "y": 19.09853744506836,
+                    "z": -11.49484920501709
+                },
+                "raw_angular_velocity": {
+                    "x": 11.157149314880371,
+                    "y": 4.303662300109863,
+                    "z": -7.105769634246826
+                },
+                "raw_acceleration": {
+                    "x": 46.94438934326172,
+                    "y": -185.60435485839845,
+                    "z": 173.4846954345703
+                },
+                "raw_angular_acceleration": {
+                    "x": -36.87796401977539,
+                    "y": -30.766752243041993,
+                    "z": 104.90892791748047
+                },
+                "magnitude_position": 82.09801483154297,
+                "magnitude_rotation": 133.21890258789063,
+                "magnitude_velocity": 24.558351516723634,
+                "magnitude_angular_velocity": 14.134554862976075,
+                "magnitude_acceleration": 88.56884765625,
+                "magnitude_angular_acceleration": 25.2559871673584,
+                "magnitude_raw_position": 82.43959045410156,
+                "magnitude_raw_rotation": 133.0996551513672,
+                "magnitude_raw_velocity": 22.564008712768556,
+                "magnitude_raw_angular_velocity": 13.910264015197754,
+                "magnitude_raw_acceleration": 258.359619140625,
+                "magnitude_raw_angular_acceleration": 115.37963104248047
+            },
+            "left_controller_spatial_pose": {
+                "position": {
+                    "x": -33.035972595214847,
+                    "y": -11.357370376586914,
+                    "z": -73.93791961669922
+                },
+                "rotation": {
+                    "x": 27.30963134765625,
+                    "y": -153.28602600097657,
+                    "z": -60.988372802734378
+                },
+                "velocity": {
+                    "x": -3.9151065349578859,
+                    "y": 19.80141830444336,
+                    "z": -13.913963317871094
+                },
+                "angular_velocity": {
+                    "x": 3.3220975399017336,
+                    "y": 13.202203750610352,
+                    "z": -5.694757461547852
+                },
+                "acceleration": {
+                    "x": 13.58206558227539,
+                    "y": -30.11407470703125,
+                    "z": 82.14060974121094
+                },
+                "angular_acceleration": {
+                    "x": -0.4326810836791992,
+                    "y": -22.973201751708986,
+                    "z": 26.74010467529297
+                },
+                "raw_position": {
+                    "x": -33.15182876586914,
+                    "y": -10.772687911987305,
+                    "z": -74.351806640625
+                },
+                "raw_rotation": {
+                    "x": 27.14785385131836,
+                    "y": -152.83990478515626,
+                    "z": -60.866973876953128
+                },
+                "raw_velocity": {
+                    "x": -3.536229372024536,
+                    "y": 18.99347496032715,
+                    "z": -11.571429252624512
+                },
+                "raw_angular_velocity": {
+                    "x": 3.309870481491089,
+                    "y": 12.577836990356446,
+                    "z": -4.954670429229736
+                },
+                "raw_acceleration": {
+                    "x": 47.710899353027347,
+                    "y": -183.93785095214845,
+                    "z": 174.01719665527345
+                },
+                "raw_angular_acceleration": {
+                    "x": -21.639772415161134,
+                    "y": -124.59980773925781,
+                    "z": 107.02699279785156
+                },
+                "magnitude_position": 81.77518463134766,
+                "magnitude_rotation": 167.2184295654297,
+                "magnitude_velocity": 24.515762329101564,
+                "magnitude_angular_velocity": 14.756855964660645,
+                "magnitude_acceleration": 88.5347900390625,
+                "magnitude_angular_acceleration": 35.25604248046875,
+                "magnitude_raw_position": 82.11750793457031,
+                "magnitude_raw_rotation": 166.7388153076172,
+                "magnitude_raw_velocity": 22.52010154724121,
+                "magnitude_raw_angular_velocity": 13.917830467224121,
+                "magnitude_raw_acceleration": 257.6653747558594,
+                "magnitude_raw_angular_acceleration": 165.6748809814453
+            },
+            "right_controller_spatial_pose": {
+                "position": {
+                    "x": -33.507564544677737,
+                    "y": -11.32532024383545,
+                    "z": -73.70819091796875
+                },
+                "rotation": {
+                    "x": 63.12621307373047,
+                    "y": -104.33372497558594,
+                    "z": -17.792573928833009
+                },
+                "velocity": {
+                    "x": -3.906034231185913,
+                    "y": 19.822345733642579,
+                    "z": -13.895544052124024
+                },
+                "angular_velocity": {
+                    "x": -1.5453977584838868,
+                    "y": 6.994297981262207,
+                    "z": -11.928702354431153
+                },
+                "acceleration": {
+                    "x": 13.707297325134278,
+                    "y": -30.236801147460939,
+                    "z": 82.24064636230469
+                },
+                "angular_acceleration": {
+                    "x": 58.526268005371097,
+                    "y": -63.74922561645508,
+                    "z": -35.73617172241211
+                },
+                "raw_position": {
+                    "x": -33.6231575012207,
+                    "y": -10.740017890930176,
+                    "z": -74.12153625488281
+                },
+                "raw_rotation": {
+                    "x": 62.797271728515628,
+                    "y": -103.86383056640625,
+                    "z": -17.498779296875
+                },
+                "raw_velocity": {
+                    "x": -3.5235233306884767,
+                    "y": 19.01118278503418,
+                    "z": -11.550137519836426
+                },
+                "raw_angular_velocity": {
+                    "x": 0.19895119965076447,
+                    "y": 5.157838821411133,
+                    "z": -13.027472496032715
+                },
+                "raw_acceleration": {
+                    "x": 47.94084930419922,
+                    "y": -184.3867645263672,
+                    "z": 174.0598602294922
+                },
+                "raw_angular_acceleration": {
+                    "x": 193.71524047851563,
+                    "y": -158.39163208007813,
+                    "z": -12.53931999206543
+                },
+                "magnitude_position": 81.7552261352539,
+                "magnitude_rotation": 123.23563385009766,
+                "magnitude_velocity": 24.520780563354493,
+                "magnitude_angular_velocity": 13.914108276367188,
+                "magnitude_acceleration": 88.68865966796875,
+                "magnitude_angular_acceleration": 93.62885284423828,
+                "magnitude_raw_position": 82.09669494628906,
+                "magnitude_raw_rotation": 122.6270751953125,
+                "magnitude_raw_velocity": 22.52212142944336,
+                "magnitude_raw_angular_velocity": 14.012777328491211,
+                "magnitude_raw_acceleration": 258.05743408203127,
+                "magnitude_raw_angular_acceleration": 250.54087829589845
+            },
+            "game_configs": {
+                "user_index": 0,
+                "preset_index": 1,
+                "vehicle_opacity": 0.20000000298023225,
+                "autopilot_enabled": true,
+                "random_seed_terrain": 1,
+                "random_seed_autopilot": 1,
+                "random_seed_specials": 0,
+                "specials_index": 1,
+                "specials": {
+                    "color1_path": {
+                        "r": 0.44999998807907107,
+                        "g": 0.8999999761581421,
+                        "b": 0.44999998807907107,
+                        "a": 1.0
+                    },
+                    "color2_not_path": {
+                        "r": 0.44999998807907107,
+                        "g": 0.44999998807907107,
+                        "b": 0.8999999761581421,
+                        "a": 1.0
+                    },
+                    "color3_not_path": {
+                        "r": 0.8999999761581421,
+                        "g": 0.44999998807907107,
+                        "b": 0.44999998807907107,
+                        "a": 1.0
+                    },
+                    "color1_name_path": "specials_green",
+                    "color2_name_not_path": "specials_blue",
+                    "color3_name_not_path": "specials_red"
+                }
+            },
+            "game_play": {
+                "scene_name": "lab-1",
+                "autopilot_enabled": true,
+                "locomotion": {
+                    "left_joystick_input": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "right_joystick_input": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "combined_input": {
+                        "x": -0.029778361320495607,
+                        "y": 0.0
+                    },
+                    "active_input": {
+                        "enabled": false,
+                        "input_value": {
+                            "x": 0.0,
+                            "y": 0.0
+                        }
+                    },
+                    "passive_input": {
+                        "enabled": true,
+                        "input_value": {
+                            "x": -0.029778361320495607,
+                            "y": 0.0
+                        }
+                    },
+                    "spatial_pose": {
+                        "position": {
+                            "x": 30.057823181152345,
+                            "y": -0.0429559201002121,
+                            "z": -74.93736267089844
+                        },
+                        "rotation": {
+                            "x": 5.074483871459961,
+                            "y": 133.10569763183595,
+                            "z": 355.2542724609375
+                        },
+                        "velocity": {
+                            "x": 10.122930526733399,
+                            "y": -1.1900101900100709,
+                            "z": -9.641889572143555
+                        },
+                        "angular_velocity": {
+                            "x": 15.237146377563477,
+                            "y": -1.7439465522766114,
+                            "z": 2.599637508392334
+                        },
+                        "acceleration": {
+                            "x": 10.110579490661621,
+                            "y": 0.9848414063453674,
+                            "z": -8.850261688232422
+                        },
+                        "angular_acceleration": {
+                            "x": 78.20539855957031,
+                            "y": -8.011273384094239,
+                            "z": 19.083972930908204
+                        },
+                        "raw_position": {
+                            "x": 30.357269287109376,
+                            "y": -0.07822342962026596,
+                            "z": -75.22260284423828
+                        },
+                        "raw_rotation": {
+                            "x": 4.712027072906494,
+                            "y": 133.07891845703126,
+                            "z": 355.5298156738281
+                        },
+                        "raw_velocity": {
+                            "x": 10.396291732788086,
+                            "y": -1.1583434343338013,
+                            "z": -9.879120826721192
+                        },
+                        "raw_angular_velocity": {
+                            "x": 17.521541595458986,
+                            "y": -1.9800825119018555,
+                            "z": 3.127166509628296
+                        },
+                        "raw_acceleration": {
+                            "x": 1.1387791633605958,
+                            "y": 2.6385457515716554,
+                            "z": -0.13813529908657075
+                        },
+                        "raw_angular_acceleration": {
+                            "x": 48.09778594970703,
+                            "y": -7.123111248016357,
+                            "z": 42.80097198486328
+                        },
+                        "magnitude_position": 80.74083709716797,
+                        "magnitude_rotation": 379.4054260253906,
+                        "magnitude_velocity": 14.030533790588379,
+                        "magnitude_angular_velocity": 15.555387496948243,
+                        "magnitude_acceleration": 13.472968101501465,
+                        "magnitude_angular_acceleration": 80.89785766601563,
+                        "magnitude_raw_position": 81.11725616455078,
+                        "magnitude_raw_rotation": 379.6493835449219,
+                        "magnitude_raw_velocity": 14.3882474899292,
+                        "magnitude_raw_angular_velocity": 17.908218383789064,
+                        "magnitude_raw_acceleration": 2.8771204948425295,
+                        "magnitude_raw_angular_acceleration": 64.77699279785156
+                    }
+                }
+            },
+            "sickness": {
+                "button_input": {
+                    "a": 0.0,
+                    "b": 0.0,
+                    "x": 0.0,
+                    "y": 0.0
+                },
+                "reported": 0.0,
+                "deduced": 0.0,
+                "predicted": 0.0
+            },
+            "continuous_ema": {
+                "time_interval_ideal": 0.03333333134651184,
+                "time_interval_actual": 0.04443359375,
+                "exponent_rectification": 1.3330079317092896,
+                "alpha_ideal": 0.5,
+                "alpha_actual": 0.603060245513916,
+                "_1_minus_alpha_ideal": 0.5,
+                "_1_minus_alpha_actual": 0.39693978428840639
+            }
+        },
+        {
+            "recorder_name": "Recorder25",
+            "timestamp": {
+                "date_time_custom": "20250201-173635-794712-utc0800",
+                "date_time": "2025-02-01T17:36:35.7947120+08:00",
+                "unix_ms": 1738402595794,
+                "game_time_custom": "000 days, 00:01:02.123001",
+                "game_time": "00:01:02.1230010",
+                "game_time_seconds": 60.11719512939453,
+                "unity_fixed_delta_time_seconds": 0.0111236572265625,
+                "ideal_record_interval_seconds": 0.03333333134651184,
+                "actual_record_interval_seconds": 0.0333404541015625
+            },
+            "eye_gaze": {
+                "spatial_pose": {
+                    "position": {
+                        "x": -0.0038025053218007089,
+                        "y": -0.05074438452720642,
+                        "z": 0.03240713104605675
+                    },
+                    "rotation": {
+                        "x": 40.460479736328128,
+                        "y": 11.658528327941895,
+                        "z": -1.6544099423754233e-9
+                    },
+                    "velocity": {
+                        "x": -0.00006422793376259506,
+                        "y": 0.0009076087735593319,
+                        "z": 0.0014133434742689133
+                    },
+                    "angular_velocity": {
+                        "x": -0.04703684151172638,
+                        "y": -1.131400465965271,
+                        "z": 0.01035781018435955
+                    },
+                    "acceleration": {
+                        "x": 0.020457390695810319,
+                        "y": 0.01614290103316307,
+                        "z": 0.06917140632867813
+                    },
+                    "angular_acceleration": {
+                        "x": 9.733175277709961,
+                        "y": -18.80974769592285,
+                        "z": -2.0341897010803224
+                    },
+                    "raw_position": {
+                        "x": -0.003803253173828125,
+                        "y": -0.05071544647216797,
+                        "z": 0.0324554443359375
+                    },
+                    "raw_rotation": {
+                        "x": 40.460182189941409,
+                        "y": 11.62169075012207,
+                        "z": 0.0
+                    },
+                    "raw_velocity": {
+                        "x": 0.0005720824119634926,
+                        "y": 0.0014588100602850319,
+                        "z": 0.0036613272968679668
+                    },
+                    "raw_angular_velocity": {
+                        "x": 0.23088085651397706,
+                        "y": -1.7986270189285279,
+                        "z": -0.04776405915617943
+                    },
+                    "raw_acceleration": {
+                        "x": 0.017158806324005128,
+                        "y": 0.043754953891038898,
+                        "z": 0.11496636271476746
+                    },
+                    "raw_angular_acceleration": {
+                        "x": 6.920300006866455,
+                        "y": -53.95146560668945,
+                        "z": -1.4323276281356812
+                    },
+                    "magnitude_position": 0.06032970920205116,
+                    "magnitude_rotation": 42.10667037963867,
+                    "magnitude_velocity": 0.0016808982472866774,
+                    "magnitude_angular_velocity": 1.13242506980896,
+                    "magnitude_acceleration": 0.07391739636659622,
+                    "magnitude_angular_acceleration": 21.276260375976564,
+                    "magnitude_raw_position": 0.060331396758556369,
+                    "magnitude_raw_rotation": 42.09619903564453,
+                    "magnitude_raw_velocity": 0.0039825523272156719,
+                    "magnitude_raw_angular_velocity": 1.814013957977295,
+                    "magnitude_raw_acceleration": 0.1242021918296814,
+                    "magnitude_raw_angular_acceleration": 54.4123420715332
+                },
+                "viewport_pose": {
+                    "position": {
+                        "x": 0.4851558208465576,
+                        "y": 0.6764024496078491
+                    },
+                    "velocity": {
+                        "x": -0.3792586922645569,
+                        "y": 0.2672293484210968
+                    },
+                    "acceleration": {
+                        "x": -16.72600746154785,
+                        "y": 9.352493286132813
+                    },
+                    "raw_position": {
+                        "x": 0.4721153974533081,
+                        "y": 0.6855769157409668
+                    },
+                    "raw_velocity": {
+                        "x": -0.9295069575309753,
+                        "y": 0.5827106237411499
+                    },
+                    "raw_acceleration": {
+                        "x": -28.927400588989259,
+                        "y": 16.9534912109375
+                    },
+                    "magnitude_position": 0.8324040174484253,
+                    "magnitude_velocity": 0.4639489948749542,
+                    "magnitude_acceleration": 19.163206100463868,
+                    "magnitude_raw_position": 0.8324113488197327,
+                    "magnitude_raw_velocity": 1.0970573425292969,
+                    "magnitude_raw_acceleration": 33.529319763183597
+                },
+                "left_eye_openness": 1.0,
+                "right_eye_openness": 1.0
+            },
+            "face": {
+                "blend_shapes_data": {
+                    "eyeLookDownLeft": 0.4233410358428955,
+                    "noseSneerLeft": 0.21559329330921174,
+                    "eyeLookInLeft": 0.17131167650222779,
+                    "browInnerUp": 0.0010238040704280139,
+                    "browDownRight": 0.11187072843313217,
+                    "mouthClose": 0.055086635053157809,
+                    "mouthLowerDownRight": 0.0,
+                    "jawOpen": 0.0031816954724490644,
+                    "mouthUpperUpRight": 0.0583113431930542,
+                    "mouthShrugUpper": 0.04716638848185539,
+                    "mouthFunnel": 0.07271991670131684,
+                    "eyeLookInRight": 0.0056052254512906078,
+                    "eyeLookDownRight": 0.4233410358428955,
+                    "noseSneerRight": 0.2319779247045517,
+                    "mouthRollUpper": 0.00031880292226560414,
+                    "jawRight": 0.00006491273961728439,
+                    "browDownLeft": 0.11187072843313217,
+                    "mouthShrugLower": 0.05367182195186615,
+                    "mouthRollLower": 0.0005647982470691204,
+                    "mouthSmileLeft": 0.0009806414600461722,
+                    "mouthPressLeft": 0.13432425260543824,
+                    "mouthSmileRight": 0.0013090387219563127,
+                    "mouthPressRight": 0.04494680464267731,
+                    "mouthDimpleRight": 0.047671057283878329,
+                    "mouthLeft": 0.010881071910262108,
+                    "jawForward": 0.001506015774793923,
+                    "eyeSquintLeft": 0.030188437551259996,
+                    "mouthFrownLeft": 0.05502374470233917,
+                    "eyeBlinkLeft": 0.0017086853040382267,
+                    "cheekSquintLeft": 0.18374577164649964,
+                    "browOuterUpLeft": 0.0010238040704280139,
+                    "eyeLookUpLeft": 0.005624011158943176,
+                    "jawLeft": 3.835467055068875e-7,
+                    "mouthStretchLeft": 0.0006533716223202646,
+                    "mouthPucker": 0.0014217610005289317,
+                    "eyeLookUpRight": 0.005624011158943176,
+                    "browOuterUpRight": 0.0010238040704280139,
+                    "cheekSquintRight": 0.12995347380638123,
+                    "eyeBlinkRight": 0.0018871764186769724,
+                    "mouthUpperUpLeft": 0.055259451270103458,
+                    "mouthFrownRight": 0.06214763969182968,
+                    "eyeSquintRight": 0.03320170193910599,
+                    "mouthStretchRight": 0.0006654085591435432,
+                    "cheekPuff": 0.06076745316386223,
+                    "eyeLookOutLeft": 0.0056052254512906078,
+                    "eyeLookOutRight": 0.17131167650222779,
+                    "eyeWideRight": 0.005191183649003506,
+                    "eyeWideLeft": 0.005191183649003506,
+                    "mouthRight": 0.014194643124938012,
+                    "mouthDimpleLeft": 0.03734305128455162,
+                    "mouthLowerDownLeft": 0.00011282753985142335,
+                    "tongueOut": 0.0,
+                    "viseme_PP": 0.0,
+                    "viseme_CH": 0.0,
+                    "viseme_o": 0.0,
+                    "viseme_O": 0.0,
+                    "viseme_i": 0.0,
+                    "viseme_I": 0.0,
+                    "viseme_RR": 0.0,
+                    "viseme_XX": 0.0,
+                    "viseme_aa": 0.0,
+                    "viseme_FF": 0.0,
+                    "viseme_u": 0.0,
+                    "viseme_U": 0.0,
+                    "viseme_TH": 0.0,
+                    "viseme_kk": 0.0,
+                    "viseme_SS": 0.0,
+                    "viseme_e": 0.0,
+                    "viseme_DD": 0.0,
+                    "viseme_E": 0.0,
+                    "viseme_nn": 0.0,
+                    "viseme_sil": 0.9999998807907105
+                },
+                "laughing": 0.0
+            },
+            "headset_spatial_pose": {
+                "position": {
+                    "x": -33.73320007324219,
+                    "y": -10.304088592529297,
+                    "z": -74.5470199584961
+                },
+                "rotation": {
+                    "x": -2.433027744293213,
+                    "y": -132.42047119140626,
+                    "z": -13.044212341308594
+                },
+                "velocity": {
+                    "x": -4.3730573654174809,
+                    "y": 23.89365005493164,
+                    "z": -14.497846603393555
+                },
+                "angular_velocity": {
+                    "x": 13.609640121459961,
+                    "y": 4.7733659744262699,
+                    "z": -8.189481735229493
+                },
+                "acceleration": {
+                    "x": -13.90108871459961,
+                    "y": 116.30412292480469,
+                    "z": -13.944572448730469
+                },
+                "angular_acceleration": {
+                    "x": 79.40484619140625,
+                    "y": 10.096367835998536,
+                    "z": -10.665776252746582
+                },
+                "raw_position": {
+                    "x": -33.87171936035156,
+                    "y": -9.54556941986084,
+                    "z": -75.00545501708985
+                },
+                "raw_rotation": {
+                    "x": -2.915985107421875,
+                    "y": -132.26246643066407,
+                    "z": -13.188446044921875
+                },
+                "raw_velocity": {
+                    "x": -4.872768878936768,
+                    "y": 27.86907958984375,
+                    "z": -15.159954071044922
+                },
+                "raw_angular_velocity": {
+                    "x": 16.258554458618165,
+                    "y": 5.1319684982299809,
+                    "z": -8.62151050567627
+                },
+                "raw_acceleration": {
+                    "x": -41.179420471191409,
+                    "y": 263.06005859375,
+                    "z": -109.9296646118164
+                },
+                "raw_angular_acceleration": {
+                    "x": 153.0094757080078,
+                    "y": 24.84387969970703,
+                    "z": -45.46251678466797
+                },
+                "magnitude_position": 82.47036743164063,
+                "magnitude_rotation": 133.08363342285157,
+                "magnitude_velocity": 28.28812026977539,
+                "magnitude_angular_velocity": 16.585384368896486,
+                "magnitude_acceleration": 117.95906066894531,
+                "magnitude_angular_acceleration": 80.75162506103516,
+                "magnitude_raw_position": 82.85064697265625,
+                "magnitude_raw_rotation": 132.9503631591797,
+                "magnitude_raw_velocity": 32.097564697265628,
+                "magnitude_raw_angular_velocity": 19.105186462402345,
+                "magnitude_raw_acceleration": 288.0639953613281,
+                "magnitude_raw_angular_acceleration": 161.5424346923828
+            },
+            "left_controller_spatial_pose": {
+                "position": {
+                    "x": -33.1759033203125,
+                    "y": -10.602655410766602,
+                    "z": -74.39955139160156
+                },
+                "rotation": {
+                    "x": 27.1016845703125,
+                    "y": -152.7352294921875,
+                    "z": -60.88215637207031
+                },
+                "velocity": {
+                    "x": -4.416609287261963,
+                    "y": 23.766199111938478,
+                    "z": -14.594038009643555
+                },
+                "angular_velocity": {
+                    "x": 4.4951066970825199,
+                    "y": 15.804306983947754,
+                    "z": -5.669342994689941
+                },
+                "acceleration": {
+                    "x": -13.934627532958985,
+                    "y": 115.98158264160156,
+                    "z": -14.469402313232422
+                },
+                "angular_acceleration": {
+                    "x": 35.14984130859375,
+                    "y": 75.92640686035156,
+                    "z": 3.0297632217407228
+                },
+                "raw_position": {
+                    "x": -33.3157958984375,
+                    "y": -9.848163604736329,
+                    "z": -74.86104583740235
+                },
+                "raw_rotation": {
+                    "x": 26.893802642822267,
+                    "y": -152.18460083007813,
+                    "z": -60.775970458984378
+                },
+                "raw_velocity": {
+                    "x": -4.91796350479126,
+                    "y": 27.729806900024415,
+                    "z": -15.273913383483887
+                },
+                "raw_angular_velocity": {
+                    "x": 5.667768478393555,
+                    "y": 18.4056396484375,
+                    "z": -5.6439361572265629
+                },
+                "raw_acceleration": {
+                    "x": -41.443172454833987,
+                    "y": 262.03399658203127,
+                    "z": -111.0508041381836
+                },
+                "raw_angular_acceleration": {
+                    "x": 70.72183227539063,
+                    "y": 174.79673767089845,
+                    "z": -20.673555374145509
+                },
+                "magnitude_position": 82.1483383178711,
+                "magnitude_rotation": 166.64089965820313,
+                "magnitude_velocity": 28.236936569213868,
+                "magnitude_angular_velocity": 17.381702423095704,
+                "magnitude_acceleration": 117.70838928222656,
+                "magnitude_angular_acceleration": 83.72281646728516,
+                "magnitude_raw_position": 82.5294189453125,
+                "magnitude_raw_rotation": 166.06369018554688,
+                "magnitude_raw_velocity": 32.03780746459961,
+                "magnitude_raw_angular_velocity": 20.068511962890626,
+                "magnitude_raw_acceleration": 287.5963134765625,
+                "magnitude_raw_angular_acceleration": 189.69151306152345
+            },
+            "right_controller_spatial_pose": {
+                "position": {
+                    "x": -33.6470947265625,
+                    "y": -10.570025444030762,
+                    "z": -74.16917419433594
+                },
+                "rotation": {
+                    "x": 62.558536529541019,
+                    "y": -103.77110290527344,
+                    "z": -17.355281829833986
+                },
+                "velocity": {
+                    "x": -4.4040632247924809,
+                    "y": 23.784744262695314,
+                    "z": -14.573501586914063
+                },
+                "angular_velocity": {
+                    "x": -1.8500895500183106,
+                    "y": 5.61361026763916,
+                    "z": -18.666034698486329
+                },
+                "acceleration": {
+                    "x": -13.822339057922364,
+                    "y": 115.89701843261719,
+                    "z": -14.398948669433594
+                },
+                "angular_acceleration": {
+                    "x": -6.043521881103516,
+                    "y": -45.7365837097168,
+                    "z": -203.46177673339845
+                },
+                "raw_position": {
+                    "x": -33.786590576171878,
+                    "y": -9.81495475769043,
+                    "z": -74.63002014160156
+                },
+                "raw_rotation": {
+                    "x": 61.991031646728519,
+                    "y": -103.20864868164063,
+                    "z": -16.918121337890626
+                },
+                "raw_velocity": {
+                    "x": -4.901945114135742,
+                    "y": 27.745967864990236,
+                    "z": -15.251258850097657
+                },
+                "raw_angular_velocity": {
+                    "x": -2.154691219329834,
+                    "y": 4.23333215713501,
+                    "z": -25.4013729095459
+                },
+                "raw_acceleration": {
+                    "x": -41.34382247924805,
+                    "y": 261.9875793457031,
+                    "z": -111.00992584228516
+                },
+                "raw_angular_acceleration": {
+                    "x": -70.59419250488281,
+                    "y": -27.729276657104493,
+                    "z": -371.1377258300781
+                },
+                "magnitude_position": 82.12745666503906,
+                "magnitude_rotation": 122.40595245361328,
+                "magnitude_velocity": 28.2399845123291,
+                "magnitude_angular_velocity": 19.579486846923829,
+                "magnitude_acceleration": 117.6031723022461,
+                "magnitude_angular_acceleration": 208.6265869140625,
+                "magnitude_raw_position": 82.50762176513672,
+                "magnitude_raw_rotation": 121.57769775390625,
+                "magnitude_raw_velocity": 32.038551330566409,
+                "magnitude_raw_angular_velocity": 25.84170150756836,
+                "magnitude_raw_acceleration": 287.52392578125,
+                "magnitude_raw_angular_acceleration": 378.8082275390625
+            },
+            "game_configs": {
+                "user_index": 0,
+                "preset_index": 1,
+                "vehicle_opacity": 0.20000000298023225,
+                "autopilot_enabled": true,
+                "random_seed_terrain": 1,
+                "random_seed_autopilot": 1,
+                "random_seed_specials": 0,
+                "specials_index": 1,
+                "specials": {
+                    "color1_path": {
+                        "r": 0.44999998807907107,
+                        "g": 0.8999999761581421,
+                        "b": 0.44999998807907107,
+                        "a": 1.0
+                    },
+                    "color2_not_path": {
+                        "r": 0.44999998807907107,
+                        "g": 0.44999998807907107,
+                        "b": 0.8999999761581421,
+                        "a": 1.0
+                    },
+                    "color3_not_path": {
+                        "r": 0.8999999761581421,
+                        "g": 0.44999998807907107,
+                        "b": 0.44999998807907107,
+                        "a": 1.0
+                    },
+                    "color1_name_path": "specials_green",
+                    "color2_name_not_path": "specials_blue",
+                    "color3_name_not_path": "specials_red"
+                }
+            },
+            "game_play": {
+                "scene_name": "lab-1",
+                "autopilot_enabled": true,
+                "locomotion": {
+                    "left_joystick_input": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "right_joystick_input": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "combined_input": {
+                        "x": -0.031607985496520999,
+                        "y": 0.0
+                    },
+                    "active_input": {
+                        "enabled": false,
+                        "input_value": {
+                            "x": 0.0,
+                            "y": 0.0
+                        }
+                    },
+                    "passive_input": {
+                        "enabled": true,
+                        "input_value": {
+                            "x": -0.031607985496520999,
+                            "y": 0.0
+                        }
+                    },
+                    "spatial_pose": {
+                        "position": {
+                            "x": 30.43842887878418,
+                            "y": -0.08358237147331238,
+                            "z": -75.29862976074219
+                        },
+                        "rotation": {
+                            "x": 4.512950420379639,
+                            "y": 133.0625,
+                            "z": 355.60516357421877
+                        },
+                        "velocity": {
+                            "x": 11.985082626342774,
+                            "y": -1.2844722270965577,
+                            "z": -11.377723693847657
+                        },
+                        "angular_velocity": {
+                            "x": 20.063854217529298,
+                            "y": -2.219412088394165,
+                            "z": 5.274477481842041
+                        },
+                        "acceleration": {
+                            "x": 56.807010650634769,
+                            "y": -2.815877676010132,
+                            "z": -52.93014144897461
+                        },
+                        "angular_acceleration": {
+                            "x": 149.60357666015626,
+                            "y": -14.724157333374024,
+                            "z": 81.85621643066406
+                        },
+                        "raw_position": {
+                            "x": 30.818923950195314,
+                            "y": -0.12419679015874863,
+                            "z": -75.65979766845703
+                        },
+                        "raw_rotation": {
+                            "x": 3.9515833854675295,
+                            "y": 133.0193328857422,
+                            "z": 355.9559326171875
+                        },
+                        "raw_velocity": {
+                            "x": 13.84668254852295,
+                            "y": -1.37890625,
+                            "z": -13.113043785095215
+                        },
+                        "raw_angular_velocity": {
+                            "x": 24.889135360717775,
+                            "y": -2.694736957550049,
+                            "z": 7.948525428771973
+                        },
+                        "raw_acceleration": {
+                            "x": 103.48961639404297,
+                            "y": -6.615471363067627,
+                            "z": -96.9969711303711
+                        },
+                        "raw_angular_acceleration": {
+                            "x": 220.98060607910157,
+                            "y": -21.435054779052736,
+                            "z": 144.60987854003907
+                        },
+                        "magnitude_position": 81.21815490722656,
+                        "magnitude_rotation": 379.7117614746094,
+                        "magnitude_velocity": 16.575424194335939,
+                        "magnitude_angular_velocity": 20.863943099975587,
+                        "magnitude_acceleration": 77.6953353881836,
+                        "magnitude_angular_acceleration": 171.16795349121095,
+                        "magnitude_raw_position": 81.69593811035156,
+                        "magnitude_raw_rotation": 380.0189208984375,
+                        "magnitude_raw_velocity": 19.120248794555665,
+                        "magnitude_raw_angular_velocity": 26.266132354736329,
+                        "magnitude_raw_acceleration": 141.99392700195313,
+                        "magnitude_raw_angular_acceleration": 264.960205078125
+                    }
+                }
+            },
+            "sickness": {
+                "button_input": {
+                    "a": 0.0,
+                    "b": 0.0,
+                    "x": 0.0,
+                    "y": 0.0
+                },
+                "reported": 0.0,
+                "deduced": 0.0,
+                "predicted": 0.0
+            },
+            "continuous_ema": {
+                "time_interval_ideal": 0.03333333134651184,
+                "time_interval_actual": 0.0333404541015625,
+                "exponent_rectification": 1.0002137422561646,
+                "alpha_ideal": 0.5,
+                "alpha_actual": 0.500074028968811,
+                "_1_minus_alpha_ideal": 0.5,
+                "_1_minus_alpha_actual": 0.4999259412288666
+            }
+        },
+        {
+            "recorder_name": "Recorder25",
+            "timestamp": {
+                "date_time_custom": "20250201-173635-845198-utc0800",
+                "date_time": "2025-02-01T17:36:35.8451980+08:00",
+                "unix_ms": 1738402595845,
+                "game_time_custom": "000 days, 00:01:02.173487",
+                "game_time": "00:01:02.1734870",
+                "game_time_seconds": 60.15052032470703,
+                "unity_fixed_delta_time_seconds": 0.0111083984375,
+                "ideal_record_interval_seconds": 0.03333333134651184,
+                "actual_record_interval_seconds": 0.04443359375
+            },
+            "eye_gaze": {
+                "spatial_pose": {
+                    "position": {
+                        "x": -0.0037638479843735697,
+                        "y": -0.050659071654081348,
+                        "z": 0.032546691596508029
+                    },
+                    "rotation": {
+                        "x": 40.424537658691409,
+                        "y": 11.57712173461914,
+                        "z": -6.567011379132737e-10
+                    },
+                    "velocity": {
+                        "x": 0.0008546586032025516,
+                        "y": 0.0018875907408073545,
+                        "z": 0.0030461507849395277
+                    },
+                    "angular_velocity": {
+                        "x": -0.8068738579750061,
+                        "y": -1.7811321020126343,
+                        "z": 0.16626529395580293
+                    },
+                    "acceleration": {
+                        "x": 0.020164236426353456,
+                        "y": 0.020981740206480027,
+                        "z": 0.03369400277733803
+                    },
+                    "angular_acceleration": {
+                        "x": -17.008968353271486,
+                        "y": -13.03315544128418,
+                        "z": 3.490164279937744
+                    },
+                    "raw_position": {
+                        "x": -0.0037384033203125,
+                        "y": -0.05060291290283203,
+                        "z": 0.0326385498046875
+                    },
+                    "raw_rotation": {
+                        "x": 40.400875091552737,
+                        "y": 11.523539543151856,
+                        "z": 0.0
+                    },
+                    "raw_velocity": {
+                        "x": 0.0014594780514016748,
+                        "y": 0.0025326237082481386,
+                        "z": 0.004120879340916872
+                    },
+                    "raw_angular_velocity": {
+                        "x": -1.307005524635315,
+                        "y": -2.2087912559509279,
+                        "z": 0.2688850164413452
+                    },
+                    "raw_acceleration": {
+                        "x": 0.019971277564764024,
+                        "y": 0.024166706949472429,
+                        "z": 0.010342446155846119
+                    },
+                    "raw_angular_acceleration": {
+                        "x": -34.61089324951172,
+                        "y": -9.230949401855469,
+                        "z": 7.126344203948975
+                    },
+                    "magnitude_position": 0.06033071503043175,
+                    "magnitude_rotation": 42.04964828491211,
+                    "magnitude_velocity": 0.003684083931148052,
+                    "magnitude_angular_velocity": 1.9624272584915162,
+                    "magnitude_acceleration": 0.04452095925807953,
+                    "magnitude_angular_acceleration": 21.710582733154298,
+                    "magnitude_raw_position": 0.06033162772655487,
+                    "magnitude_raw_rotation": 42.01217269897461,
+                    "magnitude_raw_velocity": 0.0050523169338703159,
+                    "magnitude_raw_angular_velocity": 2.580566167831421,
+                    "magnitude_raw_acceleration": 0.03301284462213516,
+                    "magnitude_raw_angular_acceleration": 36.52272033691406
+                },
+                "viewport_pose": {
+                    "position": {
+                        "x": 0.4655027985572815,
+                        "y": 0.6790566444396973
+                    },
+                    "velocity": {
+                        "x": -0.4158576726913452,
+                        "y": 0.04128967225551605
+                    },
+                    "acceleration": {
+                        "x": 0.0051670074462890629,
+                        "y": -5.654273986816406
+                    },
+                    "raw_position": {
+                        "x": 0.4525669515132904,
+                        "y": 0.6808035969734192
+                    },
+                    "raw_velocity": {
+                        "x": -0.4399474561214447,
+                        "y": -0.10742589831352234
+                    },
+                    "raw_acceleration": {
+                        "x": 11.017779350280762,
+                        "y": -15.531865119934082
+                    },
+                    "magnitude_position": 0.8232926726341248,
+                    "magnitude_velocity": 0.4179024398326874,
+                    "magnitude_acceleration": 5.654276371002197,
+                    "magnitude_raw_position": 0.8175025582313538,
+                    "magnitude_raw_velocity": 0.4528731405735016,
+                    "magnitude_raw_acceleration": 19.04285430908203
+                },
+                "left_eye_openness": 1.0,
+                "right_eye_openness": 1.0
+            },
+            "face": {
+                "blend_shapes_data": {
+                    "eyeLookDownLeft": 0.42660361528396609,
+                    "noseSneerLeft": 0.21551302075386048,
+                    "eyeLookInLeft": 0.16290108859539033,
+                    "browInnerUp": 0.000716665992513299,
+                    "browDownRight": 0.11350052058696747,
+                    "mouthClose": 0.055042725056409839,
+                    "mouthLowerDownRight": 0.0,
+                    "jawOpen": 0.0031816521659493448,
+                    "mouthUpperUpRight": 0.058747854083776477,
+                    "mouthShrugUpper": 0.04788822680711746,
+                    "mouthFunnel": 0.07158687710762024,
+                    "eyeLookInRight": 0.005719833076000214,
+                    "eyeLookDownRight": 0.42660361528396609,
+                    "noseSneerRight": 0.23183704912662507,
+                    "mouthRollUpper": 0.0003181928477715701,
+                    "jawRight": 0.00006623387889703736,
+                    "browDownLeft": 0.11350052058696747,
+                    "mouthShrugLower": 0.0542004257440567,
+                    "mouthRollLower": 0.0005626401980407536,
+                    "mouthSmileLeft": 0.0009806412272155285,
+                    "mouthPressLeft": 0.13289177417755128,
+                    "mouthSmileRight": 0.0013090381398797036,
+                    "mouthPressRight": 0.044244252145290378,
+                    "mouthDimpleRight": 0.046732548624277118,
+                    "mouthLeft": 0.010876336134970189,
+                    "jawForward": 0.0014844449469819666,
+                    "eyeSquintLeft": 0.030561553314328195,
+                    "mouthFrownLeft": 0.055507842451334,
+                    "eyeBlinkLeft": 0.0016573212342336774,
+                    "cheekSquintLeft": 0.1849621832370758,
+                    "browOuterUpLeft": 0.000716665992513299,
+                    "eyeLookUpLeft": 0.005095262546092272,
+                    "jawLeft": 0.000001372085193906969,
+                    "mouthStretchLeft": 0.00065170245943591,
+                    "mouthPucker": 0.0014845358673483134,
+                    "eyeLookUpRight": 0.005095262546092272,
+                    "browOuterUpRight": 0.000716665992513299,
+                    "cheekSquintRight": 0.1331300586462021,
+                    "eyeBlinkRight": 0.0018246689578518272,
+                    "mouthUpperUpLeft": 0.0558600127696991,
+                    "mouthFrownRight": 0.06256772577762604,
+                    "eyeSquintRight": 0.03273848444223404,
+                    "mouthStretchRight": 0.0006644300301559269,
+                    "cheekPuff": 0.06071387603878975,
+                    "eyeLookOutLeft": 0.005719833076000214,
+                    "eyeLookOutRight": 0.16290108859539033,
+                    "eyeWideRight": 0.004738179501146078,
+                    "eyeWideLeft": 0.004738179501146078,
+                    "mouthRight": 0.01419334951788187,
+                    "mouthDimpleLeft": 0.031741783022880557,
+                    "mouthLowerDownLeft": 0.00013834434503223747,
+                    "tongueOut": 0.0,
+                    "viseme_PP": 0.0,
+                    "viseme_CH": 0.0,
+                    "viseme_o": 0.0,
+                    "viseme_O": 0.0,
+                    "viseme_i": 0.0,
+                    "viseme_I": 0.0,
+                    "viseme_RR": 0.0,
+                    "viseme_XX": 0.0,
+                    "viseme_aa": 0.0,
+                    "viseme_FF": 0.0,
+                    "viseme_u": 0.0,
+                    "viseme_U": 0.0,
+                    "viseme_TH": 0.0,
+                    "viseme_kk": 0.0,
+                    "viseme_SS": 0.0,
+                    "viseme_e": 0.0,
+                    "viseme_DD": 0.0,
+                    "viseme_E": 0.0,
+                    "viseme_nn": 0.0,
+                    "viseme_sil": 0.9999998807907105
+                },
+                "laughing": 0.0
+            },
+            "headset_spatial_pose": {
+                "position": {
+                    "x": -33.9293212890625,
+                    "y": -9.253055572509766,
+                    "z": -75.11604309082031
+                },
+                "rotation": {
+                    "x": -3.0941624641418459,
+                    "y": -132.25738525390626,
+                    "z": -13.234973907470704
+                },
+                "velocity": {
+                    "x": -4.269594192504883,
+                    "y": 22.843605041503908,
+                    "z": -12.338939666748047
+                },
+                "angular_velocity": {
+                    "x": 12.72596549987793,
+                    "y": 3.2676072120666506,
+                    "z": -7.843681335449219
+                },
+                "acceleration": {
+                    "x": 3.592764377593994,
+                    "y": -31.421295166015626,
+                    "z": 52.03837203979492
+                },
+                "angular_acceleration": {
+                    "x": -24.320112228393556,
+                    "y": -34.74721908569336,
+                    "z": 9.412315368652344
+                },
+                "raw_position": {
+                    "x": -34.058406829833987,
+                    "y": -8.561256408691407,
+                    "z": -75.4905776977539
+                },
+                "raw_rotation": {
+                    "x": -3.529327392578125,
+                    "y": -132.15003967285157,
+                    "z": -13.36053466796875
+                },
+                "raw_velocity": {
+                    "x": -4.201493740081787,
+                    "y": 22.15245246887207,
+                    "z": -10.917925834655762
+                },
+                "raw_angular_velocity": {
+                    "x": 12.144322395324707,
+                    "y": 2.276502847671509,
+                    "z": -7.616071701049805
+                },
+                "raw_acceleration": {
+                    "x": 15.107378959655762,
+                    "y": -128.655517578125,
+                    "z": 95.46894836425781
+                },
+                "raw_angular_acceleration": {
+                    "x": -92.59282684326172,
+                    "y": -64.263671875,
+                    "z": 22.627897262573243
+                },
+                "magnitude_position": 82.94116973876953,
+                "magnitude_rotation": 132.95394897460938,
+                "magnitude_velocity": 26.311767578125,
+                "magnitude_angular_velocity": 15.301986694335938,
+                "magnitude_acceleration": 60.89497375488281,
+                "magnitude_angular_acceleration": 43.444549560546878,
+                "magnitude_raw_position": 83.25921630859375,
+                "magnitude_raw_rotation": 132.87059020996095,
+                "magnitude_raw_velocity": 25.0516414642334,
+                "magnitude_raw_angular_velocity": 14.514530181884766,
+                "magnitude_raw_acceleration": 160.91859436035157,
+                "magnitude_raw_angular_acceleration": 114.95769500732422
+            },
+            "left_controller_spatial_pose": {
+                "position": {
+                    "x": -33.373783111572269,
+                    "y": -9.557123184204102,
+                    "z": -74.972900390625
+                },
+                "rotation": {
+                    "x": 26.826698303222658,
+                    "y": -151.97991943359376,
+                    "z": -60.759521484375
+                },
+                "velocity": {
+                    "x": -4.307850360870361,
+                    "y": 22.7238826751709,
+                    "z": -12.433036804199219
+                },
+                "angular_velocity": {
+                    "x": 4.212159156799316,
+                    "y": 15.200809478759766,
+                    "z": -4.863924980163574
+                },
+                "acceleration": {
+                    "x": 3.7209367752075197,
+                    "y": -31.214927673339845,
+                    "z": 52.118309020996097
+                },
+                "angular_acceleration": {
+                    "x": -8.331068992614746,
+                    "y": -18.749536514282228,
+                    "z": 18.984142303466798
+                },
+                "raw_position": {
+                    "x": -33.5040283203125,
+                    "y": -8.86894416809082,
+                    "z": -75.35028839111328
+                },
+                "raw_rotation": {
+                    "x": 26.64569664001465,
+                    "y": -151.48275756835938,
+                    "z": -60.678802490234378
+                },
+                "raw_velocity": {
+                    "x": -4.236263751983643,
+                    "y": 22.037818908691408,
+                    "z": -11.010645866394043
+                },
+                "raw_angular_velocity": {
+                    "x": 4.025920391082764,
+                    "y": 14.803581237792969,
+                    "z": -4.333791255950928
+                },
+                "raw_acceleration": {
+                    "x": 15.34199047088623,
+                    "y": -128.10101318359376,
+                    "z": 95.94694519042969
+                },
+                "raw_angular_acceleration": {
+                    "x": -36.95060348510742,
+                    "y": -81.06610870361328,
+                    "z": 29.48546028137207
+                },
+                "magnitude_position": 82.6201171875,
+                "magnitude_rotation": 165.85923767089845,
+                "magnitude_velocity": 26.258575439453126,
+                "magnitude_angular_velocity": 16.50650405883789,
+                "magnitude_acceleration": 60.864891052246097,
+                "magnitude_angular_acceleration": 27.95262908935547,
+                "magnitude_raw_position": 82.93879699707031,
+                "magnitude_raw_rotation": 165.34490966796876,
+                "magnitude_raw_velocity": 24.99691390991211,
+                "magnitude_raw_angular_velocity": 15.94163703918457,
+                "magnitude_raw_acceleration": 160.78265380859376,
+                "magnitude_raw_angular_acceleration": 93.84270477294922
+            },
+            "right_controller_spatial_pose": {
+                "position": {
+                    "x": -33.8447151184082,
+                    "y": -9.524348258972168,
+                    "z": -74.74153137207031
+                },
+                "rotation": {
+                    "x": 61.89662170410156,
+                    "y": -103.09646606445313,
+                    "z": -17.038755416870118
+                },
+                "velocity": {
+                    "x": -4.302404403686523,
+                    "y": 22.72665023803711,
+                    "z": -12.411113739013672
+                },
+                "angular_velocity": {
+                    "x": 0.3557981252670288,
+                    "y": 8.724370002746582,
+                    "z": -14.542881965637207
+                },
+                "acceleration": {
+                    "x": 3.5585880279541017,
+                    "y": -31.571239471435548,
+                    "z": 52.14874267578125
+                },
+                "angular_acceleration": {
+                    "x": 51.379783630371097,
+                    "y": 70.58788299560547,
+                    "z": 103.44469451904297
+                },
+                "raw_position": {
+                    "x": -33.974788665771487,
+                    "y": -8.836073875427246,
+                    "z": -75.11824798583985
+                },
+                "raw_rotation": {
+                    "x": 61.4609375,
+                    "y": -102.65240478515625,
+                    "z": -16.830413818359376
+                },
+                "raw_velocity": {
+                    "x": -4.2354912757873539,
+                    "y": 22.03019905090332,
+                    "z": -10.987809181213379
+                },
+                "raw_angular_velocity": {
+                    "x": 1.8077336549758912,
+                    "y": 10.771900177001954,
+                    "z": -11.828984260559082
+                },
+                "raw_acceleration": {
+                    "x": 14.998873710632325,
+                    "y": -128.63619995117188,
+                    "z": 95.95104217529297
+                },
+                "raw_angular_acceleration": {
+                    "x": 89.17633056640625,
+                    "y": 147.15371704101563,
+                    "z": 305.4533386230469
+                },
+                "magnitude_position": 82.59827423095703,
+                "magnitude_rotation": 121.45118713378906,
+                "magnitude_velocity": 26.249706268310548,
+                "magnitude_angular_velocity": 16.962800979614259,
+                "magnitude_acceleration": 61.06470489501953,
+                "magnitude_angular_acceleration": 135.3637237548828,
+                "magnitude_raw_position": 82.91630554199219,
+                "magnitude_raw_rotation": 120.8231201171875,
+                "magnitude_raw_velocity": 24.980012893676759,
+                "magnitude_raw_angular_velocity": 16.100515365600587,
+                "magnitude_raw_acceleration": 161.1795196533203,
+                "magnitude_raw_angular_acceleration": 350.5829162597656
+            },
+            "game_configs": {
+                "user_index": 0,
+                "preset_index": 1,
+                "vehicle_opacity": 0.20000000298023225,
+                "autopilot_enabled": true,
+                "random_seed_terrain": 1,
+                "random_seed_autopilot": 1,
+                "random_seed_specials": 0,
+                "specials_index": 1,
+                "specials": {
+                    "color1_path": {
+                        "r": 0.44999998807907107,
+                        "g": 0.8999999761581421,
+                        "b": 0.44999998807907107,
+                        "a": 1.0
+                    },
+                    "color2_not_path": {
+                        "r": 0.44999998807907107,
+                        "g": 0.44999998807907107,
+                        "b": 0.8999999761581421,
+                        "a": 1.0
+                    },
+                    "color3_not_path": {
+                        "r": 0.8999999761581421,
+                        "g": 0.44999998807907107,
+                        "b": 0.44999998807907107,
+                        "a": 1.0
+                    },
+                    "color1_name_path": "specials_green",
+                    "color2_name_not_path": "specials_blue",
+                    "color3_name_not_path": "specials_red"
+                }
+            },
+            "game_play": {
+                "scene_name": "lab-1",
+                "autopilot_enabled": true,
+                "locomotion": {
+                    "left_joystick_input": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "right_joystick_input": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "combined_input": {
+                        "x": -0.4881252944469452,
+                        "y": 0.0
+                    },
+                    "active_input": {
+                        "enabled": false,
+                        "input_value": {
+                            "x": 0.0,
+                            "y": 0.0
+                        }
+                    },
+                    "passive_input": {
+                        "enabled": true,
+                        "input_value": {
+                            "x": -0.4881252944469452,
+                            "y": 0.0
+                        }
+                    },
+                    "spatial_pose": {
+                        "position": {
+                            "x": 30.94614028930664,
+                            "y": -0.13112373650074006,
+                            "z": -75.7789535522461
+                        },
+                        "rotation": {
+                            "x": 3.688716173171997,
+                            "y": 132.96434020996095,
+                            "z": 356.1087951660156
+                        },
+                        "velocity": {
+                            "x": 11.019491195678711,
+                            "y": -1.0285742282867432,
+                            "z": -10.424273490905762
+                        },
+                        "angular_velocity": {
+                            "x": 20.219411849975587,
+                            "y": -2.883580207824707,
+                            "z": 5.606252670288086
+                        },
+                        "acceleration": {
+                            "x": -24.44811248779297,
+                            "y": 5.923052787780762,
+                            "z": 23.999858856201173
+                        },
+                        "angular_acceleration": {
+                            "x": -2.6050376892089845,
+                            "y": -14.340848922729493,
+                            "z": 3.6661243438720705
+                        },
+                        "raw_position": {
+                            "x": 31.280319213867189,
+                            "y": -0.16241589188575746,
+                            "z": -76.09510040283203
+                        },
+                        "raw_rotation": {
+                            "x": 3.146197557449341,
+                            "y": 132.89971923828126,
+                            "z": 356.4402770996094
+                        },
+                        "raw_velocity": {
+                            "x": 10.383929252624512,
+                            "y": -0.860139787197113,
+                            "z": -9.796703338623047
+                        },
+                        "raw_angular_velocity": {
+                            "x": 20.321800231933595,
+                            "y": -3.320741891860962,
+                            "z": 5.824630260467529
+                        },
+                        "raw_acceleration": {
+                            "x": -77.93097686767578,
+                            "y": 11.67509651184082,
+                            "z": 74.6358871459961
+                        },
+                        "raw_angular_acceleration": {
+                            "x": -102.7901382446289,
+                            "y": -14.088550567626954,
+                            "z": -47.799312591552737
+                        },
+                        "magnitude_position": 81.85432434082031,
+                        "magnitude_rotation": 380.1402282714844,
+                        "magnitude_velocity": 15.203704833984375,
+                        "magnitude_angular_velocity": 21.17946434020996,
+                        "magnitude_acceleration": 34.767601013183597,
+                        "magnitude_angular_acceleration": 15.029524803161621,
+                        "magnitude_raw_position": 82.27362060546875,
+                        "magnitude_raw_rotation": 380.42333984375,
+                        "magnitude_raw_velocity": 14.301791191101075,
+                        "magnitude_raw_angular_velocity": 21.399280548095704,
+                        "magnitude_raw_acceleration": 108.5359878540039,
+                        "magnitude_raw_angular_acceleration": 114.2325439453125
+                    }
+                }
+            },
+            "sickness": {
+                "button_input": {
+                    "a": 0.0,
+                    "b": 0.0,
+                    "x": 0.0,
+                    "y": 0.0
+                },
+                "reported": 0.0,
+                "deduced": 0.0,
+                "predicted": 0.0
+            },
+            "continuous_ema": {
+                "time_interval_ideal": 0.03333333134651184,
+                "time_interval_actual": 0.04443359375,
+                "exponent_rectification": 1.3330079317092896,
+                "alpha_ideal": 0.5,
+                "alpha_actual": 0.603060245513916,
+                "_1_minus_alpha_ideal": 0.5,
+                "_1_minus_alpha_actual": 0.39693978428840639
+            }
+        },
+        {
+            "recorder_name": "Recorder25",
+            "timestamp": {
+                "date_time_custom": "20250201-173635-890278-utc0800",
+                "date_time": "2025-02-01T17:36:35.8902780+08:00",
+                "unix_ms": 1738402595890,
+                "game_time_custom": "000 days, 00:01:02.218567",
+                "game_time": "00:01:02.2185670",
+                "game_time_seconds": 60.183860778808597,
+                "unity_fixed_delta_time_seconds": 0.0111236572265625,
+                "ideal_record_interval_seconds": 0.03333333134651184,
+                "actual_record_interval_seconds": 0.0333404541015625
+            },
+            "eye_gaze": {
+                "spatial_pose": {
+                    "position": {
+                        "x": -0.00395905552431941,
+                        "y": -0.050655547529459,
+                        "z": 0.032420940697193149
+                    },
+                    "rotation": {
+                        "x": 41.40210723876953,
+                        "y": 7.19813346862793,
+                        "z": 7.19187625008999e-8
+                    },
+                    "velocity": {
+                        "x": -0.005809355527162552,
+                        "y": 0.00020699040032923222,
+                        "z": -0.0036266539245843889
+                    },
+                    "angular_velocity": {
+                        "x": 28.67388916015625,
+                        "y": -131.5285186767578,
+                        "z": -5.8472771644592289
+                    },
+                    "acceleration": {
+                        "x": -0.19886881113052369,
+                        "y": -0.04959278553724289,
+                        "z": -0.19941674172878266
+                    },
+                    "angular_acceleration": {
+                        "x": 883.2322998046875,
+                        "y": -3891.69189453125,
+                        "z": -180.162109375
+                    },
+                    "raw_position": {
+                        "x": -0.004154205322265625,
+                        "y": -0.05065202713012695,
+                        "z": 0.03229522705078125
+                    },
+                    "raw_rotation": {
+                        "x": 42.37938690185547,
+                        "y": 2.8204426765441896,
+                        "z": 1.4447273599671463e-7
+                    },
+                    "raw_velocity": {
+                        "x": -0.01247139647603035,
+                        "y": -0.001473112148232758,
+                        "z": -0.010297482833266259
+                    },
+                    "raw_angular_velocity": {
+                        "x": 58.14592361450195,
+                        "y": -261.2375183105469,
+                        "z": -11.859039306640625
+                    },
+                    "raw_acceleration": {
+                        "x": -0.417836993932724,
+                        "y": -0.12014640867710114,
+                        "z": -0.4324584901332855
+                    },
+                    "raw_angular_acceleration": {
+                        "x": 1783.20703125,
+                        "y": -7769.2021484375,
+                        "z": -363.760009765625
+                    },
+                    "magnitude_position": 0.06027251482009888,
+                    "magnitude_rotation": 42.02317810058594,
+                    "magnitude_velocity": 0.006851574406027794,
+                    "magnitude_angular_velocity": 134.7447052001953,
+                    "magnitude_acceleration": 0.285963773727417,
+                    "magnitude_angular_acceleration": 3994.724365234375,
+                    "magnitude_raw_position": 0.06021517142653465,
+                    "magnitude_raw_rotation": 42.47313690185547,
+                    "magnitude_raw_velocity": 0.01624019630253315,
+                    "magnitude_raw_angular_velocity": 267.8929443359375,
+                    "magnitude_raw_acceleration": 0.613223671913147,
+                    "magnitude_raw_angular_acceleration": 7979.5146484375
+                },
+                "viewport_pose": {
+                    "position": {
+                        "x": 0.4914148449897766,
+                        "y": 0.6738649010658264
+                    },
+                    "velocity": {
+                        "x": 0.7633229494094849,
+                        "y": -0.16127964854240418
+                    },
+                    "acceleration": {
+                        "x": 35.73176956176758,
+                        "y": -6.671913146972656
+                    },
+                    "raw_position": {
+                        "x": 0.5173192620277405,
+                        "y": 0.6686747074127197
+                    },
+                    "raw_velocity": {
+                        "x": 1.9421544075012208,
+                        "y": -0.36378899216651919
+                    },
+                    "raw_acceleration": {
+                        "x": 71.44779205322266,
+                        "y": -7.689250469207764
+                    },
+                    "magnitude_position": 0.8340158462524414,
+                    "magnitude_velocity": 0.7801750302314758,
+                    "magnitude_acceleration": 36.34933090209961,
+                    "magnitude_raw_position": 0.8454259634017944,
+                    "magnitude_raw_velocity": 1.9759317636489869,
+                    "magnitude_raw_acceleration": 71.86035919189453
+                },
+                "left_eye_openness": 1.0,
+                "right_eye_openness": 1.0
+            },
+            "face": {
+                "blend_shapes_data": {
+                    "eyeLookDownLeft": 0.42718133330345156,
+                    "noseSneerLeft": 0.21655376255512238,
+                    "eyeLookInLeft": 0.16282275319099427,
+                    "browInnerUp": 0.0006204682867974043,
+                    "browDownRight": 0.11231369525194168,
+                    "mouthClose": 0.05501903221011162,
+                    "mouthLowerDownRight": 0.0,
+                    "jawOpen": 0.003181630512699485,
+                    "mouthUpperUpRight": 0.05873904377222061,
+                    "mouthShrugUpper": 0.048573337495326999,
+                    "mouthFunnel": 0.07148852944374085,
+                    "eyeLookInRight": 0.00570976547896862,
+                    "eyeLookDownRight": 0.42718133330345156,
+                    "noseSneerRight": 0.23286712169647218,
+                    "mouthRollUpper": 0.0003181926440447569,
+                    "jawRight": 0.00006620756175834686,
+                    "browDownLeft": 0.11231369525194168,
+                    "mouthShrugLower": 0.05424679443240166,
+                    "mouthRollLower": 0.0005607440252788365,
+                    "mouthSmileLeft": 0.0009806412272155285,
+                    "mouthPressLeft": 0.13270063698291779,
+                    "mouthSmileRight": 0.001309037790633738,
+                    "mouthPressRight": 0.04411224648356438,
+                    "mouthDimpleRight": 0.046531375497579578,
+                    "mouthLeft": 0.010873544961214066,
+                    "jawForward": 0.0014712822157889605,
+                    "eyeSquintLeft": 0.030954111367464067,
+                    "mouthFrownLeft": 0.055420003831386569,
+                    "eyeBlinkLeft": 0.0016327842604368926,
+                    "cheekSquintLeft": 0.18612085282802583,
+                    "browOuterUpLeft": 0.0006204682867974043,
+                    "eyeLookUpLeft": 0.004866883624345064,
+                    "jawLeft": 0.0000013720739389100345,
+                    "mouthStretchLeft": 0.0006491591338999569,
+                    "mouthPucker": 0.0014931627083569766,
+                    "eyeLookUpRight": 0.004866883624345064,
+                    "browOuterUpRight": 0.0006204682867974043,
+                    "cheekSquintRight": 0.1340762823820114,
+                    "eyeBlinkRight": 0.0017949489410966635,
+                    "mouthUpperUpLeft": 0.05585958808660507,
+                    "mouthFrownRight": 0.062448322772979739,
+                    "eyeSquintRight": 0.03253652900457382,
+                    "mouthStretchRight": 0.0006617864710278809,
+                    "cheekPuff": 0.06060835346579552,
+                    "eyeLookOutLeft": 0.00570976547896862,
+                    "eyeLookOutRight": 0.16282275319099427,
+                    "eyeWideRight": 0.004540374036878347,
+                    "eyeWideLeft": 0.004540374036878347,
+                    "mouthRight": 0.014191994443535805,
+                    "mouthDimpleLeft": 0.030228139832615854,
+                    "mouthLowerDownLeft": 0.00014905715943314135,
+                    "tongueOut": 0.0,
+                    "viseme_PP": 0.0,
+                    "viseme_CH": 0.0,
+                    "viseme_o": 0.0,
+                    "viseme_O": 0.0,
+                    "viseme_i": 0.0,
+                    "viseme_I": 0.0,
+                    "viseme_RR": 0.0,
+                    "viseme_XX": 0.0,
+                    "viseme_aa": 0.0,
+                    "viseme_FF": 0.0,
+                    "viseme_u": 0.0,
+                    "viseme_U": 0.0,
+                    "viseme_TH": 0.0,
+                    "viseme_kk": 0.0,
+                    "viseme_SS": 0.0,
+                    "viseme_e": 0.0,
+                    "viseme_DD": 0.0,
+                    "viseme_E": 0.0,
+                    "viseme_nn": 0.0,
+                    "viseme_sil": 0.9999998807907105
+                },
+                "laughing": 0.0
+            },
+            "headset_spatial_pose": {
+                "position": {
+                    "x": -34.173858642578128,
+                    "y": -8.391744613647461,
+                    "z": -75.50015258789063
+                },
+                "rotation": {
+                    "x": -3.6483137607574465,
+                    "y": -132.02542114257813,
+                    "z": -13.37933349609375
+                },
+                "velocity": {
+                    "x": -7.532934665679932,
+                    "y": 26.877613067626954,
+                    "z": -12.071832656860352
+                },
+                "angular_velocity": {
+                    "x": 14.944942474365235,
+                    "y": 6.786416530609131,
+                    "z": -9.767891883850098
+                },
+                "acceleration": {
+                    "x": -97.10462951660156,
+                    "y": 115.6526870727539,
+                    "z": 12.713004112243653
+                },
+                "angular_acceleration": {
+                    "x": 63.12095642089844,
+                    "y": 103.03628540039063,
+                    "z": -56.422454833984378
+                },
+                "raw_position": {
+                    "x": -34.41832733154297,
+                    "y": -7.530688762664795,
+                    "z": -75.8841552734375
+                },
+                "raw_rotation": {
+                    "x": -4.202301025390625,
+                    "y": -131.79354858398438,
+                    "z": -13.523651123046875
+                },
+                "raw_velocity": {
+                    "x": -10.795309066772461,
+                    "y": 30.91042709350586,
+                    "z": -11.804805755615235
+                },
+                "raw_angular_velocity": {
+                    "x": 17.163265228271486,
+                    "y": 10.304183959960938,
+                    "z": -11.691533088684082
+                },
+                "raw_acceleration": {
+                    "x": -197.772216796875,
+                    "y": 262.6831359863281,
+                    "z": -26.60071563720703
+                },
+                "raw_angular_acceleration": {
+                    "x": 150.5361328125,
+                    "y": 240.7790069580078,
+                    "z": -122.23773193359375
+                },
+                "magnitude_position": 83.29794311523438,
+                "magnitude_rotation": 132.7517547607422,
+                "magnitude_velocity": 30.41184425354004,
+                "magnitude_angular_velocity": 19.100221633911134,
+                "magnitude_acceleration": 151.54693603515626,
+                "magnitude_angular_acceleration": 133.35751342773438,
+                "magnitude_raw_position": 83.66443634033203,
+                "magnitude_raw_rotation": 132.55221557617188,
+                "magnitude_raw_velocity": 34.804405212402347,
+                "magnitude_raw_angular_velocity": 23.182876586914064,
+                "magnitude_raw_acceleration": 329.8846435546875,
+                "magnitude_raw_angular_acceleration": 309.1564636230469
+            },
+            "left_controller_spatial_pose": {
+                "position": {
+                    "x": -33.62007141113281,
+                    "y": -8.700387954711914,
+                    "z": -75.36119842529297
+                },
+                "rotation": {
+                    "x": 26.65462303161621,
+                    "y": -151.31854248046876,
+                    "z": -60.607032775878909
+                },
+                "velocity": {
+                    "x": -7.587247848510742,
+                    "y": 26.734817504882814,
+                    "z": -12.2017240524292
+                },
+                "angular_velocity": {
+                    "x": 2.815873146057129,
+                    "y": 18.474214553833009,
+                    "z": -6.24315071105957
+                },
+                "acceleration": {
+                    "x": -97.57445526123047,
+                    "y": 114.98750305175781,
+                    "z": 11.658711433410645
+                },
+                "angular_acceleration": {
+                    "x": -43.251155853271487,
+                    "y": 94.76583862304688,
+                    "z": -39.828758239746097
+                },
+                "raw_position": {
+                    "x": -33.866294860839847,
+                    "y": -7.843906402587891,
+                    "z": -75.7493896484375
+                },
+                "raw_rotation": {
+                    "x": 26.48259925842285,
+                    "y": -150.6573486328125,
+                    "z": -60.45458984375
+                },
+                "raw_velocity": {
+                    "x": -10.86567497253418,
+                    "y": 30.744565963745118,
+                    "z": -11.970480918884278
+                },
+                "raw_angular_velocity": {
+                    "x": 1.4200003147125245,
+                    "y": 21.74665069580078,
+                    "z": -7.6219682693481449
+                },
+                "raw_acceleration": {
+                    "x": -198.83985900878907,
+                    "y": 261.1466369628906,
+                    "z": -28.788902282714845
+                },
+                "raw_angular_acceleration": {
+                    "x": -78.16090393066406,
+                    "y": 208.2476043701172,
+                    "z": -98.6242446899414
+                },
+                "magnitude_position": 82.9778060913086,
+                "magnitude_rotation": 165.1695556640625,
+                "magnitude_velocity": 30.351259231567384,
+                "magnitude_angular_velocity": 19.70285987854004,
+                "magnitude_acceleration": 151.25747680664063,
+                "magnitude_angular_acceleration": 111.52379608154297,
+                "magnitude_raw_position": 83.34519958496094,
+                "magnitude_raw_rotation": 164.48016357421876,
+                "magnitude_raw_velocity": 34.73591613769531,
+                "magnitude_raw_angular_velocity": 23.087390899658204,
+                "magnitude_raw_acceleration": 329.489990234375,
+                "magnitude_raw_angular_acceleration": 243.31654357910157
+            },
+            "right_controller_spatial_pose": {
+                "position": {
+                    "x": -34.0903434753418,
+                    "y": -8.667165756225586,
+                    "z": -75.12843322753906
+                },
+                "rotation": {
+                    "x": 61.50096130371094,
+                    "y": -102.34764862060547,
+                    "z": -16.52593994140625
+                },
+                "velocity": {
+                    "x": -7.5671892166137699,
+                    "y": 26.748165130615236,
+                    "z": -12.158951759338379
+                },
+                "angular_velocity": {
+                    "x": -4.440202713012695,
+                    "y": 9.429049491882325,
+                    "z": -13.734478950500489
+                },
+                "acceleration": {
+                    "x": -97.14722442626953,
+                    "y": 115.28256225585938,
+                    "z": 12.28557300567627
+                },
+                "angular_acceleration": {
+                    "x": -139.94081115722657,
+                    "y": 25.71365737915039,
+                    "z": 35.25578689575195
+                },
+                "raw_position": {
+                    "x": -34.335899353027347,
+                    "y": -7.810238361358643,
+                    "z": -75.51522827148438
+                },
+                "raw_rotation": {
+                    "x": 61.10541915893555,
+                    "y": -101.59906005859375,
+                    "z": -16.013275146484376
+                },
+                "raw_velocity": {
+                    "x": -10.83100700378418,
+                    "y": 30.76849365234375,
+                    "z": -11.906865119934082
+                },
+                "raw_angular_velocity": {
+                    "x": -9.234783172607422,
+                    "y": 10.13352108001709,
+                    "z": -12.926316261291504
+                },
+                "raw_acceleration": {
+                    "x": -197.82321166992188,
+                    "y": 262.0928649902344,
+                    "z": -27.5657901763916
+                },
+                "raw_angular_acceleration": {
+                    "x": -331.2047424316406,
+                    "y": -19.14728355407715,
+                    "z": -32.91292953491211
+                },
+                "magnitude_position": 82.95512390136719,
+                "magnitude_rotation": 120.54258728027344,
+                "magnitude_velocity": 30.340843200683595,
+                "magnitude_angular_velocity": 17.241180419921876,
+                "magnitude_acceleration": 151.25669860839845,
+                "magnitude_angular_acceleration": 146.5864715576172,
+                "magnitude_raw_position": 83.32168579101563,
+                "magnitude_raw_rotation": 119.63555145263672,
+                "magnitude_raw_velocity": 34.724403381347659,
+                "magnitude_raw_angular_velocity": 18.8430118560791,
+                "magnitude_raw_acceleration": 329.5247497558594,
+                "magnitude_raw_angular_acceleration": 333.3863525390625
+            },
+            "game_configs": {
+                "user_index": 0,
+                "preset_index": 1,
+                "vehicle_opacity": 0.20000000298023225,
+                "autopilot_enabled": true,
+                "random_seed_terrain": 1,
+                "random_seed_autopilot": 1,
+                "random_seed_specials": 0,
+                "specials_index": 1,
+                "specials": {
+                    "color1_path": {
+                        "r": 0.44999998807907107,
+                        "g": 0.8999999761581421,
+                        "b": 0.44999998807907107,
+                        "a": 1.0
+                    },
+                    "color2_not_path": {
+                        "r": 0.44999998807907107,
+                        "g": 0.44999998807907107,
+                        "b": 0.8999999761581421,
+                        "a": 1.0
+                    },
+                    "color3_not_path": {
+                        "r": 0.8999999761581421,
+                        "g": 0.44999998807907107,
+                        "b": 0.44999998807907107,
+                        "a": 1.0
+                    },
+                    "color1_name_path": "specials_green",
+                    "color2_name_not_path": "specials_blue",
+                    "color3_name_not_path": "specials_red"
+                }
+            },
+            "game_play": {
+                "scene_name": "lab-1",
+                "autopilot_enabled": true,
+                "locomotion": {
+                    "left_joystick_input": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "right_joystick_input": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "combined_input": {
+                        "x": -0.48742619156837466,
+                        "y": 0.0
+                    },
+                    "active_input": {
+                        "enabled": false,
+                        "input_value": {
+                            "x": 0.0,
+                            "y": 0.0
+                        }
+                    },
+                    "passive_input": {
+                        "enabled": true,
+                        "input_value": {
+                            "x": -0.48742619156837466,
+                            "y": 0.0
+                        }
+                    },
+                    "spatial_pose": {
+                        "position": {
+                            "x": 31.22829818725586,
+                            "y": -0.15508827567100526,
+                            "z": -76.04534149169922
+                        },
+                        "rotation": {
+                            "x": 3.2155354022979738,
+                            "y": 132.8562774658203,
+                            "z": 356.41925048828127
+                        },
+                        "velocity": {
+                            "x": 8.959554672241211,
+                            "y": -0.7636418342590332,
+                            "z": -8.459443092346192
+                        },
+                        "angular_velocity": {
+                            "x": 17.40499496459961,
+                            "y": -3.929816722869873,
+                            "z": 4.287302494049072
+                        },
+                        "acceleration": {
+                            "x": -64.47432708740235,
+                            "y": 8.381011009216309,
+                            "z": 61.517539978027347
+                        },
+                        "angular_acceleration": {
+                            "x": -87.25247955322266,
+                            "y": -31.992765426635743,
+                            "z": -41.002716064453128
+                        },
+                        "raw_position": {
+                            "x": 31.5103759765625,
+                            "y": -0.17904570698738099,
+                            "z": -76.31165313720703
+                        },
+                        "raw_rotation": {
+                            "x": 2.742495059967041,
+                            "y": 132.74826049804688,
+                            "z": 356.7296142578125
+                        },
+                        "raw_velocity": {
+                            "x": 6.900228977203369,
+                            "y": -0.49878790974617007,
+                            "z": -6.495194435119629
+                        },
+                        "raw_angular_velocity": {
+                            "x": 14.591414451599121,
+                            "y": -4.975743770599365,
+                            "z": 2.968742609024048
+                        },
+                        "raw_acceleration": {
+                            "x": -104.48868560791016,
+                            "y": 10.838241577148438,
+                            "z": 99.02411651611328
+                        },
+                        "raw_angular_acceleration": {
+                            "x": -171.87486267089845,
+                            "y": -49.63945388793945,
+                            "z": -85.65833282470703
+                        },
+                        "magnitude_position": 82.20780944824219,
+                        "magnitude_rotation": 380.3890380859375,
+                        "magnitude_velocity": 12.345807075500489,
+                        "magnitude_angular_velocity": 18.35097312927246,
+                        "magnitude_acceleration": 89.50747680664063,
+                        "magnitude_angular_acceleration": 101.57634735107422,
+                        "magnitude_raw_position": 82.56151580810547,
+                        "magnitude_raw_rotation": 380.6384582519531,
+                        "magnitude_raw_velocity": 9.489441871643067,
+                        "magnitude_raw_angular_velocity": 15.699707984924317,
+                        "magnitude_raw_acceleration": 144.36456298828126,
+                        "magnitude_raw_angular_acceleration": 198.3491668701172
+                    }
+                }
+            },
+            "sickness": {
+                "button_input": {
+                    "a": 0.0,
+                    "b": 0.0,
+                    "x": 0.0,
+                    "y": 0.0
+                },
+                "reported": 0.0,
+                "deduced": 0.0,
+                "predicted": 0.0
+            },
+            "continuous_ema": {
+                "time_interval_ideal": 0.03333333134651184,
+                "time_interval_actual": 0.0333404541015625,
+                "exponent_rectification": 1.0002137422561646,
+                "alpha_ideal": 0.5,
+                "alpha_actual": 0.500074028968811,
+                "_1_minus_alpha_ideal": 0.5,
+                "_1_minus_alpha_actual": 0.4999259412288666
+            }
+        },
+        {
+            "recorder_name": "Recorder25",
+            "timestamp": {
+                "date_time_custom": "20250201-173635-943621-utc0800",
+                "date_time": "2025-02-01T17:36:35.9436210+08:00",
+                "unix_ms": 1738402595943,
+                "game_time_custom": "000 days, 00:01:02.271910",
+                "game_time": "00:01:02.2719100",
+                "game_time_seconds": 60.239418029785159,
+                "unity_fixed_delta_time_seconds": 0.0111236572265625,
+                "ideal_record_interval_seconds": 0.03333333134651184,
+                "actual_record_interval_seconds": 0.0333404541015625
+            },
+            "eye_gaze": {
+                "spatial_pose": {
+                    "position": {
+                        "x": -0.0038448977284133436,
+                        "y": -0.05062993988394737,
+                        "z": 0.03260606527328491
+                    },
+                    "rotation": {
+                        "x": 41.855533599853519,
+                        "y": 4.912899017333984,
+                        "z": -3.62119898511537e-8
+                    },
+                    "velocity": {
+                        "x": 0.0034468071535229685,
+                        "y": 0.000818688771687448,
+                        "z": 0.005625114310532808
+                    },
+                    "angular_velocity": {
+                        "x": 13.277914047241211,
+                        "y": -68.63594818115235,
+                        "z": -2.8711349964141847
+                    },
+                    "acceleration": {
+                        "x": 0.2781299650669098,
+                        "y": 0.018754195421934129,
+                        "z": 0.2778560519218445
+                    },
+                    "angular_acceleration": {
+                        "x": -462.2814025878906,
+                        "y": 1886.3236083984375,
+                        "z": 89.36800384521485
+                    },
+                    "raw_position": {
+                        "x": -0.00373077392578125,
+                        "y": -0.05060434341430664,
+                        "z": 0.0327911376953125
+                    },
+                    "raw_rotation": {
+                        "x": 42.30883026123047,
+                        "y": 2.6283421516418459,
+                        "z": -1.443107180421066e-7
+                    },
+                    "raw_velocity": {
+                        "x": 0.012700228951871395,
+                        "y": 0.0014302060008049012,
+                        "z": 0.014874142594635487
+                    },
+                    "raw_angular_velocity": {
+                        "x": -2.1135010719299318,
+                        "y": -5.762013912200928,
+                        "z": 0.10412587970495224
+                    },
+                    "raw_acceleration": {
+                        "x": 0.7549875378608704,
+                        "y": 0.0870809406042099,
+                        "z": 0.7549875378608704
+                    },
+                    "raw_angular_acceleration": {
+                        "x": -1807.396728515625,
+                        "y": 7662.62841796875,
+                        "z": 358.81829833984377
+                    },
+                    "magnitude_position": 0.060343433171510699,
+                    "magnitude_rotation": 42.142879486083987,
+                    "magnitude_velocity": 0.006647754460573196,
+                    "magnitude_angular_velocity": 69.96742248535156,
+                    "magnitude_acceleration": 0.3935886025428772,
+                    "magnitude_angular_acceleration": 1944.1983642578125,
+                    "magnitude_raw_position": 0.06041503697633743,
+                    "magnitude_raw_rotation": 42.3903923034668,
+                    "magnitude_raw_velocity": 0.019610747694969178,
+                    "magnitude_raw_angular_velocity": 6.138284206390381,
+                    "magnitude_raw_acceleration": 1.071258783340454,
+                    "magnitude_raw_angular_acceleration": 7881.0732421875
+                },
+                "viewport_pose": {
+                    "position": {
+                        "x": 0.454035222530365,
+                        "y": 0.7126325964927673
+                    },
+                    "velocity": {
+                        "x": -1.1280852556228638,
+                        "y": 1.1600037813186646
+                    },
+                    "acceleration": {
+                        "x": -56.54819869995117,
+                        "y": 39.33201599121094
+                    },
+                    "raw_position": {
+                        "x": 0.4166666567325592,
+                        "y": 0.7513889074325562
+                    },
+                    "raw_velocity": {
+                        "x": -3.0189332962036135,
+                        "y": 2.48089599609375
+                    },
+                    "raw_acceleration": {
+                        "x": -148.80084228515626,
+                        "y": 85.32232666015625
+                    },
+                    "magnitude_position": 0.8449811935424805,
+                    "magnitude_velocity": 1.6180806159973145,
+                    "magnitude_acceleration": 68.88182830810547,
+                    "magnitude_raw_position": 0.8591835498809815,
+                    "magnitude_raw_velocity": 3.907531499862671,
+                    "magnitude_raw_acceleration": 171.5272216796875
+                },
+                "left_eye_openness": 1.0,
+                "right_eye_openness": 1.0
+            },
+            "face": {
+                "blend_shapes_data": {
+                    "eyeLookDownLeft": 0.42845794558525088,
+                    "noseSneerLeft": 0.21653449535369874,
+                    "eyeLookInLeft": 0.16274848580360413,
+                    "browInnerUp": 0.0005441481480374932,
+                    "browDownRight": 0.11152783036231995,
+                    "mouthClose": 0.054986558854579929,
+                    "mouthLowerDownRight": 0.0,
+                    "jawOpen": 0.003181608859449625,
+                    "mouthUpperUpRight": 0.0592196099460125,
+                    "mouthShrugUpper": 0.04961571842432022,
+                    "mouthFunnel": 0.0704742819070816,
+                    "eyeLookInRight": 0.005699887406080961,
+                    "eyeLookDownRight": 0.42845794558525088,
+                    "noseSneerRight": 0.23293931782245637,
+                    "mouthRollUpper": 0.0003183246008120477,
+                    "jawRight": 0.00006683185347355902,
+                    "browDownLeft": 0.11152783036231995,
+                    "mouthShrugLower": 0.054792001843452457,
+                    "mouthRollLower": 0.0005622174940072,
+                    "mouthSmileLeft": 0.0009806409943848849,
+                    "mouthPressLeft": 0.12961769104003907,
+                    "mouthSmileRight": 0.001309037208557129,
+                    "mouthPressRight": 0.043423961848020557,
+                    "mouthDimpleRight": 0.046200208365917209,
+                    "mouthLeft": 0.010870721191167832,
+                    "jawForward": 0.0014583513839170337,
+                    "eyeSquintLeft": 0.03130265325307846,
+                    "mouthFrownLeft": 0.05518664792180061,
+                    "eyeBlinkLeft": 0.0016089658020064235,
+                    "cheekSquintLeft": 0.19479259848594666,
+                    "browOuterUpLeft": 0.0005441481480374932,
+                    "eyeLookUpLeft": 0.0046583060175180439,
+                    "jawLeft": 0.000001402774614689406,
+                    "mouthStretchLeft": 0.000649099878501147,
+                    "mouthPucker": 0.0016746027395129204,
+                    "eyeLookUpRight": 0.0046583060175180439,
+                    "browOuterUpRight": 0.0005441481480374932,
+                    "cheekSquintRight": 0.13887958228588105,
+                    "eyeBlinkRight": 0.001766185276210308,
+                    "mouthUpperUpLeft": 0.05644945055246353,
+                    "mouthFrownRight": 0.06221871078014374,
+                    "eyeSquintRight": 0.03235108032822609,
+                    "mouthStretchRight": 0.0006618205807171762,
+                    "cheekPuff": 0.060511231422424319,
+                    "eyeLookOutLeft": 0.005699887406080961,
+                    "eyeLookOutRight": 0.16274848580360413,
+                    "eyeWideRight": 0.004358578938990831,
+                    "eyeWideLeft": 0.004358578938990831,
+                    "mouthRight": 0.01419092807918787,
+                    "mouthDimpleLeft": 0.027027877047657968,
+                    "mouthLowerDownLeft": 0.0001489239075453952,
+                    "tongueOut": 0.0,
+                    "viseme_PP": 0.0,
+                    "viseme_CH": 0.0,
+                    "viseme_o": 0.0,
+                    "viseme_O": 0.0,
+                    "viseme_i": 0.0,
+                    "viseme_I": 0.0,
+                    "viseme_RR": 0.0,
+                    "viseme_XX": 0.0,
+                    "viseme_aa": 0.0,
+                    "viseme_FF": 0.0,
+                    "viseme_u": 0.0,
+                    "viseme_U": 0.0,
+                    "viseme_TH": 0.0,
+                    "viseme_kk": 0.0,
+                    "viseme_SS": 0.0,
+                    "viseme_e": 0.0,
+                    "viseme_DD": 0.0,
+                    "viseme_E": 0.0,
+                    "viseme_nn": 0.0,
+                    "viseme_sil": 0.9999998807907105
+                },
+                "laughing": 0.0
+            },
+            "headset_spatial_pose": {
+                "position": {
+                    "x": -34.792823791503909,
+                    "y": -7.060017108917236,
+                    "z": -75.91578674316406
+                },
+                "rotation": {
+                    "x": -4.482269763946533,
+                    "y": -131.41680908203126,
+                    "z": -13.556391716003418
+                },
+                "velocity": {
+                    "x": -18.664169311523439,
+                    "y": 40.465118408203128,
+                    "z": -12.741849899291993
+                },
+                "angular_velocity": {
+                    "x": 20.93931007385254,
+                    "y": 17.82696533203125,
+                    "z": -15.250432014465332
+                },
+                "acceleration": {
+                    "x": -333.4784240722656,
+                    "y": 404.86761474609377,
+                    "z": -17.745834350585939
+                },
+                "angular_acceleration": {
+                    "x": 178.07577514648438,
+                    "y": 329.8931884765625,
+                    "z": -163.79541015625
+                },
+                "raw_position": {
+                    "x": -35.4116096496582,
+                    "y": -5.728683948516846,
+                    "z": -76.33130645751953
+                },
+                "raw_rotation": {
+                    "x": -5.31597900390625,
+                    "y": -130.80838012695313,
+                    "z": -13.7333984375
+                },
+                "raw_velocity": {
+                    "x": -29.79210662841797,
+                    "y": 54.04859924316406,
+                    "z": -13.411670684814454
+                },
+                "raw_angular_velocity": {
+                    "x": 26.931903839111329,
+                    "y": 28.864246368408204,
+                    "z": -20.73134994506836
+                },
+                "raw_acceleration": {
+                    "x": -569.7822265625,
+                    "y": 693.9969482421875,
+                    "z": -48.19565200805664
+                },
+                "raw_angular_acceleration": {
+                    "x": 292.99658203125,
+                    "y": 556.6829833984375,
+                    "z": -271.1365966796875
+                },
+                "magnitude_position": 83.80686950683594,
+                "magnitude_rotation": 132.19017028808595,
+                "magnitude_velocity": 46.34794235229492,
+                "magnitude_angular_velocity": 31.4456844329834,
+                "magnitude_acceleration": 524.8242797851563,
+                "magnitude_angular_acceleration": 409.10809326171877,
+                "magnitude_raw_position": 84.34019470214844,
+                "magnitude_raw_rotation": 131.63470458984376,
+                "magnitude_raw_velocity": 63.15610122680664,
+                "magnitude_raw_angular_velocity": 44.58992004394531,
+                "magnitude_raw_acceleration": 899.2254028320313,
+                "magnitude_raw_angular_acceleration": 685.0241088867188
+            },
+            "left_controller_spatial_pose": {
+                "position": {
+                    "x": -34.24134826660156,
+                    "y": -7.376405715942383,
+                    "z": -75.78489685058594
+                },
+                "rotation": {
+                    "x": 26.53990364074707,
+                    "y": -150.1622772216797,
+                    "z": -60.23371124267578
+                },
+                "velocity": {
+                    "x": -18.73423194885254,
+                    "y": 40.23002624511719,
+                    "z": -12.985875129699707
+                },
+                "angular_velocity": {
+                    "x": -1.7684859037399293,
+                    "y": 30.04308319091797,
+                    "z": -10.489709854125977
+                },
+                "acceleration": {
+                    "x": -333.9449462890625,
+                    "y": 402.1127624511719,
+                    "z": -21.159442901611329
+                },
+                "angular_acceleration": {
+                    "x": -138.1870574951172,
+                    "y": 345.2845458984375,
+                    "z": -126.60009765625
+                },
+                "raw_position": {
+                    "x": -34.8624382019043,
+                    "y": -6.052815914154053,
+                    "z": -76.20848083496094
+                },
+                "raw_rotation": {
+                    "x": 26.425220489501954,
+                    "y": -149.00636291503907,
+                    "z": -59.860504150390628
+                },
+                "raw_velocity": {
+                    "x": -29.877918243408204,
+                    "y": 53.72124099731445,
+                    "z": -13.769794464111329
+                },
+                "raw_angular_velocity": {
+                    "x": -6.351487636566162,
+                    "y": 41.60852813720703,
+                    "z": -14.73501205444336
+                },
+                "raw_acceleration": {
+                    "x": -570.2454833984375,
+                    "y": 689.1530151367188,
+                    "z": -53.96788024902344
+                },
+                "raw_angular_acceleration": {
+                    "x": -233.0948486328125,
+                    "y": 595.7290649414063,
+                    "z": -213.3457489013672
+                },
+                "magnitude_position": 83.4879150390625,
+                "magnitude_rotation": 163.95480346679688,
+                "magnitude_velocity": 46.23915481567383,
+                "magnitude_angular_velocity": 31.870807647705079,
+                "magnitude_acceleration": 523.1267700195313,
+                "magnitude_angular_acceleration": 392.8672180175781,
+                "magnitude_raw_position": 84.02236938476563,
+                "magnitude_raw_rotation": 162.74049377441407,
+                "magnitude_raw_velocity": 62.994197845458987,
+                "magnitude_raw_angular_velocity": 44.59519958496094,
+                "magnitude_raw_acceleration": 896.1162109375,
+                "magnitude_raw_angular_acceleration": 674.34619140625
+            },
+            "right_controller_spatial_pose": {
+                "position": {
+                    "x": -34.70903396606445,
+                    "y": -7.3409318923950199,
+                    "z": -75.54830932617188
+                },
+                "rotation": {
+                    "x": 60.830440521240237,
+                    "y": -101.45675659179688,
+                    "z": -15.943990707397461
+                },
+                "velocity": {
+                    "x": -18.65674591064453,
+                    "y": 40.297550201416019,
+                    "z": -12.870885848999024
+                },
+                "angular_velocity": {
+                    "x": -4.133557319641113,
+                    "y": 11.712597846984864,
+                    "z": -21.708694458007814
+                },
+                "acceleration": {
+                    "x": -332.22802734375,
+                    "y": 403.72650146484377,
+                    "z": -18.992637634277345
+                },
+                "angular_acceleration": {
+                    "x": 11.151351928710938,
+                    "y": 70.78036499023438,
+                    "z": -233.6717529296875
+                },
+                "raw_position": {
+                    "x": -35.327545166015628,
+                    "y": -6.0150909423828129,
+                    "z": -75.96807861328125
+                },
+                "raw_rotation": {
+                    "x": 60.16012191772461,
+                    "y": -100.56613159179688,
+                    "z": -15.362213134765625
+                },
+                "raw_velocity": {
+                    "x": -29.74302101135254,
+                    "y": 53.84292221069336,
+                    "z": -13.582609176635743
+                },
+                "raw_angular_velocity": {
+                    "x": -3.8270022869110109,
+                    "y": 13.99547004699707,
+                    "z": -29.68054962158203
+                },
+                "raw_acceleration": {
+                    "x": -567.2392578125,
+                    "y": 692.0850219726563,
+                    "z": -50.2615852355957
+                },
+                "raw_angular_acceleration": {
+                    "x": 162.1987762451172,
+                    "y": 115.83372497558594,
+                    "z": -502.5196838378906
+                },
+                "magnitude_position": 83.46348571777344,
+                "magnitude_rotation": 119.36510467529297,
+                "magnitude_velocity": 46.234474182128909,
+                "magnitude_angular_velocity": 25.010770797729493,
+                "magnitude_acceleration": 523.193359375,
+                "magnitude_angular_acceleration": 244.41091918945313,
+                "magnitude_raw_position": 83.99622344970703,
+                "magnitude_raw_rotation": 118.18961334228516,
+                "magnitude_raw_velocity": 62.99361038208008,
+                "magnitude_raw_angular_velocity": 33.03716278076172,
+                "magnitude_raw_acceleration": 896.2523803710938,
+                "magnitude_raw_angular_acceleration": 540.6033325195313
+            },
+            "game_configs": {
+                "user_index": 0,
+                "preset_index": 1,
+                "vehicle_opacity": 0.20000000298023225,
+                "autopilot_enabled": true,
+                "random_seed_terrain": 1,
+                "random_seed_autopilot": 1,
+                "random_seed_specials": 0,
+                "specials_index": 1,
+                "specials": {
+                    "color1_path": {
+                        "r": 0.44999998807907107,
+                        "g": 0.8999999761581421,
+                        "b": 0.44999998807907107,
+                        "a": 1.0
+                    },
+                    "color2_not_path": {
+                        "r": 0.44999998807907107,
+                        "g": 0.44999998807907107,
+                        "b": 0.8999999761581421,
+                        "a": 1.0
+                    },
+                    "color3_not_path": {
+                        "r": 0.8999999761581421,
+                        "g": 0.44999998807907107,
+                        "b": 0.44999998807907107,
+                        "a": 1.0
+                    },
+                    "color1_name_path": "specials_green",
+                    "color2_name_not_path": "specials_blue",
+                    "color3_name_not_path": "specials_red"
+                }
+            },
+            "game_play": {
+                "scene_name": "lab-1",
+                "autopilot_enabled": true,
+                "locomotion": {
+                    "left_joystick_input": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "right_joystick_input": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "combined_input": {
+                        "x": -0.4882058799266815,
+                        "y": 0.6499999761581421
+                    },
+                    "active_input": {
+                        "enabled": false,
+                        "input_value": {
+                            "x": 0.0,
+                            "y": 0.0
+                        }
+                    },
+                    "passive_input": {
+                        "enabled": true,
+                        "input_value": {
+                            "x": -0.4882058799266815,
+                            "y": 0.6499999761581421
+                        }
+                    },
+                    "spatial_pose": {
+                        "position": {
+                            "x": 31.60010528564453,
+                            "y": -0.18186065554618836,
+                            "z": -76.39579772949219
+                        },
+                        "rotation": {
+                            "x": 2.5826854705810549,
+                            "y": 132.55722045898438,
+                            "z": 356.9250183105469
+                        },
+                        "velocity": {
+                            "x": 11.400047302246094,
+                            "y": -0.8254263401031494,
+                            "z": -10.746307373046875
+                        },
+                        "angular_velocity": {
+                            "x": 24.48492431640625,
+                            "y": -9.72961139678955,
+                            "z": 3.736591339111328
+                        },
+                        "acceleration": {
+                            "x": 71.8546142578125,
+                            "y": -1.63580322265625,
+                            "z": -67.29886627197266
+                        },
+                        "angular_acceleration": {
+                            "x": 210.93370056152345,
+                            "y": -174.2628173828125,
+                            "z": -17.23902130126953
+                        },
+                        "raw_position": {
+                            "x": 31.9718017578125,
+                            "y": -0.20862510800361634,
+                            "z": -76.74616241455078
+                        },
+                        "raw_rotation": {
+                            "x": 1.9500232934951783,
+                            "y": 132.25828552246095,
+                            "z": 357.4306640625
+                        },
+                        "raw_velocity": {
+                            "x": 13.83981704711914,
+                            "y": -0.8871925473213196,
+                            "z": -13.03249454498291
+                        },
+                        "raw_angular_velocity": {
+                            "x": 31.56275749206543,
+                            "y": -15.527688980102539,
+                            "z": 3.1860435009002687
+                        },
+                        "raw_acceleration": {
+                            "x": 208.1431884765625,
+                            "y": -11.649650573730469,
+                            "z": -196.07711791992188
+                        },
+                        "raw_angular_acceleration": {
+                            "x": 509.0315856933594,
+                            "y": -316.4907531738281,
+                            "z": 6.517634391784668
+                        },
+                        "magnitude_position": 82.6735610961914,
+                        "magnitude_rotation": 380.7539367675781,
+                        "magnitude_velocity": 15.68838882446289,
+                        "magnitude_angular_velocity": 26.61087989807129,
+                        "magnitude_acceleration": 98.46267700195313,
+                        "magnitude_angular_acceleration": 274.14910888671877,
+                        "magnitude_raw_position": 83.13972473144531,
+                        "magnitude_raw_rotation": 381.120361328125,
+                        "magnitude_raw_velocity": 19.030858993530275,
+                        "magnitude_raw_angular_velocity": 35.31950759887695,
+                        "magnitude_raw_acceleration": 286.1914367675781,
+                        "magnitude_raw_angular_acceleration": 599.4347534179688
+                    }
+                }
+            },
+            "sickness": {
+                "button_input": {
+                    "a": 0.0,
+                    "b": 0.0,
+                    "x": 0.0,
+                    "y": 0.0
+                },
+                "reported": 0.0,
+                "deduced": 0.0,
+                "predicted": 0.0
+            },
+            "continuous_ema": {
+                "time_interval_ideal": 0.03333333134651184,
+                "time_interval_actual": 0.0333404541015625,
+                "exponent_rectification": 1.0002137422561646,
+                "alpha_ideal": 0.5,
+                "alpha_actual": 0.500074028968811,
+                "_1_minus_alpha_ideal": 0.5,
+                "_1_minus_alpha_actual": 0.4999259412288666
+            }
+        }
+    ]
+}
